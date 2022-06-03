@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
 </head>
-<body>
+<body class="font-noto">
     <header class="w-full h-16 border-b border-neutral-200">
         <div class="flex items-center justify-between w-full h-full">
             <button class="nav-button w-16 h-full"></button>
@@ -16,7 +19,7 @@
             </nav>
             <div class="flex-center h-full">
                 <img src="img/logo.svg" alt="Adobe Experience Cloud logo" class="w-[27px]">
-                <span class="ml-2 text-center text-[15px] font-semibold text-red">Adobe Experience Cloud</span>
+                <span class="ml-2 text-center text-sm font-semibold text-red">Adobe Experience Cloud</span>
             </div>
             <div class="flex-center w-20 h-full">
                 <a href="" class="text-xs">Sign In</a>
@@ -24,20 +27,22 @@
         </div>
     </header>
     <main class="flex flex-col">
-        <section class="flex flex-col bg-adobe">
-            <div id="section-container" class="max-w-[85%] my-0 mx-auto">
-                <img src="img/post-digital-economy.webp" alt="Post Digital Economy" class="">
-                <h2 class="">ADOBE EXPERIENCE CLOUD</h2>
-                <h3 class="">Make the experience your competitive edge.</h3>
-                <p class="">Adobe Experience Cloud is our end-to-end suite of products that let businesses personalize each and every customer experience, across the whole journey - at any scale.</p>
-                <div class="">
-                    <button class="">How to suceed in the Digital Economy</button>
-                    <a href="#" class="">Learn about Experience Cloud</a>
+        <section class="flex flex-col bg-adobe py-10 border-b border-neutral-300">
+            <div id="section-container" class="max-w-[83.4%] my-0 mx-auto">
+                <img src="img/post-digital-economy.webp" alt="Post Digital Economy" class="mb-9">
+                <h2 class="text-sm font-semibold mb-2">ADOBE EXPERIENCE CLOUD</h2>
+                <h3 class="text-2xl font-semibold mb-4 leading-9">Make it personal. Make it with Adobe Experience Cloud.</h3>
+                <p class="leading-relaxed">The digital economy is a $1 trillion opportunity. As you create customer experiences, no matter the scale, they can still feel personalized and useful. That's where Adobe comes in.</p>
+                <div class="flex flex-col mt-4">
+                    <div class="w-full h-10 flex items-center mb-4">
+                        <a class="block px-4 py-2 leading-[] rounded-full bg-blue-600 text-white text-xs font-semibold">How to suceed in the Digital Economy</a>
+                    </div>
+                    <a href="#" class="text-blue-600 text-sm">Learn about Experience Cloud</a>
                 </div>      
             </div>  
         </section>
         <section class="">
-            <div class="">
+            <div class="h-screen">
                 <img src="img/what-is-AEC.jpeg" alt="What is AEC" class="">
                 <div class="">
                     <h2 class="">WHAT EXPERIENCE CLOUD OFFERS</h2>
@@ -119,7 +124,7 @@
                     </div>
                 </div>
             </div>
-            <div class="">
+            <div class="h-screen">
                 <div class="">
                     <h2 class="">ADOBE BUSINESS CUSTOMERS</h2>
                     <h3 class="">From Fortune 500 businesses to family-owned.</h3>

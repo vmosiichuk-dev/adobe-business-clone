@@ -9,10 +9,19 @@
         align-items: center;
     }
 }
+.font-noto {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.bg-adobe {
+    background-color: #FBFBFB;
+}
 .text-red {
     color: #FA0F00;
 }
 .nav-button::before {
     content: "\2630";
     font-size: 14px;
+}
+.mb-9 {
+    margin-bottom: 2.25rem;
 }
