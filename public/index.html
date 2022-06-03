@@ -11,51 +11,56 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
 </head>
 <body class="font-noto">
-    <header class="w-full h-16 border-b border-neutral-200">
+    <header class="w-full h-[calc(4rem+1px)] border-b border-neutral-200">
         <div class="flex items-center justify-between w-full h-full">
-            <button class="nav-button w-16 h-full"></button>
+            <button class="nav-button w-[60px] h-full"></button>
             <nav class="hidden">
 
             </nav>
-            <div class="flex-center h-full">
+            <div class="flex items-center h-full w-[calc(100%-9rem)] px-5">
                 <img src="img/logo.svg" alt="Adobe Experience Cloud logo" class="w-[27px]">
                 <span class="ml-2 text-center text-sm font-semibold text-red">Adobe Experience Cloud</span>
             </div>
-            <div class="flex-center w-20 h-full">
-                <a href="" class="text-xs">Sign In</a>
+            <div class="flex-center px-5 h-full">
+                <a href="#" class="text-xs">Sign In</a>
             </div>
         </div>
     </header>
     <main class="flex flex-col">
         <section class="flex flex-col bg-adobe py-10 border-b border-neutral-300">
-            <div id="section-container" class="max-w-[83.4%] my-0 mx-auto">
+            <div class="section-container">
                 <img src="img/post-digital-economy.webp" alt="Post Digital Economy" class="mb-9">
                 <h2 class="text-sm font-semibold mb-2">ADOBE EXPERIENCE CLOUD</h2>
-                <h3 class="text-2xl font-semibold mb-4 leading-9">Make it personal. Make it with Adobe Experience Cloud.</h3>
+                <h3 class="text-2xl font-semibold mb-[calc(1rem-1px)] leading-9">Make it personal. Make it with Adobe Experience Cloud.</h3>
                 <p class="leading-relaxed">The digital economy is a $1 trillion opportunity. As you create customer experiences, no matter the scale, they can still feel personalized and useful. That's where Adobe comes in.</p>
                 <div class="flex flex-col mt-4">
                     <div class="w-full h-10 flex items-center mb-4">
-                        <a class="block px-4 py-2 leading-[] rounded-full bg-blue-600 text-white text-xs font-semibold">How to suceed in the Digital Economy</a>
+                        <a href="#" class="block px-4 py-2 leading-[] rounded-full bg-blue-600 text-white text-xs font-semibold">How to suceed in the Digital Economy</a>
                     </div>
                     <a href="#" class="text-blue-600 text-sm">Learn about Experience Cloud</a>
                 </div>      
             </div>  
         </section>
         <section class="">
-            <div class="h-screen">
-                <img src="img/what-is-AEC.jpeg" alt="What is AEC" class="">
+            <div class="section-container">
+                <div class="flex pt-20 pb-6 my-0 mx-auto py-6">
+                    <img src="img/what-is-AEC.jpeg" alt="What is AEC" class="">
+                </div>
                 <div class="">
-                    <h2 class="">WHAT EXPERIENCE CLOUD OFFERS</h2>
-                    <h3 class="">Discover what Adobe Experience Cloud can do for your business.</h3>
-                    <p class="">With Adobe Experience Cloud and its suite of products and services you can easily manage the entire customer experience with real-time data, scalable personalization, and more.</p>
-                    <div class="">
-                        <button class="">Explore Experience Cloud</button>
-                        <a href="#" class="">Explore the platform</a>
+                    <h2 class="text-sm font-semibold mb-2">WHAT EXPERIENCE CLOUD OFFERS</h2>
+                    <h3 class="text-2xl font-semibold mb-[calc(1rem-1px)] leading-9">Discover what Adobe Experience Cloud can do for your business.</h3>
+                    <p class="text-sm leading-relaxed">With Adobe Experience Cloud and its suite of products and services you can easily manage the entire customer experience with real-time data, scalable personalization, and more.</p>
+                    <div class="flex items-center pt-4">
+                        <a href="#" class="block px-4 py-[6px] leading-[] rounded-full border-2 border-neutral-600 text-neutral-600 text-xs font-semibold">Explore Experience Cloud</a>
+                        <a href="#" class="text-blue-600 text-sm ml-4">Explore the platform</a>
+                    </div>
+                    <div class="pt-[4.5rem]">
+                        <hr class="border-neutral-300">
                     </div>
                 </div>
             </div>
-            <div class="">
-                <h2 class="">Your business has needs. Experience Cloud has your business solutions.</h2>
+            <div class="section-container pt-16">
+                <h2 class="pb-14 text-[1.05rem] font-semibold text-center">Your business has needs. Experience Cloud has your business solutions.</h2>
                 <div class="grid">
                     <div class="">
                         <h3 class="">Personalization at scale</h3>
