@@ -32,6 +32,12 @@
 .pb-13 {
     padding-bottom: 3.25rem;
 }
+.leading-relaxed {
+    line-height: 1.7;
+}
+.leading-title {
+    line-height: 2.2rem;
+}
 #solution-1 {
     background-image: url(https://business.adobe.com/content/dam/dx/us/en/homepage/summit/DOTCOM-36160-DXHomepage-Tabs-Solutions-Digital-Tablet-308x260%402x.png.img.png);
     background-size: cover;
@@ -61,4 +67,16 @@
     background-image: url(https://business.adobe.com/content/dam/dx/us/en/homepage/summit/DOTCOM-36160-DXHomepage-Tabs-Solutions-ExperiencePlatform-Tablet-308x260%402x.png.img.png);
     background-size: cover;
     background-position: 100% 99%;
+}
+footer ul ul li {
+    display: none;
+}
+#footer-region::after {
+    content: 'v';
+    display: block;
+    color: #7d7a7a;
+    margin-left: 5px;
+    margin-bottom: 2px;
+    font-size: 0.875rem;
+    font-weight: 500;
 }
