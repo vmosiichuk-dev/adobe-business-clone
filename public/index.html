@@ -19,7 +19,7 @@
             </nav>
             <div class="flex items-center h-full w-[calc(100%-9rem)] px-5">
                 <img src="img/logo.svg" alt="Adobe Experience Cloud logo" class="w-[27px]">
-                <span class="ml-2 text-center text-sm font-semibold text-red">Adobe Experience Cloud</span>
+                <span class="ml-2 text-center text-sm font-semibold text-red whitespace-nowrap">Adobe Experience Cloud</span>
             </div>
             <div class="flex-center px-5 h-full">
                 <a href="#" class="text-xs">Sign In</a>
@@ -50,9 +50,11 @@
                     <h2 class="text-sm font-semibold mb-2">WHAT EXPERIENCE CLOUD OFFERS</h2>
                     <h3 class="text-2xl font-semibold mb-[calc(1rem-1px)] leading-9">Discover what Adobe Experience Cloud can do for your business.</h3>
                     <p class="text-sm leading-relaxed">With Adobe Experience Cloud and its suite of products and services you can easily manage the entire customer experience with real-time data, scalable personalization, and more.</p>
-                    <div class="flex items-center pt-4">
-                        <a href="#" class="block px-4 py-[6px] leading-[] rounded-full border-2 border-neutral-600 text-neutral-600 text-xs font-semibold">Explore Experience Cloud</a>
-                        <a href="#" class="text-blue-600 text-sm ml-4">Explore the platform</a>
+                    <div class="flex flex-col mt-6">
+                        <div class="w-full h-10 flex items-center mb-4">
+                            <a href="#" class="block px-4 py-[6px] rounded-full border-2 border-neutral-600 text-neutral-600 text-xs font-semibold">Explore Experience Cloud</a>
+                        </div>
+                        <a href="#" class="text-blue-600 text-sm">Explore the platform</a>
                     </div>
                     <div class="pt-[4.5rem]">
                         <hr class="border-neutral-300">
@@ -60,40 +62,59 @@
                 </div>
             </div>
             <div class="section-container pt-16">
-                <h2 class="pb-14 text-[1.05rem] font-semibold text-center">Your business has needs. Experience Cloud has your business solutions.</h2>
-                <div class="grid">
-                    <div class="">
-                        <h3 class="">Personalization at scale</h3>
-                        <p class="">A personal experience for each customer is possible</p>
-                        <a href="#" class="">Learn more</a>
+                <h2 class="pb-13 text-[1.05rem] font-semibold text-center">Your business has needs. Experience Cloud has your business solutions.</h2>
+                <div class="flex flex-wrap">
+                    <div id="solution-1" class="bg-[#eee] mb-5">
+                        <div class="w-2/3 max-w-[66.666667%] min-h-[260px] pl-6 py-5">
+                            <h3 class="text-[1.3rem] font-semibold mb-2">Personalization at scale</h3>
+                            <p class="leading-relaxed mb-6">A personal experience for each customer is possible</p>
+                            <a href="#" class="text-blue-600 text-xs">Learn more</a>
+                        </div>
                     </div>
-                    <div class="">
-                        <h3 class="">Content and commerce</h3>
-                        <p class="">Content at scale and personalized commerce</p>
-                        <a href="#" class="">Content solutions</a>
-                        <a href="#" class="">Commerce solutions</a>
+                    <div id="solution-2" class="bg-[#eee] mb-5">
+                        <div class="w-2/3 max-w-[66.666667%] min-h-[260px] pl-6 py-5">
+                            <h3 class="text-[1.3rem] font-semibold mb-2">Content and commerce</h3>
+                            <p class="leading-relaxed mb-6">Content at scale and personalized commerce</p>
+                            <div class="flex flex-col">
+                                <a href="#" class="text-blue-600 text-xs mb-3">Content solutions</a>
+                                <a href="#" class="text-blue-600 text-xs">Commerce solutions</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="">
-                        <h3 class="">Data insights and audiences</h3>
-                        <p class="">Real-time insights, audiences, and activation</p>
-                        <a href="#" class="">Learn more</a>
+                    <div id="solution-3" class="bg-[#eee] mb-5">
+                        <div class="w-2/3 max-w-[66.666667%] min-h-[260px] pl-6 py-5">
+                            <h3 class="text-[1.3rem] font-semibold mb-2">Data insights and audiences</h3>
+                            <p class="leading-relaxed mb-6">Real-time insights, audiences, and activation</p>
+                            <a href="#" class="text-blue-600 text-xs">Learn more</a>
+                        </div>
                     </div>
-                    <div class="">
-                        <h3 class="">Customer journeys</h3>
-                        <p class="">Experiences that adapt to customers in real time</p>
-                        <a href="#" class="">Customer journey solutions</a>
-                        <a href="#" class="">B2B marketing solutions</a>
+                    <div id="solution-4" class="bg-[#eee] mb-5">
+                        <div class="w-2/3 max-w-[66.666667%] min-h-[260px] pl-6 py-5">
+                            <h3 class="text-[1.3rem] font-semibold mb-2">Customer journeys</h3>
+                            <p class="leading-relaxed mb-6">Experiences that adapt to customers in real time</p>
+                            <div class="flex flex-col">
+                                <a href="#" class="text-blue-600 text-xs mb-3">Customer journey solutions</a>
+                                <a href="#" class="text-blue-600 text-xs">B2B marketing solutions</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="">
-                        <h3 class="">Marketing workflows</h3>
-                        <p class="">One place for managing all of your work-streams</p>
-                        <a href="#" class="">Learn more</a>
+                    <div id="solution-5" class="bg-[#eee] mb-5">
+                        <div class="w-2/3 max-w-[66.666667%] min-h-[260px] pl-6 py-5">
+                            <h3 class="text-[1.3rem] font-semibold mb-2">Marketing workflows</h3>
+                            <p class="leading-relaxed mb-6">One place for managing all of your work-streams</p>
+                            <a href="#" class="text-blue-600 text-xs">Learn more</a>
+                        </div>
                     </div>
-                    <div class="">
-                        <h3 class="">Experience platform</h3>
-                        <p class="">Unified data on an open, AI-powered platform</p>
-                        <a href="#" class="">Learn more</a>
+                    <div id="solution-6" class="bg-[#eee]">
+                        <div class="w-2/3 max-w-[66.666667%] min-h-[260px] pl-6 py-5">
+                            <h3 class="text-[1.3rem] font-semibold mb-2">Experience platform</h3>
+                            <p class="leading-relaxed mb-6">Unified data on an open, AI-powered platform</p>
+                            <a href="#" class="text-blue-600 text-xs">Learn more</a>
+                        </div>
                     </div>
+                </div>
+                <div class="pt-[4.5rem]">
+                    <hr class="border-neutral-300">
                 </div>
             </div>
             <div class="">

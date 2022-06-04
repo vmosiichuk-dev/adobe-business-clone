@@ -29,3 +29,36 @@
     max-width: 83.4%;
     margin: 0 auto;
 }
+.pb-13 {
+    padding-bottom: 3.25rem;
+}
+#solution-1 {
+    background-image: url(https://business.adobe.com/content/dam/dx/us/en/homepage/summit/DOTCOM-36160-DXHomepage-Tabs-Solutions-Digital-Tablet-308x260%402x.png.img.png);
+    background-size: cover;
+    background-position: 100% 99%;
+}
+#solution-2 {
+    background-image: url(https://business.adobe.com/content/dam/dx/us/en/homepage/summit/DOTCOM-36160-DXHomepage-Tabs-Solutions-Content-Tablet-308x260%402x.png.img.png);
+    background-size: cover;
+    background-position: 100% 99%;
+}
+#solution-3 {
+    background-image: url(https://business.adobe.com/content/dam/dx/us/en/homepage/summit/DOTCOM-36160-DXHomepage-Tabs-Solutions-Data-Tablet-308x260%402x.png.img.png);
+    background-size: cover;
+    background-position: 100% 99%;
+}
+#solution-4 {
+    background-image: url(https://business.adobe.com/content/dam/dx/us/en/homepage/summit/DOTCOM-36160-DXHomepage-Tabs-Solutions-CustomerJourneys-Tablet-308x260%402x.png.img.png);
+    background-size: cover;
+    background-position: 100% 99%;
+}
+#solution-5 {
+    background-image: url(https://business.adobe.com/content/dam/dx/us/en/homepage/summit/DOTCOM-36160-DXHomepage-Tabs-Solutions-Marketing-Tablet-308x260%402x.png.img.png);
+    background-size: cover;
+    background-position: 100% 99%;
+}
+#solution-6 {
+    background-image: url(https://business.adobe.com/content/dam/dx/us/en/homepage/summit/DOTCOM-36160-DXHomepage-Tabs-Solutions-ExperiencePlatform-Tablet-308x260%402x.png.img.png);
+    background-size: cover;
+    background-position: 100% 99%;
+}
