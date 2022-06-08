@@ -32,6 +32,15 @@
 .pb-13 {
     padding-bottom: 3.25rem;
 }
+.pb-15 {
+    padding-bottom: 3.75rem;
+}
+.h-15 {
+    height: 3.75rem;
+}
+.h-25 {
+    height: 6.25rem;
+}
 .leading-relaxed {
     line-height: 1.7;
 }
@@ -79,4 +88,10 @@ footer ul ul li {
     margin-bottom: 2px;
     font-size: 0.875rem;
     font-weight: 500;
+}
+.slash::after {
+  margin: 0 8px;
+  color: #4B4B4B;
+  font-size: 11px;
+  content: '/';
 }

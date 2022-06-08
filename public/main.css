@@ -531,20 +531,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 1.75rem;
 }
 
-.mb-10 {
-  margin-bottom: 2.5rem;
+.mb-9 {
+  margin-bottom: 2.25rem;
 }
 
-.mt-1 {
-  margin-top: 0.25rem;
-}
-
-.mt-9 {
-  margin-top: 2.25rem;
+.mt-10 {
+  margin-top: 2.5rem;
 }
 
 .mb-12 {
   margin-bottom: 3rem;
+}
+
+.mb-0 {
+  margin-bottom: 0px;
+}
+
+.mt-14 {
+  margin-top: 3.5rem;
+}
+
+.mb-\[6px\] {
+  margin-bottom: 6px;
 }
 
 .block {
@@ -579,12 +587,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 7rem;
 }
 
-.h-16 {
-  height: 4rem;
-}
-
 .h-5 {
   height: 1.25rem;
+}
+
+.h-12 {
+  height: 3rem;
 }
 
 .min-h-\[260px\] {
@@ -639,6 +647,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 70%;
 }
 
+.max-w-\[83\.4\%\] {
+  max-width: 83.4%;
+}
+
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -649,6 +661,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.items-start {
+  align-items: flex-start;
 }
 
 .items-center {
@@ -743,8 +759,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 1rem;
 }
 
-.p-3 {
-  padding: 0.75rem;
+.p-\[13px\] {
+  padding: 13px;
 }
 
 .px-5 {
@@ -828,20 +844,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 3.5rem;
 }
 
-.pb-16 {
-  padding-bottom: 4rem;
-}
-
-.pb-10 {
-  padding-bottom: 2.5rem;
-}
-
 .pt-12 {
   padding-top: 3rem;
 }
 
 .pb-8 {
   padding-bottom: 2rem;
+}
+
+.pb-16 {
+  padding-bottom: 4rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
 }
 
 .text-center {
@@ -966,6 +986,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 3.25rem;
 }
 
+.pb-15 {
+  padding-bottom: 3.75rem;
+}
+
+.h-15 {
+  height: 3.75rem;
+}
+
+.h-25 {
+  height: 6.25rem;
+}
+
 .leading-relaxed {
   line-height: 1.7;
 }
@@ -1022,4 +1054,11 @@ footer ul ul li {
   margin-bottom: 2px;
   font-size: 0.875rem;
   font-weight: 500;
+}
+
+.slash::after {
+  margin: 0 8px;
+  color: #4B4B4B;
+  font-size: 11px;
+  content: '/';
 }
