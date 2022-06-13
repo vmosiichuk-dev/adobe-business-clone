@@ -81,17 +81,37 @@ footer ul ul li {
     display: none;
 }
 #footer-region::after {
-    content: 'v';
+    content: '⌄';
     display: block;
     color: #7d7a7a;
     margin-left: 5px;
-    margin-bottom: 2px;
-    font-size: 0.875rem;
+    margin-bottom: 10px;
+  font-size: 1.25rem;
     font-weight: 500;
 }
 .slash::after {
   margin: 0 8px;
   color: #4B4B4B;
-  font-size: 11px;
+  font-size: 0.6rem;
   content: '/';
+}
+.ul-arrow-header::after {
+  color: #737373;
+  font-size: 1.25rem;
+  content: '⌄';
+  position: absolute;
+  right: .75rem;
+  top: -50%;
+}
+.ul-arrow-footer::after {
+  color: #737373;
+  font-size: 1.25rem;
+  content: '⌄';
+  position: absolute;
+  right: .75rem;
+  top: -.25rem;
+}
+input::placeholder {
+    font-size: .875rem;
+    font-weight: 300;
 }
