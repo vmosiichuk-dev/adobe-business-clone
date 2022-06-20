@@ -19,7 +19,12 @@
     color: #FA0F00;
 }
 .nav-button::before {
-    content: "\2630";
+    /* x */
+    content: "\2715"; 
+    font-size: 24px;
+
+    /* hamburger */
+    content: "\2630"; 
     font-size: 14px;
 }
 .mb-9 {
@@ -77,6 +82,8 @@
     background-size: cover;
     background-position: 100% 99%;
 }
+.curtain,
+nav.flex,
 footer ul ul li {
     display: none;
 }
@@ -115,3 +122,23 @@ input::placeholder {
     font-size: .875rem;
     font-weight: 300;
 }
+/*
+.bg-adobe li ul {
+    display: none;
+}
+.ul-check,
+.ul-check li ul {
+    display: block !important;
+}
+ nav ul li active
+::before {
+  content: "";
+  background: #2c2c2c;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 2px;
+  z-index: 1;
+}
+*/

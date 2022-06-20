@@ -31,63 +31,215 @@
     <header class="w-full h-[calc(4rem+1px)] border-b border-neutral-200">
         <div class="flex items-center justify-between w-full h-full shadow-xl">
             <button class="nav-button w-[60px] h-full"></button>
-            <div class="block absolute top-[calc(4rem+1px)] left-0">
-                <span class="fixed w-full h-full z-10 bg-black opacity-50 curtain"></span>
+            <div class="curtain block absolute top-[calc(4rem+1px)] left-0">
+                <span class="fixed w-full h-full z-10 bg-black opacity-50"></span>
             </div>
-            <nav class="flex flex-col bg-white absolute top-16 left-0 w-[calc(100%-20px)] h-full z-20 shadow-xl">
-                <aside class="px-4 py-6">
-                    <div class="flex flex-col w-full">
-                        <input name="inp-search" id="inp-search" type="text" class="h-9 bg-white border rounded-[0.25rem] border-neutral-300 p-4" placeholder="Search">
+            <nav class="flex flex-col bg-white absolute top-16 left-0 w-[calc(100%-20px)] h-full z-20 shadow-2xl">
+                <aside class="flex flex-col items-center p-5">
+                    <div class="relative w-full">
+                        <form class="flex items-center relative text-sm px-[10px] py-[7px] bg-white border rounded-[0.25rem] border-neutral-300" action="https://helpx.adobe.com/globalsearch.html" method="GET">
+                            <input name="inp-search" id="inp-search" type="text" class="bg-transparent font-light max-w-[90%] min-w-[auto] p-0 border-0 flex-grow outline-none" placeholder="Search">
+                            <div class="flex items-center h-full ml-[10px] relative">
+                                <svg class="block h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false">
+                                    <path d="M14 2A8 8 0 0 0 7.4 14.5L2.4 19.4a1.5 1.5 0 0 0 2.1 2.1L9.5 16.6A8 8 0 1 0 14 2Zm0 14.1A6.1 6.1 0 1 1 20.1 10 6.1 6.1 0 0 1 14 16.1Z"></path>
+                                </svg>
+                                <a href="#" tabindex="-1" class="" role="button" aria-label="Clear results"></a>
+                            </div>
+                        </form>
                     </div>
                 </aside>
                 <ul class="bg-adobe">
-                    <li class="border-b border-neutral-100">
+                    <li class="border-b border-zinc-100 text-neutral-700">
                         <div class="flex w-full cursor-pointer">
                             <a href="#" class="py-4 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
                                 <span class="ul-arrow-header ml-6 relative w-full text-[0.8rem]">Solutions</span>
                             </a>
                         </div>
-                        <ul class="">
+                        <ul class="ul-check">
                             <li class="">
+                                <div class="flex w-full cursor-pointer border-b border-neutral-200">
+                                    <a href="#" class="py-[11px] flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                        <span class="ul-arrow-header ml-6 relative w-full text-xs font-semibold h-">By Category</span>
+                                    </a>
+                                </div>
                                 <ul class="">
-                                    <li class=""></li>
-                                    <li class=""></li>
-                                    <li class=""></li>
-                                    <li class=""></li>
-                                    <li class=""></li>
-                                    <li class=""></li>
-                                    <li class=""></li>
-                                    <li class=""></li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Data insights & audiences</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Experience management platform</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Content management</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Commerce</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Customer journeys</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">B2B marketing</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Digital enrollment & onboarding</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="" class="block ml-8 px-4 py-[6px] rounded-full border-2 border-neutral-600 text-neutral-600 text-xs font-semibold">View all solutions</a>
+                                        </div>
+                                    </li>
                                 </ul>
                             </li>
                             <li class="">
+                                <div class="flex w-full cursor-pointer border-b border-neutral-200">
+                                    <a href="#" class="py-[11px] flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                        <span class="ul-arrow-header ml-6 relative w-full text-xs font-semibold h-">By Industry</span>
+                                    </a>
+                                </div>
                                 <ul class="">
-                                    <li class=""></li>
-                                    <li class=""></li>
-                                    <li class=""></li>
-                                    <li class=""></li>
-                                    <li class=""></li>
-                                    <li class=""></li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Financial services</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Government</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Media & entertainment</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Retail</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Healthcare</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="text-blue-600">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">View all</span>
+                                            </a>
+                                        </div>
+                                    </li>
                                 </ul>
                             </li>
                             <li class="">
+                                <div class="flex w-full cursor-pointer border-b border-neutral-200">
+                                    <a href="#" class="py-[11px] flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                        <span class="ul-arrow-header ml-6 relative w-full text-xs font-semibold h-">By Use Case</span>
+                                    </a>
+                                </div>
                                 <ul class="">
-                                    <li class=""></li>
-                                    <li class=""></li>
-                                    <li class=""></li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Customer case studies</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Cookieless and first-party data</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Healthcare experience management</span>
+                                            </a>
+                                        </div>
+                                    </li>
                                 </ul>
                             </li>
                             <li class="">
+                                <div class="flex w-full cursor-pointer border-b border-neutral-200">
+                                    <a href="#" class="py-[11px] flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                        <span class="ul-arrow-header ml-6 relative w-full text-xs font-semibold h-">By Role</span>
+                                    </a>
+                                </div>
                                 <ul class="">
-                                    <li class=""></li>
-                                    <li class=""></li>
-                                    <li class=""></li>
-                                    <li class=""></li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">IT</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Marketer</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Advertiser</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Digital leader</span>
+                                            </a>
+                                        </div>
+                                    </li>
                                 </ul>
                             </li>
                         </ul>
                     </li>
-                    <li class="border-b border-neutral-100">
+                    <li class="border-b border-zinc-100 text-neutral-700">
                         <div class="flex w-full cursor-pointer">
                             <a href="#" class="py-4 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
                                 <span class="ul-arrow-header ml-6 relative w-full text-[0.8rem]">Products</span>
@@ -95,120 +247,777 @@
                         </div>
                         <ul class="">
                             <li class="">
+                                <div class="flex w-full cursor-pointer border-b border-neutral-200">
+                                    <a href="#" class="py-[11px] flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                        <span class="ul-arrow-header ml-6 relative w-full text-xs font-semibold h-">Overview</span>
+                                    </a>
+                                </div>
                                 <ul class="">
-                                    <li class=""></li>
-                                    <li class=""></li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">What is Experience Cloud?</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="" class="block ml-8 px-4 py-[6px] rounded-full border-2 border-neutral-600 text-neutral-600 text-xs font-semibold">View all products</a>
+                                        </div>
+                                    </li>
                                 </ul>
                             </li>
                             <li class="">
+                                <div class="flex w-full cursor-pointer border-b border-neutral-200">
+                                    <a href="#" class="py-[11px] flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                        <span class="ul-arrow-header ml-6 relative w-full text-xs font-semibold h-">Data insights & audiences</span>
+                                    </a>
+                                </div>
                                 <ul class="">
-                                    <li class=""></li>
-                                    <li class=""></li>
-                                    <li class=""></li>
-                                    <li class=""></li>
-                                    <li class=""></li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Analytics</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Customer Journey Analytics</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Real-time CDP</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Audience Manager</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Advertising</span>
+                                            </a>
+                                        </div>
+                                    </li>
                                 </ul>
                             </li>
                             <li class="">
+                                <div class="flex w-full cursor-pointer border-b border-neutral-200">
+                                    <a href="#" class="py-[11px] flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                        <span class="ul-arrow-header ml-6 relative w-full text-xs font-semibold h-">Content & commerce</span>
+                                    </a>
+                                </div>
                                 <ul class="">
-                                    <li class=""></li>
-                                    <li class=""></li>
-                                    <li class=""></li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Experience Manager Sites (CMS)</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Experience Manager Assets (DAM)</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Adobe Commerce (Magento)</span>
+                                            </a>
+                                        </div>
+                                    </li>
                                 </ul>
                             </li>
                             <li class="">
+                                <div class="flex w-full cursor-pointer border-b border-neutral-200">
+                                    <a href="#" class="py-[11px] flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                        <span class="ul-arrow-header ml-6 relative w-full text-xs font-semibold h-">Customer journeys</span>
+                                    </a>
+                                </div>
                                 <ul class="">
-                                    <li class=""></li>
-                                    <li class=""></li>
-                                    <li class=""></li>
-                                    <li class=""></li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Target</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Campaign</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Journey Optimizer</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Marketo Engage</span>
+                                            </a>
+                                        </div>
+                                    </li>
                                 </ul>
                             </li>
                             <li class="">
+                                <div class="flex w-full cursor-pointer border-b border-neutral-200">
+                                    <a href="#" class="py-[11px] flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                        <span class="ul-arrow-header ml-6 relative w-full text-xs font-semibold h-">Marketing workflow</span>
+                                    </a>
+                                </div>
                                 <ul class="">
-                                    <li class=""></li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Adobe Workfront</span>
+                                            </a>
+                                        </div>
+                                    </li>
                                 </ul>
                             </li>
                             <li class="">
+                                <div class="flex w-full cursor-pointer border-b border-neutral-200">
+                                    <a href="#" class="py-[11px] flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                        <span class="ul-arrow-header ml-6 relative w-full text-xs font-semibold h-">Digital enrollmaent & onboarding</span>
+                                    </a>
+                                </div>
                                 <ul class="">
-                                    <li class=""></li>
-                                    <li class=""></li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Experience Manager Forms</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Adobe Acrobat Sign</span>
+                                            </a>
+                                        </div>
+                                    </li>
                                 </ul>
                             </li>
                             <li class="">
+                                <div class="flex w-full cursor-pointer border-b border-neutral-200">
+                                    <a href="#" class="py-[11px] flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                        <span class="ul-arrow-header ml-6 relative w-full text-xs font-semibold h-">Experience management platform</span>
+                                    </a>
+                                </div>
                                 <ul class="">
-                                    <li class=""></li>
-                                    <li class=""></li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Experience Platform</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Sensei (AI)</span>
+                                            </a>
+                                        </div>
+                                    </li>
                                 </ul>
                             </li>
                         </ul>
                     </li>
-                    <li class="border-b border-neutral-100">
+                    <li class="border-b border-zinc-100 text-neutral-700">
                         <div class="flex w-full cursor-pointer">
                             <a href="#" class="py-4 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
                                 <span class="ul-arrow-header ml-6 relative w-full text-[0.8rem]">Resources</span>
                             </a>
                         </div>
                         <ul class="">
-                            <li class=""></li>
-                            <li class=""></li>
-                            <li class=""></li>
-                            <li class=""></li>
+                            <li class="">
+                                <div class="flex w-full cursor-pointer border-b border-neutral-200">
+                                    <a href="#" class="py-[11px] flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                        <span class="ul-arrow-header ml-6 relative w-full text-xs font-semibold h-">Browse All</span>
+                                    </a>
+                                </div>
+                                <ul class="">
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Resource center</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Customer succes stories</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class2"py-4 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span clml-10 relative w-full text-[0.8rem]">Videos</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Analyst reports</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Experience League</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="">
+                                <div class="flex w-full cursor-pointer border-b border-neutral-200">
+                                    <a href="#" class="py-[11px] flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                        <span class="ul-arrow-header ml-6 relative w-full text-xs font-semibold h-">Adobe Insights</span>
+                                    </a>
+                                </div>
+                                <ul class="">
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Digital economy</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Digital pricing index</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Digital trends</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Holiday shopping trends</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="">
+                                <div class="flex w-full cursor-pointer border-b border-neutral-200">
+                                    <a href="#" class="py-[11px] flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                        <span class="ul-arrow-header ml-6 relative w-full text-xs font-semibold h-">Blogs</span>
+                                    </a>
+                                </div>
+                                <ul class="">
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Experience Cloud blog</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Adobe blog</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="">
+                                <div class="flex w-full cursor-pointer border-b border-neutral-200">
+                                    <a href="#" class="py-[11px] flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                        <span class="ul-arrow-header ml-6 relative w-full text-xs font-semibold h-">Technical</span>
+                                    </a>
+                                </div>
+                                <ul class="">
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Product documentation</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">For developers</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
-                    <li class="border-b border-neutral-100">
+                    <li class="border-b border-zinc-100 text-neutral-700">
                         <div class="flex w-full cursor-pointer">
                             <a href="#" class="py-4 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
                                 <span class="ul-arrow-header ml-6 relative w-full text-[0.8rem]">For customers</span>
                             </a>
                         </div>
                         <ul class="">
-                            <li class=""></li>
-                            <li class=""></li>
-                            <li class=""></li>
+                            <li class="">
+                                <div class="flex w-full cursor-pointer border-b border-neutral-200">
+                                    <a href="#" class="py-[11px] flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                        <span class="ul-arrow-header ml-6 relative w-full text-xs font-semibold h-">Learn with the Experience League</span>
+                                    </a>
+                                </div>
+                                <ul class="">
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">All learning</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Courses</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Product documentation</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Support articles</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Instructor-led training</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="">
+                                <div class="flex w-full cursor-pointer border-b border-neutral-200">
+                                    <a href="#" class="py-[11px] flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                        <span class="ul-arrow-header ml-6 relative w-full text-xs font-semibold h-">Communities</span>
+                                    </a>
+                                </div>
+                                <ul class="">
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">All community forums</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Magento developer community</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="">
+                                <div class="flex w-full cursor-pointer border-b border-neutral-200">
+                                    <a href="#" class="py-[11px] flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                        <span class="ul-arrow-header ml-6 relative w-full text-xs font-semibold h-">Partners & Consulting</span>
+                                    </a>
+                                </div>
+                                <ul class="">
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Learn about our partners</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Third-party apps</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Adobe Consulting Services</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
-                </ul>
-                <ul class="">
-                    <li class="border-b border-neutral-100">
+                    <li class="border-b border-zinc-100 text-neutral-700">
                         <div class="flex w-full cursor-pointer">
                             <a href="#" class="py-4 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
                                 <span class="ul-arrow-header ml-6 relative w-full text-[0.8rem]">Support</span>
                             </a>
                         </div>
                         <ul class="">
-                            <li class=""></li>
-                            <li class=""></li>
-                            <li class=""></li>
+                            <li class="">
+                                <div class="flex w-full cursor-pointer border-b border-neutral-200">
+                                    <a href="#" class="py-[11px] flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                        <span class="ul-arrow-header ml-6 relative w-full text-xs font-semibold h-">Support</span>
+                                    </a>
+                                </div>
+                                <ul class="">
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">All services and support</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Help documentation</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Guided learning</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Instructor-led training</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Community</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="">
+                                <div class="flex w-full cursor-pointer border-b border-neutral-200">
+                                    <a href="#" class="py-[11px] flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                        <span class="ul-arrow-header ml-6 relative w-full text-xs font-semibold h-">Partners</span>
+                                    </a>
+                                </div>
+                                <ul class="">
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Our partner network</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Find a partner</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Adobe Exchange (third-party apps)</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="">
+                                <div class="flex w-full cursor-pointer border-b border-neutral-200">
+                                    <a href="#" class="py-[11px] flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                        <span class="ul-arrow-header ml-6 relative w-full text-xs font-semibold h-">Consulting</span>
+                                    </a>
+                                </div>
+                                <ul class="">
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Adobe Consulting Services</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Full services</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Adobe support</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
-                </ul>
-                <ul class="">
-                    <li class="border-b border-neutral-100">
+                    <li class="border-b border-zinc-100 text-neutral-700">
                         <div class="flex w-full cursor-pointer">
                             <a href="#" class="py-4 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
                                 <span class="ul-arrow-header ml-6 relative w-full text-[0.8rem]">Events</span>
                             </a>
                         </div>
                         <ul class="">
-                            <li class=""></li>
-                            <li class=""></li>
-                            <li class=""></li>
+                            <li class="">
+                                <div class="flex w-full cursor-pointer border-b border-neutral-200">
+                                    <a href="#" class="py-[11px] flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                        <span class="ul-arrow-header ml-6 relative w-full text-xs font-semibold h-">Adobe Summit</span>
+                                    </a>
+                                </div>
+                                <ul class="">
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Watch on-demand</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="">
+                                <div class="flex w-full cursor-pointer border-b border-neutral-200">
+                                    <a href="#" class="py-[11px] flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                        <span class="ul-arrow-header ml-6 relative w-full text-xs font-semibold h-">Experience Makers Live</span>
+                                    </a>
+                                </div>
+                                <ul class="">
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class2"py-4 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span clml-10 relative w-full text-[0.8rem]">Register now</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="">
+                                <div class="flex w-full cursor-pointer border-b border-neutral-200">
+                                    <a href="#" class="py-[11px] flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                        <span class="ul-arrow-header ml-6 relative w-full text-xs font-semibold h-">Ongoing Events</span>
+                                    </a>
+                                </div>
+                                <ul class="">
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Webinars</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">View all events</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
-                </ul>
-                <ul class="">
-                    <li class="border-b border-neutral-100">
+                    <li class="border-b border-zinc-100 text-neutral-700">
                         <div class="flex w-full cursor-pointer">
                             <a href="#" class="py-4 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
                                 <span class="ul-arrow-header ml-6 relative w-full text-[0.8rem]">Why Adobe</span>
                             </a>
                         </div>
                         <ul class="">
-                            <li class=""></li>
-                            <li class=""></li>
-                            <li class=""></li>
+                            <li class="">
+                                <div class="flex w-full cursor-pointer border-b border-neutral-200">
+                                    <a href="#" class="py-[11px] flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                        <span class="ul-arrow-header ml-6 relative w-full text-xs font-semibold h-">Why Adobe</span>
+                                    </a>
+                                </div>
+                                <ul class="">
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Why partner with Adobe</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Analyst reports</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">ROI of Experience Cloud</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Digital economy</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Digital price index</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Customer success</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Cookieless and first-party data</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Customer experience management</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="">
+                                <div class="flex w-full cursor-pointer border-b border-neutral-200">
+                                    <a href="#" class="py-[11px] flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                        <span class="ul-arrow-header ml-6 relative w-full text-xs font-semibold h-">About Experience Cloud</span>
+                                    </a>
+                                </div>
+                                <ul class="">
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">How we use our products</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Our digital transformation</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="" class="block ml-8 px-4 py-[6px] rounded-full border-2 border-neutral-600 text-neutral-600 text-xs font-semibold">View all products</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="">
+                                <div class="flex w-full cursor-pointer border-b border-neutral-200">
+                                    <a href="#" class="py-[11px] flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                        <span class="ul-arrow-header ml-6 relative w-full text-xs font-semibold h-">Company</span>
+                                    </a>
+                                </div>
+                                <ul class="">
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">About Adobe</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Our leaders</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Adobe newsroom</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Corporate responsibility</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Trust center</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="flex w-full cursor-pointer">
+                                            <a href="#" class="py-2 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="ml-10 relative w-full text-[0.8rem]">Integrity</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
                         </ul>
+                    </li>
+                    <li class="px-3 py-5">
+                        <div class="w-full h-10 flex items-center mb-4">
+                            <a href="#" class="block px-4 py-2 leading-[] rounded-full bg-blue-600 text-white text-sm font-semibold">Get started</a>
+                        </div>                                
                     </li>
                 </ul>
             </nav>
