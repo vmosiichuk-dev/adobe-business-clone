@@ -34,6 +34,9 @@
     max-width: 83.4%;
     margin: 0 auto;
 }
+.pr-7 {
+    padding-right: 1.75rem;
+}
 .pb-13 {
     padding-bottom: 3.25rem;
 }
@@ -48,6 +51,9 @@
 }
 .leading-relaxed {
     line-height: 1.7;
+}
+.leading-5{
+    line-height: 1.75rem;
 }
 .leading-title {
     line-height: 2.2rem;
