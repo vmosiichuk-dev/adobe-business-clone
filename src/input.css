@@ -93,6 +93,11 @@ nav.flex,
 footer ul ul li {
     display: none;
 }
+#ul-visible li,
+#ul2-visible li {
+    display: flex !important;
+}
+
 #footer-region::after {
     content: '⌄';
     display: block;
@@ -148,3 +153,30 @@ input::placeholder {
   z-index: 1;
 }
 */
+#section2-hr {
+    padding-top: 4.5rem;
+}
+@media screen and (min-width: 419px) {
+    #grey-button-cont {
+        flex-direction: row;
+        align-items: center;
+        margin-top: 1.25rem;
+    }
+    #grey-button-cont div {
+        width: auto;
+        margin-right: 1rem;
+        margin-bottom: 0;
+    }
+    #section2-card-cont {
+        padding-bottom: 0.5rem;
+    }
+    #section2-card-cont h2 {
+        margin-bottom: 0.25rem;
+    }
+    #section2-hr {
+        padding-top: 3.7rem;
+    }
+    #solutions-cont h2 {
+        padding-bottom: 2.75rem;
+    }
+}

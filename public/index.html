@@ -34,7 +34,7 @@
             <div class="curtain block absolute top-[calc(4rem+1px)] left-0">
                 <span class="fixed w-full h-full z-10 bg-black opacity-50"></span>
             </div>
-            <nav class="flex flex-col bg-white absolute top-16 left-0 w-[calc(100%-20px)] h-full z-20 shadow-2xl">
+            <nav class="flex flex-col bg-white absolute top-16 left-0 w-[calc(100%-20px)] h-full z-30 shadow-2xl">
                 <aside class="flex flex-col items-center p-5">
                     <div class="relative w-full">
                         <form class="flex items-center relative text-sm px-[10px] py-[7px] bg-white border rounded-[0.25rem] border-neutral-300" action="https://helpx.adobe.com/globalsearch.html" method="GET">
@@ -1023,7 +1023,7 @@
             </nav>
             <a href="#" class="flex items-center h-full w-[calc(100%-9rem)] px-5">
                 <img src="img/logo.svg" alt="Adobe Experience Cloud logo" class="w-[27px]">
-                <span class="ml-2 text-center text-sm font-semibold text-red whitespace-nowrap">Adobe Experience Cloud</span>
+                <span class="ml-2 text-center text-sm font-semibold text-red">Adobe Experience Cloud</span>
             </a>
             <div class="flex-center px-5 h-full">
                 <a href="#" class="text-xs">Sign In</a>
@@ -1031,6 +1031,11 @@
         </div>
     </header>
     <main class="flex flex-col">
+        <!--
+        <div class="fixed bottom-7 right-8 w-[64px] h-[64px] z-20 rounded-md bg-neutral-600 backdrop-blur-2xl backdrop-opacity-10">
+            <img src="img/fixed-logo.jpeg" alt="Adobe Chat" class="p-2 w-full h-full rounded-md z-10">
+        </div>
+        -->
         <section class="flex flex-col bg-adobe py-10 border-b border-neutral-300">
             <div class="section-container">
                 <img src="img/post-digital-economy.webp" alt="Post Digital Economy" class="mb-8">
@@ -1047,7 +1052,7 @@
         </section>
         <section class="pb-20 border-b border-neutral-300">
             <div class="section-container">
-                <div class="w-full my-7 border border-neutral-300 rounded-xl pb-1">
+                <div id="section2-card-cont" class="w-full my-7 border border-neutral-300 rounded-xl pb-1">
                     <div class="flex pb-5 my-0 mx-auto">
                         <img src="img/promo-banner.webp" alt="EML" class="rounded-xl rounded-b-none">
                     </div>
@@ -1069,18 +1074,18 @@
                     <h2 class="text-sm font-semibold mb-2">WHAT EXPERIENCE CLOUD OFFERS</h2>
                     <h3 class="text-2xl font-semibold mb-4 leading-title">Discover what Adobe Experience Cloud can do for your business.</h3>
                     <p class="text-sm leading-relaxed">With Adobe Experience Cloud and its suite of products and services you can easily manage the entire customer experience with real-time data, scalable personalization, and more.</p>
-                    <div class="flex flex-col mt-6">
+                    <div id="grey-button-cont" class="flex flex-col mt-6">
                         <div class="w-full h-10 flex items-center mb-4">
                             <a href="#" class="block px-4 py-[6px] rounded-full border-2 border-neutral-600 text-neutral-600 text-xs font-semibold">Explore Experience Cloud</a>
                         </div>
                         <a href="#" class="text-blue-600 text-sm">Explore the platform</a>
                     </div>
-                    <div class="pt-[4.5rem]">
+                    <div id="section2-hr" class="">
                         <hr class="border-neutral-300">
                     </div>
                 </div>
             </div>
-            <div class="section-container pt-16">
+            <div id="solutions-cont" class="section-container pt-16">
                 <h2 class="pb-12 text-[1.09rem] font-semibold text-center">Your business has needs. Experience Cloud has your business solutions.</h2>
                 <div class="flex flex-wrap">
                     <div id="solution-1" class="bg-[#eee] mb-5">
@@ -1110,7 +1115,7 @@
                     <div id="solution-4" class="bg-[#eee] mb-5 w-full">
                         <div class="w-2/3 max-w-[66.666667%] min-h-[260px] pl-6 py-6">
                             <h3 class="text-[1.3rem] font-semibold mb-1">Customer journeys</h3>
-                            <p class="leading-[1.8] mb-7"><span class="block">Experiences that adapt</span><span class="block whitespace-nowrap">to customers in real time</span></p>
+                            <p class="leading-[1.8] mb-7"><span class="block">Experiences that adapt</span><span class="block">to customers in real time</span></p>
                             <div class="flex flex-col">
                                 <a href="#" class="text-blue-600 text-xs mb-3">Customer journey solutions</a>
                                 <a href="#" class="text-blue-600 text-xs">B2B marketing solutions</a>
@@ -1188,7 +1193,7 @@
                     <h2 class="text-sm font-medium mb-2">ADOBE BUSINESS CUSTOMERS</h2>
                     <h3 class="text-[1.55rem] font-semibold mb-2 leading-title">From Fortune 500 businesses to family-owned.</h3>
                     <p class="text-sm mb-9 leading-relaxed">With leadership status in more CX-focused analyst reports than anyone - 35 reports in all - we help companies of all sizes transform their businesses into digital experience powerhouses.</p>
-                    <div class="flex flex-col mt-6">
+                    <div id="grey-button-cont" class="flex flex-col mt-6">
                         <div class="w-full h-10 flex items-center mb-4">
                             <a href="#" class="block px-4 py-[6px] rounded-full border-2 border-neutral-600 text-neutral-600 text-xs font-semibold">Discover why Adobe</a>
                         </div>
@@ -1533,7 +1538,7 @@
     <footer class="bg-adobe">
         <div class="mx-6 pt-10">
             <ul class="">
-                <ul class="border-b border-neutral-400 pb-4">
+                <ul class="border-b border-neutral-400">
                     <div class="flex w-full cursor-pointer">
                         <a href="#" class="py-4 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
                             <span class="ul-arrow-footer relative w-full font-medium text-sm">Contact us</span>
@@ -1546,7 +1551,7 @@
                             </a>
                         </div>
                     </li>
-                    <li class="">
+                    <li class="pb-4">
                         <div class="flex w-full cursor-pointer">
                             <a href="#" class="py-1 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
                                 <span class="relative w-full text-[0.65rem] text-neutral-600 leading-relaxed">Adobe.com</span>
@@ -1554,7 +1559,7 @@
                         </div>
                     </li>
                 </ul>
-                <ul class="border-b border-neutral-400 pb-4">
+                <ul class="border-b border-neutral-400">
                     <div class="flex w-full cursor-pointer">
                         <a href="#" class="py-4 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
                             <span class="ul-arrow-footer relative w-full font-medium text-sm">Why Adobe</span>
@@ -1595,7 +1600,7 @@
                             </a>
                         </div>
                     </li>
-                    <li class="">
+                    <li class="pb-4">
                         <div class="flex w-full cursor-pointer">
                             <a href="#" class="py-1 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
                                 <span class="relative w-full text-[0.65rem] text-neutral-600 leading-relaxed">Document Cloud for Business</span>
@@ -1603,7 +1608,7 @@
                         </div>
                     </li>
                 </ul>
-                <ul class="border-b border-neutral-400 pb-4">
+                <ul class="border-b border-neutral-400">
                     <div class="flex w-full cursor-pointer">
                         <a href="#" class="py-4 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
                             <span class="ul-arrow-footer relative w-full font-medium text-sm">About Experience Cloud</span>
@@ -1651,7 +1656,7 @@
                             </a>
                         </div>
                     </li>
-                    <li class="">
+                    <li class="pb-4">
                         <div class="flex w-full cursor-pointer">
                             <a href="#" class="py-1 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
                                 <span class="relative w-full text-[0.65rem] text-neutral-600 leading-relaxed">Adobe Commerce</span>
@@ -1659,7 +1664,7 @@
                         </div>
                     </li>
                 </ul>
-                <ul class="border-b border-neutral-400 pb-4">
+                <ul class="border-b border-neutral-400">
                     <div class="flex w-full cursor-pointer">
                         <a href="#" class="py-4 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
                             <span class="ul-arrow-footer relative w-full font-medium text-sm">Our solutions</span>
@@ -1707,7 +1712,7 @@
                             </a>
                         </div>
                     </li>
-                    <li class="">
+                    <li class="pb-4">
                         <div class="flex w-full cursor-pointer">
                             <a href="#" class="py-1 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
                                 <span class="relative w-full text-[0.65rem] text-neutral-600 leading-relaxed">Digital enrollment & onboarding</span>
@@ -1715,7 +1720,7 @@
                         </div>
                     </li>
                 </ul>
-                <ul class="border-b border-neutral-400 pb-4">
+                <ul class="border-b border-neutral-400">
                     <div class="flex w-full cursor-pointer">
                         <a href="#" class="py-4 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
                             <span class="ul-arrow-footer relative w-full font-medium text-sm">Resources</span>
@@ -1763,7 +1768,7 @@
                             </a>
                         </div>
                     </li>
-                    <li class="">
+                    <li class="pb-4">
                         <div class="flex w-full cursor-pointer">
                             <a href="#" class="py-1 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
                                 <span class="relative w-full text-[0.65rem] text-neutral-600 leading-relaxed">Development resources</span>
@@ -1771,7 +1776,7 @@
                         </div>
                     </li>
                 </ul>
-                <ul class="border-b border-neutral-400 pb-4">
+                <ul class="border-b border-neutral-400">
                     <div class="flex w-full cursor-pointer">
                         <a href="#" class="py-4 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
                             <span class="ul-arrow-footer relative w-full font-medium text-sm">Company</span>
@@ -1847,7 +1852,7 @@
                             </a>
                         </div>
                     </li>
-                    <li class="">
+                    <li class="pb-4">
                         <div class="flex w-full cursor-pointer">
                             <a href="#" class="py-1 flex w-full h-full z-10" aria-haspopup="true" aria-expanded="false" role="button">
                                 <span class="relative w-full text-[0.65rem] text-neutral-600 leading-relaxed">COVID-19</span>
@@ -1855,74 +1860,76 @@
                         </div>
                     </li>
                 </ul>
-            </ul>
-        </div>
-        <div class="max-w-[83.4%] flex w-full h-15 mx-auto mb-0 mt-16 pb-10">
-            <div class="flex-center w-2/5">
-                <a href="" class="flex-center h-5">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" focusable="false" class="w-5 h-full fill-neutral-600">
-                        <path d="M50 23.8c-0.2-3.3-1-6.5-2.4-9.5l0 0C43.7 5.9 35.4 0.4 26.2 0h-2.4C14.6 0.4 6.3 5.9 2.4 14.3l0 0c-1.4 3-2.2 6.2-2.4 9.5l0 0v2.4l0 0c0.2 3.3 1 6.5 2.4 9.5l0 0c4 8.4 12.2 13.9 21.4 14.3h2.4c9.2-0.4 17.5-5.9 21.4-14.3l0 0c1.4-3 2.2-6.2 2.4-9.5l0 0V23.8zM47.6 23.8h-9.5c0-3.2-0.4-6.4-1.2-9.5H45C46.6 17.2 47.5 20.5 47.6 23.8zM33.6 11.9h-7.4V2.6C29.3 3.3 31.9 7.1 33.6 11.9zM23.8 2.6v9.3h-7.4C18.1 7.1 20.7 3.3 23.8 2.6zM23.8 14.3v9.5h-9.5c0.1-3.2 0.6-6.4 1.4-9.5H23.8zM23.8 26.2v9.5h-8.1c-0.8-3.1-1.3-6.3-1.4-9.5H23.8zM23.8 38.1v9.3c-3.1-0.7-5.7-4.5-7.4-9.3H23.8zM26.2 47.4v-9.3h7.4C31.9 42.9 29.3 46.7 26.2 47.4zM26.2 35.7v-9.5h9.5c-0.1 3.2-0.6 6.4-1.4 9.5H26.2zM26.2 23.8v-9.5h8.1c0.8 3.1 1.3 6.3 1.4 9.5H26.2zM43.3 11.9h-7.1c-0.9-3.1-2.4-6.1-4.5-8.6C36.4 4.8 40.5 7.8 43.3 11.9zM18.6 3.3c-2.2 2.5-3.8 5.4-4.8 8.6H6.7C9.6 7.8 13.8 4.8 18.6 3.3zM5 14.3h8.1c-0.7 3.1-1.1 6.3-1.2 9.5H2.4C2.5 20.5 3.4 17.2 5 14.3zM2.4 26.2h9.5c0 3.2 0.4 6.4 1.2 9.5H5C3.4 32.8 2.5 29.5 2.4 26.2zM6.4 38.1h7.4c0.9 3.1 2.4 6.1 4.5 8.6 -4.7-1.5-8.8-4.5-11.7-8.6H6.4zM31.4 46.7c2.2-2.5 3.8-5.4 4.8-8.6h7.4C40.6 42.2 36.3 45.3 31.4 46.7zM45 35.7h-8.1c0.7-3.1 1.1-6.3 1.2-9.5h9.5C47.5 29.5 46.6 32.8 45 35.7z"></path>
-                    </svg>
-                    <div id="footer-region" class="flex-center h-full">
-                        <p class="text-center text-[0.6rem] text-neutral-600 ml-2">Change region</p>
-                    </div>
-                </a>
-            </div>
-            <div class="flex-center w-3/5 pl-4">
-                <a href="" class="p-[11px]">
-                    <img src="img/social-icon-facebook.svg" alt="Adobe on Facebook">
-                </a>
-                <a href="" class="p-[11px]">
-                    <img src="img/social-icon-twitter.svg" alt="Adobe on Twitter">
-                </a>
-                <a href="" class="p-[11px]">
-                    <img src="img/social-icon-linkedin.svg" alt="Adobe on LinkedIn">
-                </a>
-                <a href="" class="p-[11px]">
-                    <img src="img/social-icon-instagram.svg" alt="Adobe on Instagram">
-                </a>
-            </div>
-        </div>
-        <div class="section-container w-full">
-            <div class="flex w-full slash">
-                <p class="text-center text-[0.6rem] text-neutral-500 ml-2">Copyright © 2022 Adobe. All rights reserved.</p>
-            </div>
-            <div class="w-full">
-                <ul class="flex flex-wrap w-full h-12 mb-[6px] items-start">
-                    <li class="">
-                        <a href="https://www.adobe.com/privacy.html" class="flex-center w-full h-full slash">
-                            <span class="text-center text-[0.6rem] ml-2 whitespace-nowrap">Privacy</span>
+                <ul id="ul-visible" class="flex mt-8">
+                    <li class="flex-center">
+                        <a href="" class="flex-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" focusable="false" class="w-5 h-full fill-neutral-600">
+                                <path d="M50 23.8c-0.2-3.3-1-6.5-2.4-9.5l0 0C43.7 5.9 35.4 0.4 26.2 0h-2.4C14.6 0.4 6.3 5.9 2.4 14.3l0 0c-1.4 3-2.2 6.2-2.4 9.5l0 0v2.4l0 0c0.2 3.3 1 6.5 2.4 9.5l0 0c4 8.4 12.2 13.9 21.4 14.3h2.4c9.2-0.4 17.5-5.9 21.4-14.3l0 0c1.4-3 2.2-6.2 2.4-9.5l0 0V23.8zM47.6 23.8h-9.5c0-3.2-0.4-6.4-1.2-9.5H45C46.6 17.2 47.5 20.5 47.6 23.8zM33.6 11.9h-7.4V2.6C29.3 3.3 31.9 7.1 33.6 11.9zM23.8 2.6v9.3h-7.4C18.1 7.1 20.7 3.3 23.8 2.6zM23.8 14.3v9.5h-9.5c0.1-3.2 0.6-6.4 1.4-9.5H23.8zM23.8 26.2v9.5h-8.1c-0.8-3.1-1.3-6.3-1.4-9.5H23.8zM23.8 38.1v9.3c-3.1-0.7-5.7-4.5-7.4-9.3H23.8zM26.2 47.4v-9.3h7.4C31.9 42.9 29.3 46.7 26.2 47.4zM26.2 35.7v-9.5h9.5c-0.1 3.2-0.6 6.4-1.4 9.5H26.2zM26.2 23.8v-9.5h8.1c0.8 3.1 1.3 6.3 1.4 9.5H26.2zM43.3 11.9h-7.1c-0.9-3.1-2.4-6.1-4.5-8.6C36.4 4.8 40.5 7.8 43.3 11.9zM18.6 3.3c-2.2 2.5-3.8 5.4-4.8 8.6H6.7C9.6 7.8 13.8 4.8 18.6 3.3zM5 14.3h8.1c-0.7 3.1-1.1 6.3-1.2 9.5H2.4C2.5 20.5 3.4 17.2 5 14.3zM2.4 26.2h9.5c0 3.2 0.4 6.4 1.2 9.5H5C3.4 32.8 2.5 29.5 2.4 26.2zM6.4 38.1h7.4c0.9 3.1 2.4 6.1 4.5 8.6 -4.7-1.5-8.8-4.5-11.7-8.6H6.4zM31.4 46.7c2.2-2.5 3.8-5.4 4.8-8.6h7.4C40.6 42.2 36.3 45.3 31.4 46.7zM45 35.7h-8.1c0.7-3.1 1.1-6.3 1.2-9.5h9.5C47.5 29.5 46.6 32.8 45 35.7z"></path>
+                            </svg>
+                            <div id="footer-region" class="flex-center h-full">
+                                <p class="text-center text-[0.6rem] text-neutral-700 ml-2">Change region</p>
+                            </div>
                         </a>
                     </li>
-                    <li class="">
-                        <a href="https://www.adobe.com/legal/terms.html" class="flex-center w-full h-full slash">
-                            <span class="text-center text-[0.6rem] ml-2 whitespace-nowrap">Terms of Use</span>
+                    <li class="flex-center pl-4">
+                        <a href="" class="px-3 py-5">
+                            <img class="w-5 h-full" src="img/social-icon-facebook.svg" alt="Adobe on Facebook">
                         </a>
-                    </li>
-                    <li class="">
-                        <a href="#" class="flex-center w-full h-full slash">
-                            <span class="text-center text-[0.6rem] ml-2 whitespace-nowrap">Cookie preferences</span>
+                        <a href="" class="px-3 py-5">
+                            <img class="w-5 h-full" src="img/social-icon-twitter.svg" alt="Adobe on Twitter">
                         </a>
-                    </li>
-                    <li class="">
-                        <a href="https://www.adobe.com/privacy/ca-rights.html" class="flex-center w-full h-full slash">
-                            <span class="text-center text-[0.6rem] ml-2 whitespace-nowrap">Do not sell my personal information</span>
+                        <a href="" class="px-3 py-5">
+                            <img class="w-5 h-full" src="img/social-icon-linkedin.svg" alt="Adobe on LinkedIn">
                         </a>
-                    </li>
-                    <li class="">
-                        <a href="https://www.adobe.com/privacy/opt-out.html#interest-based-ads" class="flex items-center w-full h-full relative top-[.1rem]">
-                            <span class="w-6 h-6 absolute"><img alt="" src="https://www.adobe.com/content/dam/cc/icons/adchoices-small.svg"></span>
-                            <span class="text-center text-[0.6rem] ml-7 whitespace-nowrap relative -top-[.1rem]">AdChoices</span>
+                        <a href="" class="px-3 py-5">
+                            <img class="w-5 h-full" src="img/social-icon-instagram.svg" alt="Adobe on Instagram">
                         </a>
                     </li>
                 </ul>
-            </div>
-        </div> 
+                <ul id="ul2-visible" class="w-full pt-4">
+                    <li class="flex w-full slash">
+                        <p class="text-center text-[0.6rem] text-neutral-500 leading-loose">Copyright © 2022 Adobe. All rights reserved.</p>
+                    </li>
+                    <li class="w-full">
+                        <ul class="flex flex-wrap w-full h-12 mb-[6px] items-start">
+                            <li class="">
+                                <a href="https://www.adobe.com/privacy.html" class="flex-center w-full h-full slash">
+                                    <span class="text-center text-[0.6rem] text-neutral-700">Privacy</span>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="https://www.adobe.com/legal/terms.html" class="flex-center w-full h-full slash">
+                                    <span class="text-center text-[0.6rem] text-neutral-700 ml-2">Terms of Use</span>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="flex-center w-full h-full slash">
+                                    <span class="text-center text-[0.6rem] text-neutral-700 ml-2">Cookie preferences</span>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="https://www.adobe.com/privacy/ca-rights.html" class="flex-center w-full h-full slash">
+                                    <span class="text-center text-[0.6rem] text-neutral-700">Do not sell my personal information</span>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="https://www.adobe.com/privacy/opt-out.html#interest-based-ads" class="flex items-center w-full h-full relative top-[.1rem]">
+                                    <span class="w-6 h-6 absolute"><img alt="" src="https://www.adobe.com/content/dam/cc/icons/adchoices-small.svg"></span>
+                                    <span class="text-center text-[0.6rem] text-neutral-700 ml-7">AdChoices</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul> 
+            </ul>
+        </div>
     </footer>
+    <!--
     <div class="flex flex-col sticky bottom-0 z-20">
         <div class="w-full h-12 flex-center mb-2 bg-blue-600">
             <a href="#" class="block px-4 py-[0.35rem] rounded-full bg-blue-600 border-2 border-white text-white text-xs font-semibold">Get started</a>
         </div>
     </div>  
+    -->
 </body>
 </html>
