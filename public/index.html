@@ -29,7 +29,7 @@
 </head>
 <body class="font-noto">
     <header class="w-full h-[calc(4rem+1px)] border-b border-neutral-200">
-        <div class="flex items-center justify-between w-full h-full shadow-xl">
+        <div class="flex-center w-full h-full shadow-xl">
             <button class="nav-button w-[60px] h-full"></button>
             <div class="curtain block absolute top-[calc(4rem+1px)] left-0">
                 <span class="fixed w-full h-full z-10 bg-black opacity-50"></span>
@@ -1021,11 +1021,13 @@
                     </li>
                 </ul>
             </nav>
-            <a href="#" class="flex items-center h-full w-[calc(100%-9rem)] px-5">
-                <img src="img/logo.svg" alt="Adobe Experience Cloud logo" class="w-[27px]">
-                <span class="ml-2 text-center text-sm font-semibold text-red">Adobe Experience Cloud</span>
-            </a>
-            <div class="flex-center px-5 h-full">
+            <div class="flex-center h-full w-[calc(100vw-140px)]">
+                <a href="#" class="flex items-center">
+                    <img src="img/logo.svg" alt="Adobe Experience Cloud logo" class="w-[27px]">
+                    <p class="ml-2 text-center text-sm font-semibold text-red">Adobe Experience Cloud</p>
+                </a>
+            </div>
+            <div class="flex-center w-[60px] mx-2.5 h-full">
                 <a href="#" class="text-xs">Sign In</a>
             </div>
         </div>
@@ -1036,20 +1038,89 @@
             <img src="img/fixed-logo.jpeg" alt="Adobe Chat" class="p-2 w-full h-full rounded-md z-10">
         </div>
         -->
-        <section class="flex flex-col bg-adobe py-10 border-b border-neutral-300">
+        <section class="flex flex-col bg-black opacity-80">
             <div class="section-container">
-                <img src="img/post-digital-economy.webp" alt="Post Digital Economy" class="mb-8">
-                <h2 class="text-sm font-semibold mb-2">ADOBE EXPERIENCE CLOUD</h2>
-                <h3 class="text-2xl font-semibold mb-[calc(1rem-1px)] leading-title">Make it personal. Make it with Adobe Experience Cloud.</h3>
-                <p class="leading-relaxed">The digital economy is a $1 trillion opportunity. As you create customer experiences, no matter the scale, they can still feel personalized and useful. That's where Adobe comes in.</p>
-                <div class="flex flex-col mt-4">
-                    <div class="w-full h-10 flex items-center mb-4">
-                        <a href="#" class="block px-4 py-2 rounded-full bg-blue-600 text-white text-xs font-semibold">How to suceed in the Digital Economy</a>
+                <div id="section0-card-cont" class="w-full my-6">
+                    <div class="h-3 w-full flex justify-start my-4">
+                        <img class="h-full" src="img/white-logo.svg" alt="Adobe Summit">
                     </div>
-                    <a href="#" class="text-blue-600 text-sm">Learn about Experience Cloud</a>
-                </div>      
+                    <p class="leading-5 font-semibold mt-1 text-white">The ultimate experience is back, March 2023 - Vegas and virtual</p>
+                    <div class="flex flex-col mt-3">
+                        <div class="w-full h-10 mt-1 flex items-center">
+                            <a href="#" class="block px-4 py-[6px] rounded-full border-2 text-white text-xs font-semibold">Register now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </section>
+        <section class="flex flex-col bg-red pb-10">
+            <div class="section-container">
+                <div class="flex my-0 mx-auto pt-12 pb-10">
+                    <img src="img/home-mobile.avif" alt="What is AEC" class="">
+                </div>
+                <div class="">
+                    <h2 class="text-[0.65rem] text-white font-semibold mb-2">ADOBE EXPERIENCE CLOUD FOR BUSINESS</h2>
+                    <h3 class="text-2xl text-white font-semibold mb-4 leading-title">Always make it personal. With Adobe Experience Cloud.</h3>
+                    <p class="text-base text-white font-normal leading-relaxed">What is Adobe Experience Cloud? It’s customer experience technology that helps your business create personalized experiences for every single customer. Starting with data insights to really know each individual. To content creation built for them. And finally delivering those experiences on any surface. With Adobe, you’ve got this.</p>
+                    <div id="grey-button-cont" class="flex flex-col mt-6 w-full h-10">
+                        <a href="#" class="flex-center w-full px-6 py-[6px] rounded-full border-2 border-white">
+                            <span class="text-white text-xs font-semibold">Explore all Experience Cloud products</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="flex flex-col bg-white pb-10">
+            <div class="section-container">
+                <h3 class="text-xl text-center font-semibold mb-[calc(1rem-1px)] leading-title mt-10">Meet the Experience Cloud business solutions.</h3>
+                <p class="text-center leading-relaxed">Adobe Experience Cloud solutions solve needs from data insights to content management, marketing workflows, and more. Let’s find your solution to more meaningful B2C and B2B customer experiences.</p>
+                <div class="flex flex-col mt-6">
+                    <a href="#" class="text-blue-600 text-base font-medium underline text-center">View all Adobe business solutions</a>
+                </div>     
+                <video class="flex w-full h-auto mt-4" width="100%" height="auto" autoplay muted loop>
+                    <source src="/public/img/graphic-mobile.mp4" type="video/mp4"> 
+                    Your browser does not support the video tag
+                </video>
             </div>  
         </section>
+        <section class="">
+            <div class="circle"> <!-- flex w-full overflow-hidden py-6 -->
+                <img src="img/render.png" alt="" class="">
+                <div class="outer-circle">
+                    <div class='line'>
+                        <h2 class='flipY'>section under construction</h2>
+                    </div>  
+                </div>
+            </div>
+        </section>
+        <!-- 
+        <section class="pb-20 border-b border-neutral-300"
+
+        /* Create Tablist */
+
+            <div class="section-container">
+                <div class="flex pt-12 pb-6 my-0 mx-auto py-6">
+                    <img src="img/deployment.avif" alt="" class="">
+                </div>
+                <div class="">
+                    <h3 class="text-2xl font-semibold mb-4 leading-title">Customer connections personalized at any scale</h3>
+                    <p class="text-base leading-relaxed">No matter the size of your business, you can bring the personal touch to each of your customers. Whether your business is far along its personalization journey or just getting started, we have the building blocks you need to transform the relationships you build with each customer.</p>
+                    <div id="grey-button-cont" class="flex flex-col mt-6">
+                        <div class="w-full h-10 flex items-center mb-4">
+                            <a href="#" class="block px-4 py-[6px] rounded-full border-2 border-neutral-800 text-neutral-800 text-xs font-semibold">Learn more</a>
+                        </div>
+                    </div>
+                    <div id="section2-hr" class="">
+                        <hr class="border-neutral-300">
+                    </div>
+                </div>
+            </div>
+        </section>
+        -->
+
+        <!--
         <section class="pb-20 border-b border-neutral-300">
             <div class="section-container">
                 <div id="section2-card-cont" class="w-full my-7 border border-neutral-300 rounded-xl pb-1">
@@ -1236,6 +1307,7 @@
                 </div>
             </div>  
         </section>
+        -->
         <section class="">
             <div class="bg-adobe shadow-md">
                 <div class="section-container pt-12">
