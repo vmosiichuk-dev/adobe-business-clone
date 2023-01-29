@@ -3,17 +3,20 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build-css": "tailwindcss build -i src/input.css -o public/main.css --watch"
+    "build-css": "tailwindcss build -i src/input.css -o public/main.css --watch",
+    "deploy": "gh-pages -d public"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "homepage": "https://vladnomad.github.io/adobe-business-clone",
   "devDependencies": {
     "@kamona/tailwindcss-perspective": "^0.1.1",
     "tailwindcss": "^3.0.24"
   },
   "dependencies": {
     "browserslist": "^4.21.4",
-    "caniuse-lite": "^1.0.30001446"
+    "caniuse-lite": "^1.0.30001446",
+    "gh-pages": "^5.0.0"
   }
 }

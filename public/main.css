@@ -1322,9 +1322,7 @@ img#render {
   perspective: 500px;
 }
 
-/* flipY class and keyframes*/
-
-.flipY {
+.flip {
   animation-name: depth, rotate;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
@@ -1332,6 +1330,49 @@ img#render {
   font-family: monospace;
   font-size: 1.25rem;
   color: skyblue;
+}
+
+#clone-wrapper {
+  margin-right: 7rem;
+}
+
+#clone-wrapper, 
+#original-wrapper {
+  min-width: 375px;
+  width: 375px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  height: 695px;
+  overflow: scroll;
+}
+
+#clone-wrapper::after,
+#original-wrapper::after {
+  position: absolute;
+  bottom: 7%;
+  color: #52525b;
+  font-size: 2rem;
+  font-family: "Space Mono", monospace;
+  font-weight: bolder;
+  letter-spacing: 0.5rem;
+}
+
+#clone-wrapper::after {
+  content: "clone";
+}
+
+#original-wrapper::after {
+  content: "original";
+}
+
+#customers {
+  gap: 0.75rem 0;
+}
+
+#customers img {
+  width: 50%;
+  height: auto;
+  padding: 0.5rem;
 }
 
 @keyframes depth {
@@ -1349,7 +1390,7 @@ img#render {
 
   75% {
     text-shadow: -1px 0 midnightblue, -2px 0 midnightblue, -4px 0 midnightblue, -8px 0 midnightblue,
-      -12px 0 midnightblue;
+		-12px 0 midnightblue;
   }
 
   100% {
@@ -1411,49 +1452,6 @@ img#render {
   100% {
     transform: rotateZ(0deg);
   }
-}
-
-#clone-wrapper {
-  margin-right: 7rem;
-}
-
-#clone-wrapper, 
-#original-wrapper {
-  min-width: 375px;
-  width: 375px;
-  border: 1px solid lightgrey;
-  border-radius: 5px;
-  height: 695px;
-  overflow: scroll;
-}
-
-#clone-wrapper::after,
-#original-wrapper::after {
-  position: absolute;
-  bottom: 7%;
-  color: #52525b;
-  font-size: 2rem;
-  font-family: "Space Mono", monospace;
-  font-weight: bolder;
-  letter-spacing: 0.5rem;
-}
-
-#clone-wrapper::after {
-  content: "clone";
-}
-
-#original-wrapper::after {
-  content: "original";
-}
-
-#customers {
-  gap: 0.75rem 0;
-}
-
-#customers img {
-  width: 50%;
-  height: auto;
-  padding: 0.5rem;
 }
 
 @media screen and (max-width: 415px) {
