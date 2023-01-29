@@ -28,7 +28,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'body': "url('../img/grid-bg1.jpg')",
+        'body': "url('img/grid-bg1.jpg')",
        },
     },
   },
