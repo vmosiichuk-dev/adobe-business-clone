@@ -44,15 +44,15 @@
             </div>
         </header>
         <main class="flex flex-col">
-            <section class="flex flex-col bg-black/80">
+            <section class="flex bg-black/80">
                 <div class="section-container">
-                    <div class="w-full my-6">
-                        <div class="h-3 w-full flex justify-start my-4">
+                    <div class="w-full my-6 md:flex md:items-center ">
+                        <div class="h-3 w-full flex justify-start my-4 md:my-5 md:w-max">
                             <img class="h-full" src="img/white-logo.svg" alt="Adobe Summit">
                         </div>
-                        <p class="leading-5 font-semibold mt-1 text-white">The ultimate experience is back, March 2023 - Vegas and virtual</p>
-                        <div class="flex flex-col mt-3">
-                            <div class="w-full h-10 mt-1 flex items-center">
+                        <p class="leading-5 font-semibold mt-1 text-white md:ml-4 md:mt-0 md:font-normal">Join Shaquille O'Neal and more - March 2023.</p>
+                        <div class="flex flex-col mt-3 md:mt-0 md:ml-9">
+                            <div class="w-full h-10 mt-1 flex items-center md:w-max">
                                 <a href="#" class="block px-4 py-[6px] rounded-full border-2 text-white text-xs font-semibold">Register now</a>
                             </div>
                         </div>
@@ -61,16 +61,19 @@
             </section>
             <section class="flex flex-col pb-10 bg-gradient-to-bl from-adobered-light to-adobered-dark">
                 <div class="section-container">
-                    <div class="flex my-0 mx-auto pt-12 pb-10">
-                        <img src="img/home-mobile.avif" alt="What is AEC">
+                    <div class="flex my-0 mx-auto pt-12 pb-10 md:mx-[9%] md:pb-6">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="img/home--768.avif">
+                            <img src="img/home.avif" alt="What is AEC">
+                        </picture>
                     </div>
                     <div>
-                        <h2 class="text-[0.65rem] text-white font-semibold mb-2">ADOBE EXPERIENCE CLOUD FOR BUSINESS</h2>
-                        <h3 class="text-2xl text-white font-semibold mb-4 leading-title">Always make it personal. With Adobe Experience Cloud.</h3>
-                        <p class="text-base text-white font-normal leading-relaxed">What is Adobe Experience Cloud? It’s customer experience technology that helps your business create personalized experiences for every single customer. Starting with data insights to really know each individual. To content creation built for them. And finally delivering those experiences on any surface. With Adobe, you’ve got this.</p>
-                        <div id="grey-button" class="flex flex-col mt-5 w-full h-10">
-                            <a href="#" class="flex-center w-full px-6 py-[6px] rounded-full border-2 border-white">
-                                <span class="text-white text-xs font-semibold">Explore all Experience Cloud products</span>
+                        <h2 class="text-[0.65rem] text-white font-semibold mb-2 md:mb-4">ADOBE EXPERIENCE CLOUD FOR BUSINESS</h2>
+                        <h3 class="text-2xl text-white font-semibold mb-4 leading-title md:pr-12">Always make it personal. With Adobe Experience Cloud.</h3>
+                        <p class="text-base text-white font-normal leading-relaxed md:pr-12">What is Adobe Experience Cloud? It’s customer experience technology that helps your business create personalized experiences for every single customer. Starting with data insights to really know each individual. To content creation built for them. And finally delivering those experiences on any surface. With Adobe, you’ve got this.</p>
+                        <div id="grey-button" class="flex flex-col mt-5 w-full h-10 md:w-max md:mt-[1.35rem]">
+                            <a href="#" class="flex-center w-full px-6 py-[6px] rounded-full border-2 border-white md:py-[0.65rem] md:px-5">
+                                <span class="text-white text-xs font-semibold md:text-[0.9rem]">Explore all Experience Cloud products</span>
                             </a>
                         </div>
                     </div>
@@ -78,13 +81,16 @@
             </section>
             <section class="flex flex-col bg-white pb-10">
                 <div class="section-container">
-                    <h3 class="text-xl text-center font-semibold mb-[calc(1rem-1px)] leading-title mt-10">Meet the Experience Cloud business solutions.</h3>
+                    <h3 class="text-xl text-center font-semibold mb-[calc(1rem-1px)] leading-title mt-10 md:mt-[3.25rem]">Meet the Experience Cloud business solutions.</h3>
                     <p class="text-center leading-relaxed">Adobe Experience Cloud solutions solve needs from data insights to content management, marketing workflows, and more. Let’s find your solution to more meaningful B2C and B2B customer experiences.</p>
                     <div class="flex flex-col mt-6">
                         <a href="#" class="text-blue-500 text-base font-medium underline text-center">View all Adobe business solutions</a>
                     </div>
-                    <video class="flex w-full h-auto mt-4" width="100%" height="auto" autoplay muted loop playsinline>
-                        <source src="/img/graphic-mobile.mp4" type="video/mp4">
+                    <video class="flex w-full h-auto mt-4 md:hidden" width="100%" height="auto" autoplay muted loop playsinline>
+                        <source src="img/graphic.mp4" type="video/mp4">
+                    </video>
+                    <video class="hidden w-full h-auto mt-4 md:flex" width="100%" height="auto" autoplay muted loop playsinline>
+                        <source src="img/graphic--768.mp4" type="video/mp4">
                     </video>
                 </div>
             </section>
