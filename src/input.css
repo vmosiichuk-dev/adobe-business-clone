@@ -66,7 +66,7 @@
 }
 
 img#render {
-    animation: swing linear infinite 18s;
+    animation: 18s linear infinite swing;
 }
 #render-container:after {
     content: "";
@@ -86,10 +86,7 @@ img#render {
 	perspective: 500px;
 }
 .flip {
-	animation-name: depth, rotate;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	animation-duration: 30s;
+	animation: 30s linear infinite depth, rotate;
 	font-family: monospace;
 	font-size: 1.25rem;
 	color: skyblue;
@@ -173,8 +170,8 @@ img#render {
 	100% {
 		transform: rotateZ(0deg) rotateY(0deg);
 	}
-	}
-	@keyframes swing {
+}
+@keyframes swing {
 	0% {
 		transform: rotateZ(0deg);
 	}
@@ -201,7 +198,7 @@ img#render {
 		flex-direction: row;
 		align-items: center;
 	}
-	#solutions-cont h2 {
-		padding-bottom: 2.75rem;
-	}
 }
+
+
+

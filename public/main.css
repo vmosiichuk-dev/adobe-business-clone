@@ -620,6 +620,11 @@ video {
   margin-right: 1.5rem;
 }
 
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .ml-2 {
   margin-left: 0.5rem;
 }
@@ -720,6 +725,14 @@ video {
   margin-left: 1.75rem;
 }
 
+.mt-12 {
+  margin-top: 3rem;
+}
+
+.mb-\[0\.7rem\] {
+  margin-bottom: 0.7rem;
+}
+
 .block {
   display: block;
 }
@@ -776,6 +789,10 @@ video {
   height: 1.5rem;
 }
 
+.h-\[0\.65rem\] {
+  height: 0.65rem;
+}
+
 .min-h-\[6rem\] {
   min-height: 6rem;
 }
@@ -818,6 +835,10 @@ video {
 
 .w-6 {
   width: 1.5rem;
+}
+
+.w-1\/2 {
+  width: 50%;
 }
 
 .cursor-pointer {
@@ -973,6 +994,10 @@ video {
   padding: 1rem;
 }
 
+.p-3 {
+  padding: 0.75rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1016,6 +1041,11 @@ video {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.py-\[7px\] {
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 
 .pb-10 {
@@ -1133,6 +1163,10 @@ video {
   font-size: 0.6rem;
 }
 
+.text-\[0\.85rem\] {
+  font-size: 0.85rem;
+}
+
 .font-semibold {
   font-weight: 600;
 }
@@ -1171,6 +1205,10 @@ video {
 
 .leading-loose {
   line-height: 2;
+}
+
+.leading-\[1\.7\] {
+  line-height: 1.7;
 }
 
 .tracking-widest {
@@ -1301,7 +1339,7 @@ video {
 }
 
 img#render {
-  animation: swing linear infinite 18s;
+  animation: 18s linear infinite swing;
 }
 
 #render-container:after {
@@ -1323,10 +1361,7 @@ img#render {
 }
 
 .flip {
-  animation-name: depth, rotate;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-duration: 30s;
+  animation: 30s linear infinite depth, rotate;
   font-family: monospace;
   font-size: 1.25rem;
   color: skyblue;
@@ -1459,10 +1494,6 @@ img#render {
     flex-direction: row;
     align-items: center;
   }
-
-  #solutions-cont h2 {
-    padding-bottom: 2.75rem;
-  }
 }
 
 .placeholder\:text-lg::-moz-placeholder {
@@ -1503,26 +1534,38 @@ img#render {
 }
 
 @media (min-width: 768px) {
-  .md\:my-5 {
-    margin-top: 1.25rem;
-    margin-bottom: 1.25rem;
+  .md\:mx-14 {
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
   }
 
-  .md\:mx-\[9\%\] {
-    margin-left: 9%;
-    margin-right: 9%;
+  .md\:mx-7 {
+    margin-left: 1.75rem;
+    margin-right: 1.75rem;
   }
 
-  .md\:ml-4 {
-    margin-left: 1rem;
+  .md\:mt-4 {
+    margin-top: 1rem;
+  }
+
+  .md\:mb-6 {
+    margin-bottom: 1.5rem;
+  }
+
+  .md\:mt-2 {
+    margin-top: 0.5rem;
+  }
+
+  .md\:mb-\[0\.85rem\] {
+    margin-bottom: 0.85rem;
   }
 
   .md\:mt-0 {
     margin-top: 0px;
   }
 
-  .md\:ml-9 {
-    margin-left: 2.25rem;
+  .md\:ml-28 {
+    margin-left: 7rem;
   }
 
   .md\:mb-4 {
@@ -1533,8 +1576,16 @@ img#render {
     margin-top: 1.35rem;
   }
 
-  .md\:mt-\[3\.25rem\] {
-    margin-top: 3.25rem;
+  .md\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
+  .md\:mt-\[0\.9rem\] {
+    margin-top: 0.9rem;
+  }
+
+  .md\:mt-11 {
+    margin-top: 2.75rem;
   }
 
   .md\:flex {
@@ -1550,8 +1601,22 @@ img#render {
     width: max-content;
   }
 
+  .md\:flex-col {
+    flex-direction: column;
+  }
+
   .md\:items-center {
     align-items: center;
+  }
+
+  .md\:py-\[5px\] {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .md\:px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
   }
 
   .md\:py-\[0\.65rem\] {
@@ -1564,19 +1629,53 @@ img#render {
     padding-right: 1.25rem;
   }
 
-  .md\:pb-6 {
-    padding-bottom: 1.5rem;
+  .md\:px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .md\:py-\[0\.15rem\] {
+    padding-top: 0.15rem;
+    padding-bottom: 0.15rem;
+  }
+
+  .md\:px-\[1\.1rem\] {
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+  }
+
+  .md\:pb-12 {
+    padding-bottom: 3rem;
+  }
+
+  .md\:pb-8 {
+    padding-bottom: 2rem;
+  }
+
+  .md\:pt-14 {
+    padding-top: 3.5rem;
   }
 
   .md\:pr-12 {
     padding-right: 3rem;
   }
 
+  .md\:pt-3 {
+    padding-top: 0.75rem;
+  }
+
+  .md\:pb-4 {
+    padding-bottom: 1rem;
+  }
+
+  .md\:text-\[0\.8rem\] {
+    font-size: 0.8rem;
+  }
+
   .md\:text-\[0\.9rem\] {
     font-size: 0.9rem;
   }
-
-  .md\:font-normal {
-    font-weight: 400;
-  }
 }
+
+
+
