@@ -121,14 +121,6 @@ img#render {
 	content: "original";
 }
 
-#customers {
-	gap: 0.75rem 0;
-}
-#customers img {
-	width: 50%;
-	height: auto;
-	padding: 0.5rem;
-}
 
 @keyframes depth {
 	0% {
