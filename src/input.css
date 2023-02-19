@@ -194,3 +194,29 @@ img#render {
 
 
 
+
+.tablist {
+	overflow: hidden;	position: relative;
+	z-index: 10;
+	margin-bottom: -1px;
+}
+.tab.js-active {
+	border: 1px solid silver;
+	border-bottom-color: white;
+	border-radius: 0.25rem 0.25rem 0 0;
+	color: black;
+}
+.tab {
+	white-space: nowrap;
+	padding: 1rem;
+	border: 1px solid transparent;
+	border-bottom-color: silver;
+	color: grey;
+	padding-bottom: 1.25rem;
+}
+#tablist-container {
+	margin-top: .85rem;
+	width: 100%;
+	padding: 0 2rem;
+	border-bottom: 1px solid silver;
+} 
