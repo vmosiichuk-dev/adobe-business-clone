@@ -32,9 +32,12 @@ module.exports = {
 			},
 			fontSize: {
 				'2xl': ['1.5rem', {
-					lineHeight: '2.1rem',
+					lineHeight: '2.188rem',
 				}],
 			},
+			lineHeight: {
+				'6.5': ['1.688rem'],
+			}
 		},
 	},
 	plugins: [],

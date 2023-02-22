@@ -62,9 +62,9 @@
 	.tab__active {
 		@apply
 		border
-		border-neutral-400
+		border-neutral-300
 		border-b-white
-		rounded-t-[0.25rem]
+		rounded-t-[0.188rem]
 		text-black !important;
 	}
 }
