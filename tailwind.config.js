@@ -28,12 +28,23 @@ module.exports = {
 		},
 		extend: {
 			backgroundImage: {
-				'body': "url('img/grid-bg1.jpg')",
+			   	'body': "url('img/grid-bg1.jpg')",
+				'trends': "url('https://ec-prod.scene7.com/is/image/ECPROD/mobile_background?$png$&jpegSize=100&wid=599')",
+			},
+			spacing: {
+				'2.7': '.688rem',
+				'.75': '.188rem',
+				'3.3': '.813rem',
+				'3.7': '.938rem',
+				 '18': '4.5rem',
 			},
 			fontSize: {
-				'2xl': ['1.5rem', {
-					lineHeight: '2.188rem',
-				}],
+				'xxs': ['.625rem'],
+				  's': ['.813rem'],
+				  'm': ['.969rem', '1.688rem'],
+				 'ml': ['1.063rem'],
+				 'lg': ['1.125rem', '1.375'],
+				'2xl': ['1.5rem', '2.188rem'],
 			},
 			lineHeight: {
 				'6.5': ['1.688rem'],
