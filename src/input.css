@@ -44,7 +44,13 @@
 		border-b-neutral-300 
 		text-neutral-500 
 		text-sm 
-		font-semibold;
+		font-semibold
+		md:py-6
+		md:leading-6
+		md:text-[.938rem]
+		md:pt-[1.625rem]
+		md:pb-[1.188rem]
+		md:px-[2.125rem];
 	}
 	.h3-center {
 		@apply

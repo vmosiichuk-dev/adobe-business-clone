@@ -30,6 +30,7 @@ module.exports = {
 			backgroundImage: {
 			   	'body': "url('img/grid-bg1.jpg')",
 				'trends': "url('https://ec-prod.scene7.com/is/image/ECPROD/mobile_background?$png$&jpegSize=100&wid=599')",
+				'trends--md': "url('https://ec-prod.scene7.com/is/image/ECPROD/tablet_background?$png$&jpegSize=200&wid=1199')",
 			},
 			spacing: {
 				'2.7': '.688rem',
