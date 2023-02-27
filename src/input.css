@@ -44,7 +44,10 @@
 		border-b-neutral-300 
 		text-neutral-500 
 		text-sm 
-		font-semibold
+		font-semibold;
+	}
+	.tab-md {
+		@apply
 		md:py-6
 		md:leading-6
 		md:text-[.938rem]
@@ -79,8 +82,7 @@
 		flex 
 		flex-col 
 		w-full 
-		py-3 
-		md:w-[calc(50%-.5rem)];
+		py-3;
 	}
 	.form__label {
 		@apply
@@ -129,20 +131,21 @@
     }
 	.comparison__wrapper {
 		@apply
-		w-[375px]
-		min-w-[375px]
+		w-[390px]
+		min-w-[390px]
 		border
 		border-neutral-300
 		rounded-md
-		h-[695px]
+		h-[844px]
 		overflow-scroll
 		after:absolute
-		after:bottom-[7%]
+		after:top-[20%]
 		after:text-neutral-600
 		after:text-[2rem]
 		after:font-mono
-		after:font-extrabold
-		after:tracking-wider;
+		after:font-light
+		after:tracking-wide
+		after:-rotate-90;
 	}
 	.tab__active {
 		@apply

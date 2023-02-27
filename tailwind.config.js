@@ -28,16 +28,20 @@ module.exports = {
 		},
 		extend: {
 			backgroundImage: {
-			   	'body': "url('img/grid-bg1.jpg')",
-				'trends': "url('https://ec-prod.scene7.com/is/image/ECPROD/mobile_background?$png$&jpegSize=100&wid=599')",
-				'trends--md': "url('https://ec-prod.scene7.com/is/image/ECPROD/tablet_background?$png$&jpegSize=200&wid=1199')",
+			   	'body': ["url('img/grid-bg1.jpg')"],
+				'trends': ["url('https://ec-prod.scene7.com/is/image/ECPROD/mobile_background?$png$&jpegSize=100&wid=599')"],
+				'trends--md': ["url('https://ec-prod.scene7.com/is/image/ECPROD/tablet_background?$png$&jpegSize=200&wid=1199')"],
 			},
 			spacing: {
-				'2.7': '.688rem',
-				'.75': '.188rem',
-				'3.3': '.813rem',
-				'3.7': '.938rem',
-				 '18': '4.5rem',
+				'2.7': ['.688rem'],
+				'.75': ['.188rem'],
+				'3.3': ['.813rem'],
+				'3.7': ['.938rem'],
+				'8.':  ['2.063rem'],
+				'12.': ['3.063rem'],
+				'18':  ['4.5rem'],
+				'20.': ['5.063rem'],
+				'24.': ['6.063rem'],
 			},
 			fontSize: {
 				'xxs': ['.625rem'],
@@ -49,7 +53,7 @@ module.exports = {
 			},
 			lineHeight: {
 				'6.5': ['1.688rem'],
-			}
+			},
 		},
 	},
 	plugins: [],
