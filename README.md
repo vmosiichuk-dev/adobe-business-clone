@@ -8,6 +8,7 @@ To challenge myself, I chose to write styles exclusively with Tailwind CSS to le
 - [x] HTML structure
 - [x] Tailwind CSS styles
 - [x] Mobile version
-- [ ] Moving from Mobile to desktop
+- [x] Moving from Mobile to Tablet
+- [ ] Moving from Tablet to Desktop
 - [ ] JavaScript functionality
 - [ ] Post-production
