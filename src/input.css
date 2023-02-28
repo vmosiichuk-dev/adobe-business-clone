@@ -127,7 +127,9 @@
 		@apply 
 		max-w-[83.4%] 
 		my-0 
-		mx-auto;
+		mx-auto
+		xl:min-h-[560px]
+		xl:max-w-[1200px];
     }
 	.comparison__wrapper {
 		@apply

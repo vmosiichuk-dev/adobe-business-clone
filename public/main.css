@@ -671,6 +671,13 @@ video {
   max-width: 83.4%;
 }
 
+@media (min-width: 1200px) {
+  .article__container {
+    min-height: 560px;
+    max-width: 1200px;
+  }
+}
+
 .comparison__wrapper {
   height: 844px;
   width: 390px;
@@ -803,11 +810,6 @@ video {
   z-index: 10;
 }
 
-.mx-8 {
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-
 .my-0 {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -828,6 +830,11 @@ video {
   margin-right: 1.5rem;
 }
 
+.mx-8 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
 .my-\[1\.125rem\] {
   margin-top: 1.125rem;
   margin-bottom: 1.125rem;
@@ -839,22 +846,6 @@ video {
 
 .ml-2 {
   margin-left: 0.5rem;
-}
-
-.mt-4 {
-  margin-top: 1rem;
-}
-
-.mb-\[1\.375rem\] {
-  margin-bottom: 1.375rem;
-}
-
-.mt-1\.5 {
-  margin-top: 0.375rem;
-}
-
-.mt-1 {
-  margin-top: 0.25rem;
 }
 
 .mb-4 {
@@ -917,6 +908,10 @@ video {
   margin-top: 0.75rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .-mb-px {
   margin-bottom: -1px;
 }
@@ -945,40 +940,36 @@ video {
   margin-top: 3.625rem;
 }
 
-.mt-\[3\.563rem\] {
-  margin-top: 3.563rem;
+.mt-14 {
+  margin-top: 3.5rem;
 }
 
-.mt-\[3\.594rem\] {
-  margin-top: 3.594rem;
-}
-
-.mt-12\. {
-  margin-top: 3.063rem;
+.mt-\[4\.375rem\] {
+  margin-top: 4.375rem;
 }
 
 .mt-12 {
   margin-top: 3rem;
 }
 
-.mt-18 {
-  margin-top: 4.5rem;
+.mt-\[5\.938rem\] {
+  margin-top: 5.938rem;
 }
 
-.mt-24\. {
-  margin-top: 6.063rem;
+.mt-\[2\.688rem\] {
+  margin-top: 2.688rem;
 }
 
-.mt-24 {
-  margin-top: 6rem;
-}
-
-.mt-11 {
-  margin-top: 2.75rem;
+.mt-\[1\.375rem\] {
+  margin-top: 1.375rem;
 }
 
 .mt-\[1\.625rem\] {
   margin-top: 1.625rem;
+}
+
+.mt-24 {
+  margin-top: 6rem;
 }
 
 .mb-\[1\.625rem\] {
@@ -1005,8 +996,8 @@ video {
   margin-bottom: 0px;
 }
 
-.mb-12 {
-  margin-bottom: 3rem;
+.mb-\[2\.938rem\] {
+  margin-bottom: 2.938rem;
 }
 
 .-mt-\[\.156rem\] {
@@ -1015,6 +1006,18 @@ video {
 
 .ml-7 {
   margin-left: 1.75rem;
+}
+
+.mb-\[1\.375rem\] {
+  margin-bottom: 1.375rem;
+}
+
+.mt-1\.5 {
+  margin-top: 0.375rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
 }
 
 .mr-10 {
@@ -1033,12 +1036,40 @@ video {
   margin-top: 1.2rem;
 }
 
+.mt-12\. {
+  margin-top: 3.063rem;
+}
+
 .mt-\[1\.125rem\] {
   margin-top: 1.125rem;
 }
 
 .mt-\[3\.688rem\] {
   margin-top: 3.688rem;
+}
+
+.mt-\[3\.563rem\] {
+  margin-top: 3.563rem;
+}
+
+.mt-\[3\.594rem\] {
+  margin-top: 3.594rem;
+}
+
+.mt-18 {
+  margin-top: 4.5rem;
+}
+
+.mt-24\. {
+  margin-top: 6.063rem;
+}
+
+.mt-11 {
+  margin-top: 2.75rem;
+}
+
+.mb-12 {
+  margin-bottom: 3rem;
 }
 
 .block {
@@ -1139,6 +1170,10 @@ video {
   flex-direction: row;
 }
 
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -1178,6 +1213,10 @@ video {
 .gap-x-6 {
   -moz-column-gap: 1.5rem;
        column-gap: 1.5rem;
+}
+
+.gap-y-\[\.188rem\] {
+  row-gap: .188rem;
 }
 
 .gap-y-1 {
@@ -1239,10 +1278,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-black\/80 {
-  background-color: rgb(0 0 0 / 0.8);
-}
-
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -1253,6 +1288,10 @@ video {
   background-color: rgb(245 245 245 / var(--tw-bg-opacity));
 }
 
+.bg-stone-100\/80 {
+  background-color: rgb(245 245 244 / 0.8);
+}
+
 .bg-adobe {
   --tw-bg-opacity: 1;
   background-color: rgb(251 251 251 / var(--tw-bg-opacity));
@@ -1261,6 +1300,10 @@ video {
 .bg-blue-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
+.bg-black\/80 {
+  background-color: rgb(0 0 0 / 0.8);
 }
 
 .bg-stone-100 {
@@ -1277,7 +1320,7 @@ video {
 }
 
 .bg-trends {
-  background-image: url('https://ec-prod.scene7.com/is/image/ECPROD/mobile_background?$png$&jpegSize=100&wid=599');
+  background-image: url('img/trends-bg.avif');
 }
 
 .from-adobered-light {
@@ -1411,8 +1454,12 @@ video {
   padding-bottom: 5.125rem;
 }
 
-.pt-12 {
-  padding-top: 3rem;
+.pt-\[2\.875rem\] {
+  padding-top: 2.875rem;
+}
+
+.pb-\[1\.813rem\] {
+  padding-bottom: 1.813rem;
 }
 
 .pb-\[1\.688rem\] {
@@ -1439,12 +1486,20 @@ video {
   padding-bottom: 4.5rem;
 }
 
+.pt-\[2\.313rem\] {
+  padding-top: 2.313rem;
+}
+
 .pl-4 {
   padding-left: 1rem;
 }
 
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pt-12 {
+  padding-top: 3rem;
 }
 
 .text-left {
@@ -1524,20 +1579,16 @@ video {
   font-weight: 600;
 }
 
-.font-extrabold {
-  font-weight: 800;
-}
-
 .font-medium {
   font-weight: 500;
 }
 
-.italic {
-  font-style: italic;
+.font-extrabold {
+  font-weight: 800;
 }
 
-.leading-\[1\.594rem\] {
-  line-height: 1.594rem;
+.italic {
+  font-style: italic;
 }
 
 .leading-6\.5 {
@@ -1562,6 +1613,10 @@ video {
 
 .leading-\[1\.0125rem\] {
   line-height: 1.0125rem;
+}
+
+.leading-\[1\.594rem\] {
+  line-height: 1.594rem;
 }
 
 .tracking-\[0\.4em\] {
@@ -1849,7 +1904,7 @@ video {
   }
 
   .md\:bg-trends--md {
-    background-image: url('https://ec-prod.scene7.com/is/image/ECPROD/tablet_background?$png$&jpegSize=200&wid=1199');
+    background-image: url('img/trends-bg--768');
   }
 
   .md\:bg-\[100\%_49\%\] {
@@ -1886,14 +1941,6 @@ video {
     padding-bottom: .438rem;
   }
 
-  .md\:pl-3\.7 {
-    padding-left: .938rem;
-  }
-
-  .md\:pl-3 {
-    padding-left: 0.75rem;
-  }
-
   .md\:pr-12 {
     padding-right: 3rem;
   }
@@ -1912,6 +1959,14 @@ video {
 
   .md\:pt-0 {
     padding-top: 0px;
+  }
+
+  .md\:pl-3\.7 {
+    padding-left: .938rem;
+  }
+
+  .md\:pl-3 {
+    padding-left: 0.75rem;
   }
 
   .md\:pb-20\. {
@@ -1945,5 +2000,58 @@ video {
   .md\:text-m {
     font-size: .969rem;
     line-height: 1.688rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:m-0 {
+    margin: 0px;
+  }
+
+  .xl\:mb-6 {
+    margin-bottom: 1.5rem;
+  }
+
+  .xl\:flex {
+    display: flex;
+  }
+
+  .xl\:w-1\/2 {
+    width: 50%;
+  }
+
+  .xl\:flex-row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .xl\:items-center {
+    align-items: center;
+  }
+
+  .xl\:p-0 {
+    padding: 0px;
+  }
+
+  .xl\:py-14 {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .xl\:pb-0 {
+    padding-bottom: 0px;
+  }
+
+  .xl\:pr-10 {
+    padding-right: 2.5rem;
+  }
+
+  .xl\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .xl\:text-3\.5xl {
+    font-size: 2rem;
+    line-height: 2.375rem;
   }
 }
