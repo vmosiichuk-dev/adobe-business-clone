@@ -41,7 +41,7 @@
 		px-3.7 
 		border 
 		border-transparent 
-		border-b-neutral-300 
+		border-b-neutral-400 
 		text-neutral-500 
 		text-sm 
 		font-semibold;
@@ -54,6 +54,11 @@
 		md:pt-[1.625rem]
 		md:pb-[1.188rem]
 		md:px-[2.125rem];
+	}
+	.tab-xl {
+		@apply
+		md:text-[.969rem]
+		md:px-[2rem];
 	}
 	.h3-center {
 		@apply
@@ -152,7 +157,7 @@
 	.tab__active {
 		@apply
 		border
-		border-neutral-300
+		border-neutral-400
 		border-b-white
 		rounded-t-[.188rem]
 		text-black !important;

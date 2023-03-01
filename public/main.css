@@ -552,7 +552,7 @@ video {
   border-width: 1px;
   border-color: transparent;
   --tw-border-opacity: 1;
-  border-bottom-color: rgb(212 212 212 / var(--tw-border-opacity));
+  border-bottom-color: rgb(163 163 163 / var(--tw-border-opacity));
   padding-top: 1.125rem;
   padding-bottom: 1.125rem;
   padding-left: .938rem;
@@ -572,6 +572,12 @@ video {
     padding-bottom: 1.188rem;
     font-size: .938rem;
     line-height: 1.5rem;
+  }
+
+  .tab-xl {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: .969rem;
   }
 }
 
@@ -707,7 +713,7 @@ video {
   border-top-left-radius: .188rem !important;
   border-top-right-radius: .188rem !important;
   border-width: 1px !important;
-  border-color: rgb(212 212 212 / var(--tw-border-opacity)) !important;
+  border-color: rgb(163 163 163 / var(--tw-border-opacity)) !important;
   --tw-border-opacity: 1 !important;
   border-bottom-color: rgb(255 255 255 / var(--tw-border-opacity)) !important;
   --tw-text-opacity: 1 !important;
@@ -1394,6 +1400,11 @@ video {
   padding-bottom: .313rem;
 }
 
+.px-\[6\.25rem\] {
+  padding-left: 6.25rem;
+  padding-right: 6.25rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1904,7 +1915,7 @@ video {
   }
 
   .md\:bg-trends--md {
-    background-image: url('img/trends-bg--768');
+    background-image: url('img/trends-bg--768.avif');
   }
 
   .md\:bg-\[100\%_49\%\] {
@@ -2001,57 +2012,212 @@ video {
     font-size: .969rem;
     line-height: 1.688rem;
   }
+
+  @media not all and (min-width: 1200px) {
+    .md\:max-xl\:flex {
+      display: flex;
+    }
+  }
 }
 
 @media (min-width: 1200px) {
+  .xl\:flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .xl\:m-0 {
     margin: 0px;
   }
 
-  .xl\:mb-6 {
-    margin-bottom: 1.5rem;
+  .xl\:mt-\[\.313rem\] {
+    margin-top: .313rem;
+  }
+
+  .xl\:mt-\[4\.313rem\] {
+    margin-top: 4.313rem;
+  }
+
+  .xl\:mb-\[\.938rem\] {
+    margin-bottom: .938rem;
+  }
+
+  .xl\:mt-\[1\.563rem\] {
+    margin-top: 1.563rem;
+  }
+
+  .xl\:mt-5 {
+    margin-top: 1.25rem;
+  }
+
+  .xl\:mt-\[1\.063rem\] {
+    margin-top: 1.063rem;
+  }
+
+  .xl\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .xl\:mt-\[\.188rem\] {
+    margin-top: .188rem;
+  }
+
+  .xl\:mt-20 {
+    margin-top: 5rem;
+  }
+
+  .xl\:mt-\[5\.313rem\] {
+    margin-top: 5.313rem;
+  }
+
+  .xl\:mt-20\. {
+    margin-top: 5.063rem;
   }
 
   .xl\:flex {
     display: flex;
   }
 
+  .xl\:min-h-\[560px\] {
+    min-height: 560px;
+  }
+
+  .xl\:\!min-h-\[236px\] {
+    min-height: 236px !important;
+  }
+
   .xl\:w-1\/2 {
     width: 50%;
+  }
+
+  .xl\:w-3\/4 {
+    width: 75%;
+  }
+
+  .xl\:w-\[66\%\] {
+    width: 66%;
+  }
+
+  .xl\:w-\[66\.66\%\] {
+    width: 66.66%;
+  }
+
+  .xl\:w-\[756px\] {
+    width: 756px;
+  }
+
+  .xl\:w-full {
+    width: 100%;
+  }
+
+  .xl\:w-\[calc\(100\%-812px\)\] {
+    width: calc(100% - 812px);
+  }
+
+  .xl\:w-\[700px\] {
+    width: 700px;
+  }
+
+  .xl\:w-\[calc\(100\%-700px\)\] {
+    width: calc(100% - 700px);
+  }
+
+  .xl\:w-\[calc\(100\%-730px\)\] {
+    width: calc(100% - 730px);
+  }
+
+  .xl\:max-w-\[1200px\] {
+    max-width: 1200px;
+  }
+
+  .xl\:max-w-\[75\%\] {
+    max-width: 75%;
   }
 
   .xl\:flex-row-reverse {
     flex-direction: row-reverse;
   }
 
+  .xl\:flex-col {
+    flex-direction: column;
+  }
+
   .xl\:items-center {
     align-items: center;
+  }
+
+  .xl\:bg-trends--xl {
+    background-image: url('img/trends-bg--1200.avif');
   }
 
   .xl\:p-0 {
     padding: 0px;
   }
 
-  .xl\:py-14 {
-    padding-top: 3.5rem;
-    padding-bottom: 3.5rem;
+  .xl\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .xl\:px-\[25\%\] {
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+
+  .xl\:px-\[calc\(25\%\+\.313rem\)\] {
+    padding-left: calc(25% + .313rem);
+    padding-right: calc(25% + .313rem);
   }
 
   .xl\:pb-0 {
     padding-bottom: 0px;
   }
 
+  .xl\:pt-\[\.438rem\] {
+    padding-top: .438rem;
+  }
+
   .xl\:pr-10 {
     padding-right: 2.5rem;
+  }
+
+  .xl\:pt-4 {
+    padding-top: 1rem;
+  }
+
+  .xl\:pb-\[1\.125rem\] {
+    padding-bottom: 1.125rem;
+  }
+
+  .xl\:pr-14 {
+    padding-right: 3.5rem;
+  }
+
+  .xl\:pl-8 {
+    padding-left: 2rem;
+  }
+
+  .xl\:text-\[\.67rem\] {
+    font-size: .67rem;
+  }
+
+  .xl\:text-3\.5xl {
+    font-size: 2rem;
+    line-height: 2.75rem;
+  }
+
+  .xl\:text-\[1\.09375rem\] {
+    font-size: 1.09375rem;
+  }
+
+  .xl\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2.188rem;
   }
 
   .xl\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
-  }
-
-  .xl\:text-3\.5xl {
-    font-size: 2rem;
-    line-height: 2.375rem;
   }
 }
