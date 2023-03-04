@@ -136,6 +136,7 @@
 		my-0 
 		mx-auto
 		xl:min-h-[560px]
+		xl:w-[1200px]
 		xl:max-w-[1200px];
     }
 	.comparison__wrapper {
