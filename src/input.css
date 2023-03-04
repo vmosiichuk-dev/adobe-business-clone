@@ -126,7 +126,9 @@
 		py-4 
 		flex 
 		w-full 
-		z-10; 
+		z-10
+		xl:pt-0 
+		xl:pb-2; 
 	}
     .article__container {
 		@apply 
@@ -183,7 +185,8 @@
 		after:origin-[75%_75%]
 		after:transition-transform
 		after:duration-[0.1s]
-		after:ease-in-out;
+		after:ease-in-out
+		xl:after:opacity-0;
 	}
 	.footer__region {
 		@apply 
@@ -209,6 +212,8 @@
 		after:content-['/'] 
 		after:mx-2 
 		after:text-xxs
-		after:text-neutral-600;
+		after:text-neutral-600
+		xl:after:text-[.5rem]
+		xl:after:pb-0;
 	}
 }
