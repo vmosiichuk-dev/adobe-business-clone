@@ -16,7 +16,7 @@ module.exports = {
 			black: colors.black,
 			white: colors.white,
 			neutral: colors.neutral,
-			adobe: "#fbfbfb",
+			adobe: "#fafafa",
 			adobered: {
 				light: "#f00f00",
 				dark: "#b40e04",

@@ -3,6 +3,64 @@
 @tailwind utilities;
 
 @layer components {
+	.tab__header {
+		@apply
+		py-4 
+		flex 
+		w-full 
+		h-full 
+		z-10;
+	}
+	.tabpanel__header {
+		@apply
+		hidden 
+		top-[4.063rem] 
+		left-0 
+		z-30 
+		shadow-2xl 
+		absolute 
+		w-full 
+		bg-adobe;
+	}
+	.tabpanel__header.--active {
+		@apply
+		block;
+	}/* 
+	.nav__link {
+		@apply
+
+	} */
+	.nav__sublink {
+		@apply
+		block 
+		pt-2 
+		pb-2.5 
+		mx-8 
+		font-semibold 
+		border-b 
+		border-neutral-200;
+	}
+	.nav__sublink--dbl {
+		@apply
+		pt-3.5 
+		pb-1 
+		px-8;
+	}
+	.nav__sublink--span {
+		@apply
+		hidden 
+		xl:block 
+		text-[.688rem] 
+		pt-0.5 
+		text-neutral-500 
+		-tracking-[.03em];
+	}
+	.nav__sublink--xs {
+		@apply
+		pt-2 
+		pb-1 
+		px-8;
+	}
 	.article {
 		@apply
 		flex
@@ -31,8 +89,14 @@
 		@apply
 		block 
 		text-neutral-800 
+		border-neutral-800
+		border-2
 		rounded-full 
-		font-semibold;
+		font-semibold
+		leading-5
+		text-sm
+		px-3 
+		py-.75;
 	}
 	.tab {
 		@apply
@@ -57,8 +121,8 @@
 	}
 	.tab-xl {
 		@apply
-		md:text-[.969rem]
-		md:px-[2rem];
+		xl:text-[.969rem]
+		xl:px-[2rem];
 	}
 	.h3-center {
 		@apply
