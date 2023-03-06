@@ -15,16 +15,10 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@100;200;300;400;500;600;700;800;900&display=swap">
     </head>
     <body class="font-noto">
-        <header class="w-full h-[calc(4rem+1px)] border-b border-neutral-200">
-            <div class="flex items-center justify-between px-8 w-full h-full">
-                <button class="before:content-['\2630'] before:text-sm h-full"></button>
-                <div class="flex items-center h-full md:max-xl:w-[75vw]">
-                    <a href="#" class="flex items-center">
-                        <img src="img/logo.svg" alt="Adobe Experience Cloud logo" class="w-[27px]">
-                        <p class="ml-2 text-center text-sm font-semibold text-adobered-light">Adobe Experience Cloud</p>
-                    </a>
-                </div>
-                <nav class="flex flex-col">
+        <div class="-z-10 fixed w-full h-full opacity-50 bg-neutral-900"></div>
+        <header class="w-full h-[4.063rem] pb-px border-b border-neutral-100 relative z-10 bg-white justify-center">
+            <div class="flex items-center h-full max-w-[1440px] mx-auto justify-between">
+                <nav class="flex h-full">
                     <aside class="hidden flex-col items-center p-5">
                         <div class="relative w-full">
                             <form class="flex items-center relative text-sm px-[10px] py-[7px] bg-white border rounded-[0.25rem] border-neutral-300" action="https://helpx.adobe.com/globalsearch.html" method="GET">
@@ -37,9 +31,16 @@
                                 </div>
                             </form>
                         </div>
-                    </aside>
-                    <ul class="bg-adobe" role="tablist">
-                        <li class="border-b border-neutral-200 text-neutral-700">
+                    </aside>                
+                    <button class="before:content-['\2630'] before:text-sm h-full xl:hidden"></button>
+                    <div class="flex items-center h-full md:max-xl:w-[75vw] xl:ml-5 xl:mr-4">
+                        <a href="#" class="flex items-center">
+                            <img src="img/logo.svg" alt="Adobe Experience Cloud logo" class="w-[27px]">
+                            <p class="ml-2 text-center text-sm font-semibold text-adobered-light">Adobe Experience Cloud</p>
+                        </a>
+                    </div>
+                    <ul class="flex items-center h-full" role="tablist">
+                        <li class="border-b border-neutral-200 text-neutral-700 xl:border-0 xl:flex xl:items-center xl:h-full xl:hover:bg-neutral-100/50">
                             <div class="flex w-full cursor-pointer">
                                 <button class="tab__header" role="tab" 
                                 aria-selected="false" 
@@ -47,6 +48,7 @@
                                 tabindex="0" 
                                 id="tab__header--1">
                                     <span class="nav__link">Solutions</span>
+                                    <div class="nav__link--arrow"></div>
                                 </button>
                             </div>
                             <div class="tabpanel__header" role="tabpanel" aria-labelledby="tab__header--1" id="tabpanel__header--1" >
@@ -156,7 +158,7 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li class="px-8">
+                                    <li class="px-8 -mt-1">
                                         <div class="flex flex-col p-[1.688rem] text-center bg-white border border-neutral-200">
                                             <a href="#" class="inline-block text-[.875rem] font-semibold mt-2.5">Contact Us</a>
                                             <a href="#" class="inline-block mt-[.813rem] text-[.688rem] text-blue-600 -tracking-[.03em]">Request demo</a>
@@ -165,22 +167,19 @@
                                 </ul>
                             </div>
                         </li>
-
-
-
-
-                        <li class="border-b border-neutral-200 text-neutral-700">
-                            <div class="flex w-full cursor-pointer">
+                        <li class="border-b border-neutral-200 text-neutral-700 xl:border-0 xl:flex xl:items-center xl:h-full xl:hover:bg-neutral-100/50">
+                            <div class="flex w-full cursor-pointer xl:after:h-[2px] xl:after:absolute xl:after:bottom-0 xl:after:left-[30.125%] xl:after:bg-neutral-900 xl:after:w-[4.125rem]">
                                 <button class="tab__header" role="tab" 
                                 aria-selected="false" 
                                 aria-controls="tabpanel__header--2" 
                                 tabindex="0" 
                                 id="tab__header--2">
-                                    <span class="nav__link ">Products</span>
+                                    <span class="nav__link xl:font-semibold">Products</span>
+                                    <div class="nav__link--arrow xl:!top-[.35rem]"></div>
                                 </button>
                             </div>
                             <div class="tabpanel__header" role="tabpanel" aria-labelledby="tab__header--2" id="tabpanel__header--2" >
-                                <ul class="flex max-w-[1000px] w-[1000px] mx-auto justify-between text-xs pt-11 pb-[3.75rem]">
+                                <ul class="flex max-w-[1000px] w-[1000px] mx-auto justify-between text-xs pt-11 pb-[3.813rem]">
                                     <li>
                                         <a href="#" class="nav__sublink">Overview</a>
                                         <ul>
@@ -189,11 +188,11 @@
                                             </li>
                                             <li>
                                                 <div class="flex">
-                                                    <a href="" class="link__pill text-s px-4 py-1 ml-7 mt-[.938rem] mb-[.313rem]">View all products</a>
+                                                    <a href="" class="link__pill text-s px-4 py-1 ml-7 mt-[1.25rem]">View all products</a>
 
                                             </li>
                                         </ul>
-                                        <a href="#" class="block pt-10 pb-2.5 mx-8 font-semibold border-b border-neutral-200">Data insights & audiences</a>
+                                        <a href="#" class="block pt-[2.75rem] pb-2.5 mx-8 font-semibold border-b border-neutral-200">Data insights & audiences</a>
                                         <ul>
                                             <li class="nav__sublink--xs">
                                                 <a href="#">Analytics</a>
@@ -228,9 +227,9 @@
                                                 <a href="#">Learning Manager</a>
                                             </li>
                                         </ul>
-                                        <a href="#" class="block pt-10 pb-2.5 mx-8 font-semibold border-b border-neutral-200">Customer journeys</a>
+                                        <a href="#" class="block pt-[2.875rem] pb-2.5 mx-8 font-semibold border-b border-neutral-200">Customer journeys</a>
                                         <ul>
-                                            <li class="nav__sublink--xs">
+                                            <li class="nav__sublink--xs !pt-1.5">
                                                 <a href="#">Target</a>
                                             </li>
                                             <li class="nav__sublink--xs">
@@ -251,7 +250,7 @@
                                                 <a href="#">Adobe Workfront</a>
                                             </li>
                                         </ul>
-                                        <a href="#" class="block pt-10 pb-2.5 mx-8 font-semibold border-b border-neutral-200">Digital enrollment and onboarding</a>
+                                        <a href="#" class="block pt-[2.875rem] pb-2.5 mx-8 font-semibold border-b border-neutral-200">Digital enrollment and onboarding</a>
                                         <ul>
                                             <li class="nav__sublink--xs">
                                                 <a href="#">Experience Manager Forms</a>
@@ -260,7 +259,7 @@
                                                 <a href="#">Adobe Acrobat Sign</a>
                                             </li>
                                         </ul>
-                                        <a href="#" class="block pt-10 pb-2.5 mx-8 font-semibold border-b border-neutral-200">Experience management platform</a>
+                                        <a href="#" class="block pt-[2.875rem] pb-2.5 mx-8 font-semibold border-b border-neutral-200">Experience management platform</a>
                                         <ul>
                                             <li class="nav__sublink--xs">
                                                 <a href="#">Experience Platform</a>
@@ -270,19 +269,16 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li class="px-8">
-                                        <div class="flex flex-col p-[1.688rem] text-center bg-white border border-neutral-200">
+                                    <li class="px-8 -mt-1">
+                                        <div class="flex flex-col py-[1.688rem] px-7 bg-white border border-neutral-200">
                                             <a href="#" class="inline-block text-[.875rem] font-semibold mt-2.5">Contact Us</a>
-                                            <a href="#" class="inline-block mt-[.813rem] text-[.688rem] text-blue-600 -tracking-[.03em]">Request demo</a>
+                                            <a href="#" class="inline-block mt-3 text-s text-blue-600 -tracking-[.03em]">Request demo</a>
                                         </div>
                                     </li>
                                 </ul>
                             </div>
                         </li>
-                        
-
-
-                        <li class="border-b border-neutral-200 text-neutral-700">
+                        <li class="border-b border-neutral-200 text-neutral-700 xl:border-0 xl:flex xl:items-center xl:h-full xl:hover:bg-neutral-100/50">
                             <div class="flex w-full cursor-pointer">
                                 <button class="tab__header" role="tab" 
                                 aria-selected="false" 
@@ -290,9 +286,10 @@
                                 tabindex="0" 
                                 id="tab__header--3">
                                     <span class="nav__link">Resources</span>
+                                    <div class="nav__link--arrow"></div>
                                 </button>
                             </div>
-                            <div class="tabpanel__header --active" role="tabpanel" aria-labelledby="tab__header--3" id="tabpanel__header--3" >
+                            <div class="tabpanel__header" role="tabpanel" aria-labelledby="tab__header--3" id="tabpanel__header--3" >
                                 <ul class="flex max-w-[1000px] w-[1000px] mx-auto justify-between text-xs pt-11 pb-[3.75rem]">
                                     <li>
                                         <a href="#" class="nav__sublink">Browse All</a>
@@ -311,22 +308,22 @@
                                     <li>
                                         <a href="#" class="nav__sublink">Insights & Research</a>
                                         <ul>
-                                            <li class="nav__sublink--xs">
+                                            <li class="nav__sublink--xs !pb-[.313rem]">
                                                 <a href="#">Experience Cloud blog</a>
                                             </li>
-                                            <li class="nav__sublink--xs">
+                                            <li class="nav__sublink--xs !pb-[.313rem]">
                                                 <a href="#">Personalization at Scale</a>
                                             </li>
-                                            <li class="nav__sublink--xs">
+                                            <li class="nav__sublink--xs !pb-[.313rem]">
                                                 <a href="#">Digital economy</a>
                                             </li>
-                                            <li class="nav__sublink--xs">
+                                            <li class="nav__sublink--xs !pb-[.313rem]">
                                                 <a href="#">Digital pricing index</a>
                                             </li>
-                                            <li class="nav__sublink--xs">
+                                            <li class="nav__sublink--xs !pb-[.313rem]">
                                                 <a href="#">Digital trends</a>
                                             </li>
-                                            <li class="nav__sublink--xs">
+                                            <li class="nav__sublink--xs !pb-[.313rem]">
                                                 <a href="#">Holiday shopping trends</a>
                                             </li>
                                         </ul>
@@ -342,7 +339,7 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li class="px-8">
+                                    <li class="px-8 -mt-1">
                                         <div class="flex flex-col p-[1.688rem] text-center bg-white border border-neutral-200">
                                             <a href="#" class="inline-block text-[.875rem] font-semibold mt-2.5">Contact Us</a>
                                             <a href="#" class="inline-block mt-[.813rem] text-[.688rem] text-blue-600 -tracking-[.03em]">Request demo</a>
@@ -351,25 +348,19 @@
                                 </ul>
                             </div>
                         </li>
-
-
-
-
-
-
-
-                        <li class="border-b border-neutral-200 text-neutral-700">
+                        <li class="border-b border-neutral-200 text-neutral-700 xl:border-0 xl:flex xl:items-center xl:h-full xl:hover:bg-neutral-100/50">
                             <div class="flex w-full cursor-pointer">
                                 <button class="tab__header" role="tab" 
                                 aria-selected="false" 
-                                aria-controls="tabpanel__header--3" 
+                                aria-controls="tabpanel__header--4" 
                                 tabindex="0" 
-                                id="tab__header--3">
+                                id="tab__header--4">
                                     <span class="nav__link">For customers</span>
+                                    <div class="nav__link--arrow"></div>
                                 </button>
                             </div>
-                            <div class="tabpanel__header --active" role="tabpanel" aria-labelledby="tab__header--3" id="tabpanel__header--3" >
-                                <ul class="flex max-w-[1000px] w-[1000px] mx-auto justify-between text-xs pt-11 pb-[3.75rem]">
+                            <div class="tabpanel__header" role="tabpanel" aria-labelledby="tab__header--4" id="tabpanel__header--4" >
+                                <ul class="flex max-w-[1000px] w-[1000px] mx-auto justify-between text-xs pt-11 pb-[3.938rem]">
                                     <li>
                                         <a href="#" class="nav__sublink">Learn with Experience League</a>
                                         <ul>
@@ -415,7 +406,7 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li class="px-8">
+                                    <li class="px-8 -mt-1">
                                         <div class="flex flex-col p-[1.688rem] text-center bg-white border border-neutral-200">
                                             <a href="#" class="inline-block text-[.875rem] font-semibold mt-2.5">Contact Us</a>
                                             <a href="#" class="inline-block mt-[.813rem] text-[.688rem] text-blue-600 -tracking-[.03em]">Request demo</a>
@@ -424,22 +415,19 @@
                                 </ul>
                             </div>
                         </li>
-
-
-
-
-                        <li class="border-b border-neutral-200 text-neutral-700">
+                        <li class="border-b border-neutral-200 text-neutral-700 xl:border-0 xl:flex xl:items-center xl:h-full xl:hover:bg-neutral-100/50">
                             <div class="flex w-full cursor-pointer">
                                 <button class="tab__header" role="tab" 
                                 aria-selected="false" 
-                                aria-controls="tabpanel__header--3" 
+                                aria-controls="tabpanel__header--5" 
                                 tabindex="0" 
-                                id="tab__header--3">
+                                id="tab__header--5">
                                     <span class="nav__link">Support</span>
+                                    <div class="nav__link--arrow"></div>
                                 </button>
                             </div>
-                            <div class="tabpanel__header --active" role="tabpanel" aria-labelledby="tab__header--3" id="tabpanel__header--3" >
-                                <ul class="flex max-w-[1000px] w-[1000px] mx-auto justify-between text-xs pt-11 pb-[3.75rem]">
+                            <div class="tabpanel__header" role="tabpanel" aria-labelledby="tab__header--5" id="tabpanel__header--5" >
+                                <ul class="flex max-w-[1000px] w-[1000px] mx-auto justify-between text-xs pt-11 pb-[3.438rem]">
                                     <li>
                                         <a href="#" class="nav__sublink">Support</a>
                                         <ul>
@@ -485,7 +473,7 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li class="px-8">
+                                    <li class="px-8 -mt-1">
                                         <div class="flex flex-col p-[1.688rem] text-center bg-white border border-neutral-200">
                                             <a href="#" class="inline-block text-[.875rem] font-semibold mt-2.5">Contact Us</a>
                                             <a href="#" class="inline-block mt-[.813rem] text-[.688rem] text-blue-600 -tracking-[.03em]">Request demo</a>
@@ -494,29 +482,26 @@
                                 </ul>
                             </div>
                         </li>
-
-
-
-
-                        <li class="border-b border-neutral-200 text-neutral-700">
+                        <li class="border-b border-neutral-200 text-neutral-700 xl:border-0 xl:flex xl:items-center xl:h-full xl:hover:bg-neutral-100/50">
                             <div class="flex w-full cursor-pointer">
                                 <button class="tab__header" role="tab" 
                                 aria-selected="false" 
-                                aria-controls="tabpanel__header--3" 
+                                aria-controls="tabpanel__header--6" 
                                 tabindex="0" 
-                                id="tab__header--3">
+                                id="tab__header--6">
                                     <span class="nav__link">Events</span>
+                                    <div class="nav__link--arrow"></div>
                                 </button>
                             </div>
-                            <div class="tabpanel__header --active" role="tabpanel" aria-labelledby="tab__header--3" id="tabpanel__header--3" >
-                                <ul class="flex max-w-[1000px] w-[1000px] mx-auto justify-between text-xs pt-11 pb-[3.75rem]">
+                            <div class="tabpanel__header" role="tabpanel" aria-labelledby="tab__header--6" id="tabpanel__header--6" >
+                                <ul class="flex max-w-[1000px] w-[1000px] mx-auto justify-between text-xs pt-11 pb-[2.75rem]">
                                     <li>
                                         <a href="#" class="nav__sublink">Adobe Summit</a>
                                         <ul>
-                                            <li class="nav__sublink--xs">
+                                            <li class="nav__sublink--xs !pb-1.5">
                                                 <a href="#">Summit 2023</a>
                                             </li>
-                                            <li class="nav__sublink--xs">
+                                            <li class="nav__sublink--xs !pb-1.5">
                                                 <a href="#">Watch on-demand</a>
                                             </li>
                                         </ul>
@@ -524,7 +509,7 @@
                                     <li>
                                         <a href="#" class="nav__sublink">Experience Makers Live</a>
                                         <ul>
-                                            <li class="nav__sublink--xs">
+                                            <li class="nav__sublink--xs !pb-1.5">
                                                 <a href="#">Watch on-demand</a>
                                             </li>
                                         </ul>
@@ -532,15 +517,15 @@
                                     <li>
                                         <a href="#" class="nav__sublink">Ongoing Events</a>
                                         <ul>
-                                            <li class="nav__sublink--xs">
+                                            <li class="nav__sublink--xs !pb-1.5">
                                                 <a href="#">Webinars</a>
                                             </li>
-                                            <li class="nav__sublink--xs">
+                                            <li class="nav__sublink--xs !pb-1.5">
                                                 <a href="#">View all events</a>
                                             </li>
                                         </ul>
                                     </li>
-                                    <li class="px-8">
+                                    <li class="px-8 -mt-1">
                                         <div class="flex flex-col p-[1.688rem] text-center bg-white border border-neutral-200">
                                             <a href="#" class="inline-block text-[.875rem] font-semibold mt-2.5">Contact Us</a>
                                             <a href="#" class="inline-block mt-[.813rem] text-[.688rem] text-blue-600 -tracking-[.03em]">Request demo</a>
@@ -549,24 +534,19 @@
                                 </ul>
                             </div>
                         </li>
-
-
-
-
-
-
-                        <li class="border-b border-neutral-200 text-neutral-700">
+                        <li class="border-b border-neutral-200 text-neutral-700 xl:border-0 xl:flex xl:items-center xl:h-full xl:hover:bg-neutral-100/50">
                             <div class="flex w-full cursor-pointer">
                                 <button class="tab__header" role="tab" 
                                 aria-selected="false" 
-                                aria-controls="tabpanel__header--3" 
+                                aria-controls="tabpanel__header--7" 
                                 tabindex="0" 
-                                id="tab__header--3">
+                                id="tab__header--7">
                                     <span class="nav__link">Why Adobe</span>
+                                    <div class="nav__link--arrow"></div>
                                 </button>
                             </div>
-                            <div class="tabpanel__header --active" role="tabpanel" aria-labelledby="tab__header--3" id="tabpanel__header--3" >
-                                <ul class="flex max-w-[1000px] w-[1000px] mx-auto justify-between text-xs pt-11 pb-[3.75rem]">
+                            <div class="tabpanel__header" role="tabpanel" aria-labelledby="tab__header--7" id="tabpanel__header--7" >
+                                <ul class="flex max-w-[1000px] w-[1000px] mx-auto justify-between text-xs pt-11 pb-[3.438rem]">
                                     <li>
                                         <a href="#" class="nav__sublink">Why Adobe</a>
                                         <ul>
@@ -621,7 +601,7 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li class="px-8">
+                                    <li class="px-8 -mt-1">
                                         <div class="flex flex-col p-[1.688rem] text-center bg-white border border-neutral-200">
                                             <a href="#" class="inline-block text-[.875rem] font-semibold mt-2.5">Contact Us</a>
                                             <a href="#" class="inline-block mt-[.813rem] text-[.688rem] text-blue-600 -tracking-[.03em]">Request demo</a>
@@ -630,21 +610,27 @@
                                 </ul>
                             </div>
                         </li>  
-                        <li class="flex">
+                        <li class="flex ml-5">
                             <a href="" class="
-                            block text-blue-500 border-blue-500 border-2 rounded-full font-semibold leading-5 text-s px-4 py-1 bg-blue-500">Get started</a>
-                        </li>                      
+                            block text-white border-blue-500 border-2 rounded-full font-semibold leading-5 text-s px-3.5 py-1 my-auto bg-blue-500">Get started</a>
+                        </li>      
+                        <li class="flex">
+                            <button class="flex h-full z-10">
+                                <span class="text-[.775rem] ml-[1.375rem] mr-3 pt-px">1-800-685-4193</span>
+                            </button>
+                        </li>                
                     </ul>
                 </nav>
-
-
-
-
-
-
-    
                 <div class="flex items-center h-full">
-                    <a href="#" class="text-xs">Sign In</a>
+                    <button class="flex items-center h-full ml-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" focusable="false">
+                            <path d="M14 2A8 8 0 0 0 7.4 14.5L2.4 19.4a1.5 1.5 0 0 0 2.1 2.1L9.5 16.6A8 8 0 1 0 14 2Zm0 14.1A6.1 6.1 0 1 1 20.1 10 6.1 6.1 0 0 1 14 16.1Z"></path>
+                        </svg>
+                    </button>
+                    <a href="#" class="text-s ml-[1.375rem] mr-5 -tracking-[.03em]">Sign In</a>
+                    <a href="#" class="flex items-center mr-9">
+                        <img src="img/logo--xl.svg" alt="Adobe Experience Cloud logo" class="w-6">
+                    </a>
                 </div>
             </div>
         </header>
@@ -679,7 +665,7 @@
                 </div>
                 <div class="xl:w-1/2 xl:pt-[.438rem] xl:pr-10">
                     <h2 id="main__label" class="text-xxs font-semibold mb-4 xl:text-[.67rem]">ADOBE EXPERIENCE CLOUD FOR BUSINESS</h2>
-                    <h3 class="text-2xl font-semibold mb-4 md:pr-12 xl:text-3.5xl">Always make it personal. With Adobe Experience Cloud.</h3>
+                    <h3 class="text-2xl font-semibold mb-4 md:pr-12 xl:text-3.5xl xl:mb-[1.125rem]">Always make it personal. With Adobe Experience Cloud.</h3>
                     <p class="leading-6.5 md:pr-12">What is Adobe Experience Cloud? It’s customer experience technology that helps your business create personalized experiences for every single customer. Starting with data insights to really know each individual. To content creation built for them. And finally delivering those experiences on any surface. With Adobe, you’ve got this.</p>
                     <div class="flex flex-row items-center mt-[1.563rem] mb-2 w-full md:w-max">
                         <a href="#" class="flex-center w-full pt-[.313rem] pb-2 rounded-full border-2 border-white md:px-5">
@@ -963,9 +949,9 @@
                 </div>
             </div>
         </article>
-        <article>
-            <div class="bg-adobe shadow-md shadow-stone-200 xl:max-w-[1200px] xl:mx-auto">
-                <div class="article__container pt-12 xl:!w-2/3">
+        <article class="article">
+            <div class="xl:max-w-[1200px] xl:mx-auto">
+                <div class="article__container pt-12 bg-adobe shadow-md shadow-stone-300 xl:!w-2/3">
                     <h2 class="pb-[1.688rem] text-ml font-semibold text-center md:px-[15%] md:pb-[1.813rem] xl:text-[1.313rem] xl:px-[20%]">Let us show you the full power of Adobe Experience Cloud for your business.</h2>
                     <div class="xl:px-[2.938rem]">
                         <form class="flex flex-col w-full gap-4 md:flex-row md:flex-wrap">
@@ -1052,7 +1038,7 @@
             </div>
             <div class="h-[6.25rem] xl:h-[6.125rem]"></div>
         </article>
-        <footer class="bg-adobe mb-1 mx-6 pt-10 pb-2 md:pt-[2.563rem] xl:flex xl:flex-wrap xl:px-[calc(calc(100%-73.5%)/2)] xl:mx-0 xl:pb-5">
+        <footer class="bg-adobe mb-1 mx-6 pt-10 pb-2 md:pt-[2.563rem] xl:flex xl:flex-wrap xl:px-[calc(calc(100%-73.5%)/2)] xl:m-0 xl:pb-6">
             <div class="border-b-400 xl:w-[17.5%] xl:border-transparent">
                 <div class="flex w-full cursor-pointer">
                     <a href="#" class="footer__link">
