@@ -2,24 +2,86 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+	.flex-between {
+		@apply
+		flex
+		justify-between;
+	}
+	.flex-ic {
+		@apply
+		flex
+		items-center;
+	}
+	.flex-ic-col {
+		@apply
+		flex
+		items-center
+		flex-col;
+	}
+    .flex-center {
+		@apply 
+		flex 
+		justify-center 
+		items-center;
+    }
+	.flex-row-ic-js {
+		@apply
+		flex 
+		flex-row 
+		items-center 
+		justify-self-start;
+	}
+	.border-200 {
+		@apply
+		border
+		border-neutral-200; 
+	}
+	.border-b-200 {
+		@apply
+		border-b 
+		border-neutral-200; 
+	}
+	.border-b-400 {
+		@apply
+		border-b 
+		border-neutral-400; 
+	}
+}
+
 @layer components {
 	.tab__header {
 		@apply
 		py-4 
 		flex 
-		w-full 
-		h-full 
-		z-10
-		xl:text-s
-		xl:p-0
-		xl:border-0;
+		xl:text-s;
+	}
+	.nav__link {
+		@apply
+		mx-[.938rem]
+		-tracking-[0.03em];
+	}
+	.nav__link--arrow {
+		@apply
+		border-neutral-600
+		border-b
+		border-r
+		h-1.5
+		w-1.5
+		relative
+		top-[.45rem]
+		-left-3
+		rotate-45
+		origin-[75%_75%]
+		transition-transform
+		duration-[0.1s]
+		ease-in-out;
 	}
 	.tabpanel__header {
 		@apply
 		hidden 
 		top-[4.063rem] 
 		left-0 
-		z-30 
 		absolute 
 		w-full 
 		bg-adobe;
@@ -27,12 +89,6 @@
 	.tabpanel__header.--active {
 		@apply
 		block;
-	}
-	.nav__link {
-		@apply
-		text-s
-		mx-[.938rem]
-		-tracking-[0.03em];
 	}
 	.nav__sublink {
 		@apply
@@ -65,30 +121,6 @@
 		pt-[.625rem] 
 		pb-[.125rem];
 	}
-	.article {
-		@apply
-		flex
-		flex-col
-		bg-white;
-	}
-    .flex-center {
-		@apply 
-		flex 
-		justify-center 
-		items-center;
-    }
-	.flex-row-ic-js {
-		@apply
-		flex 
-		flex-row 
-		items-center 
-		justify-self-start;
-	}
-	.border-b-400 {
-		@apply
-		border-b 
-		border-neutral-400; 
-	}
 	.link__pill {
 		@apply
 		block 
@@ -102,6 +134,30 @@
 		px-3 
 		py-.75;
 	}
+
+
+    .article__container {
+		@apply 
+		max-w-[83.4%] 
+		my-0 
+		mx-auto
+		xl:min-h-[560px]
+		xl:w-[1200px]
+		xl:max-w-[1200px];
+    }
+	.article {
+		@apply
+		flex
+		flex-col
+		bg-white;
+	}
+	.h3-center {
+		@apply
+		text-[1.313rem]
+		leading-[1.875rem]
+		text-center
+		font-semibold;
+	}
 	.tab {
 		@apply
 		whitespace-nowrap 
@@ -113,6 +169,14 @@
 		text-neutral-500 
 		text-sm 
 		font-semibold;
+	}
+	.tab.--active {
+		@apply
+		border
+		border-neutral-400
+		border-b-white
+		rounded-t-[.188rem]
+		text-black !important;
 	}
 	.tab-md {
 		@apply
@@ -127,13 +191,6 @@
 		@apply
 		xl:text-[.969rem]
 		xl:px-[2rem];
-	}
-	.h3-center {
-		@apply
-		text-[1.313rem]
-		leading-[1.875rem]
-		text-center
-		font-semibold;
 	}
 	.products__h3 {
 		@apply
@@ -189,6 +246,8 @@
 		text-black/70 
 		font-medium;
 	}
+
+
 	.footer__link {
 		@apply
 		py-4 
@@ -197,41 +256,6 @@
 		z-10
 		xl:pt-0 
 		xl:pb-2; 
-	}
-    .article__container {
-		@apply 
-		max-w-[83.4%] 
-		my-0 
-		mx-auto
-		xl:min-h-[560px]
-		xl:w-[1200px]
-		xl:max-w-[1200px];
-    }
-	.comparison__wrapper {
-		@apply
-		w-[390px]
-		min-w-[390px]
-		border
-		border-neutral-300
-		rounded-md
-		h-[844px]
-		overflow-scroll
-		after:absolute
-		after:top-[20%]
-		after:text-neutral-600
-		after:text-[2rem]
-		after:font-mono
-		after:font-light
-		after:tracking-wide
-		after:-rotate-90;
-	}
-	.tab__active {
-		@apply
-		border
-		border-neutral-400
-		border-b-white
-		rounded-t-[.188rem]
-		text-black !important;
 	}
 	.footer__link--arrow {
 		@apply
@@ -257,23 +281,6 @@
 		after:ease-in-out
 		xl:after:opacity-0;
 	}
-	.nav__link--arrow {
-		@apply
-		border-neutral-600
-		border-b
-		border-r
-		flex
-		h-1.5
-		w-1.5
-		relative
-		top-[.45rem]
-		-left-3
-		rotate-45
-		origin-[75%_75%]
-		transition-transform
-		duration-[0.1s]
-		ease-in-out;
-	}
 	.footer__region {
 		@apply 
 		flex-center 
@@ -292,7 +299,7 @@
 		text-xxs 
 		text-neutral-700;
 	}
-	.after__slash {
+	.after--slash {
 		@apply 
 		flex
 		after:content-['/'] 
@@ -301,5 +308,25 @@
 		after:text-neutral-600
 		xl:after:text-[.5rem]
 		xl:after:pb-0;
+	}
+
+
+	.comparison__wrapper {
+		@apply
+		w-[390px]
+		min-w-[390px]
+		border
+		border-neutral-300
+		rounded-md
+		h-[844px]
+		overflow-scroll
+		after:absolute
+		after:top-[20%]
+		after:text-neutral-600
+		after:text-[2rem]
+		after:font-mono
+		after:font-light
+		after:tracking-wide
+		after:-rotate-90;
 	}
 }

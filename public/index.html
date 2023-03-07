@@ -15,15 +15,15 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@100;200;300;400;500;600;700;800;900&display=swap">
     </head>
     <body class="font-noto">
-        <div class="-z-10 fixed w-full h-full opacity-50 bg-neutral-900"></div>
-        <header class="w-full h-[4.063rem] pb-px border-b border-neutral-100 relative z-10 bg-white justify-center">
-            <div class="flex items-center h-full max-w-[1440px] mx-auto justify-between">
-                <nav class="flex h-full">
-                    <aside class="hidden flex-col items-center p-5">
+        <div class="-z-10 fixed w-full h-full opacity-[55%] bg-neutral-900 xl:z-0"></div>
+        <header class="h-[4.063rem] border-b border-neutral-100 relative z-10 bg-white">
+            <div class="flex-between h-full max-w-[1440px] mx-auto">
+                <nav class="flex">
+                    <aside class="hidden p-5 items-center flex-col">
                         <div class="relative w-full">
-                            <form class="flex items-center relative text-sm px-[10px] py-[7px] bg-white border rounded-[0.25rem] border-neutral-300" action="https://helpx.adobe.com/globalsearch.html" method="GET">
+                            <form class="flex-ic relative text-sm px-[10px] py-[7px] bg-white border-200 rounded-[0.25rem]" action="https://helpx.adobe.com/globalsearch.html" method="GET">
                                 <input name="inp-search" id="inp-search" type="text" class="bg-transparent font-light max-w-[90%] min-w-[auto] p-0 border-0 flex-grow outline-none" placeholder="Search">
-                                <div class="flex items-center h-full ml-[10px] relative">
+                                <div class="flex-ic h-full ml-[10px] relative">
                                     <svg class="block h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false">
                                         <path d="M14 2A8 8 0 0 0 7.4 14.5L2.4 19.4a1.5 1.5 0 0 0 2.1 2.1L9.5 16.6A8 8 0 1 0 14 2Zm0 14.1A6.1 6.1 0 1 1 20.1 10 6.1 6.1 0 0 1 14 16.1Z"></path>
                                     </svg>
@@ -33,26 +33,22 @@
                         </div>
                     </aside>                
                     <button class="before:content-['\2630'] before:text-sm h-full xl:hidden"></button>
-                    <div class="flex items-center h-full md:max-xl:w-[75vw] xl:ml-5 xl:mr-4">
-                        <a href="#" class="flex items-center">
-                            <img src="img/logo.svg" alt="Adobe Experience Cloud logo" class="w-[27px]">
-                            <p class="ml-2 text-center text-sm font-semibold text-adobered-light">Adobe Experience Cloud</p>
+                    <div class="flex xl:ml-5 xl:mr-4">
+                        <a href="#" class="flex-ic">
+                            <img src="img/logo.svg" class="w-[1.688rem]" alt="Adobe Experience Cloud logo">
+                            <p class="ml-2 text-sm font-semibold text-adobered-light">Adobe Experience Cloud</p>
                         </a>
                     </div>
-                    <ul class="flex items-center h-full" role="tablist">
-                        <li class="border-b border-neutral-200 text-neutral-700 xl:border-0 xl:flex xl:items-center xl:h-full xl:hover:bg-neutral-100/50">
-                            <div class="flex w-full cursor-pointer">
-                                <button class="tab__header" role="tab" 
-                                aria-selected="false" 
-                                aria-controls="tabpanel__header--1" 
-                                tabindex="0" 
-                                id="tab__header--1">
-                                    <span class="nav__link">Solutions</span>
+                    <ul class="flex-ic" role="tablist">
+                        <li class="border-b-200 text-neutral-700 cursor-pointer xl:border-0 xl:flex-ic xl:h-full xl:hover:bg-neutral-100/50">
+                            <div class="flex">
+                                <button class="tab__header" id="tab__header--1" role="tab" aria-selected="false" aria-controls="tabpanel__header--1" tabindex="0" aria-labelledby="nav__link--1">
+                                    <span class="nav__link" id="nav__link--1">Solutions</span>
                                     <div class="nav__link--arrow"></div>
                                 </button>
                             </div>
                             <div class="tabpanel__header" role="tabpanel" aria-labelledby="tab__header--1" id="tabpanel__header--1" >
-                                <ul class="flex max-w-[1000px] w-[1000px] mx-auto justify-between text-xs pt-11 pb-[3.75rem]">
+                                <ul class="flex-between w-[1000px] mx-auto text-xs pt-11 pb-[3.75rem]">
                                     <li>
                                         <a href="#" class="nav__sublink">By Category</a>
                                         <ul>
@@ -99,7 +95,7 @@
                                                 </a>
                                             </li>
                                             <li class="flex">
-                                                <a href="" class="link__pill text-s px-4 py-1 ml-7 mt-[.938rem] mb-[.313rem]">View all solutions</a>
+                                                <a href="" class="link__pill text-s px-3.5 py-1 ml-7 mt-[.938rem] mb-[.313rem]">View all solutions</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -124,11 +120,11 @@
                                             <li class="nav__sublink--xs">
                                                 <a href="#">High Tech</a>
                                             </li>
-                                            <li class="text-blue-600 flex w-full cursor-pointer">
+                                            <li class="text-blue-600">
                                                 <a href="#" class="py-2 flex w-full h-full z-10 ml-8">View all</a>
                                             </li>
                                         </ul>
-                                        <a href="#" class="block pt-10 pb-2.5 mx-8 font-semibold border-b border-neutral-200">By Use Case</a>
+                                        <a href="#" class="block pt-10 pb-2.5 mx-8 font-semibold border-b-200">By Use Case</a>
                                         <ul>
                                             <li class="nav__sublink--xs">
                                                 <a href="#">Customer case studies</a>
@@ -159,7 +155,7 @@
                                         </ul>
                                     </li>
                                     <li class="px-8 -mt-1">
-                                        <div class="flex flex-col p-[1.688rem] text-center bg-white border border-neutral-200">
+                                        <div class="flex flex-col p-[1.688rem] bg-white border-200">
                                             <a href="#" class="inline-block text-[.875rem] font-semibold mt-2.5">Contact Us</a>
                                             <a href="#" class="inline-block mt-[.813rem] text-[.688rem] text-blue-600 -tracking-[.03em]">Request demo</a>
                                         </div>
@@ -167,14 +163,10 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="border-b border-neutral-200 text-neutral-700 xl:border-0 xl:flex xl:items-center xl:h-full xl:hover:bg-neutral-100/50">
+                        <li class="border-b-200 text-neutral-700 xl:border-0 xl:flex-ic xl:h-full xl:hover:bg-neutral-100/50">
                             <div class="flex w-full cursor-pointer xl:after:h-[2px] xl:after:absolute xl:after:bottom-0 xl:after:left-[30.125%] xl:after:bg-neutral-900 xl:after:w-[4.125rem]">
-                                <button class="tab__header" role="tab" 
-                                aria-selected="false" 
-                                aria-controls="tabpanel__header--2" 
-                                tabindex="0" 
-                                id="tab__header--2">
-                                    <span class="nav__link xl:font-semibold">Products</span>
+                                <button class="tab__header" id="tab__header--2" role="tab" aria-selected="false" aria-controls="tabpanel__header--2" tabindex="0" aria-labelledby="nav__link--2">
+                                    <span class="nav__link xl:font-semibold" id="nav__link--2">Products</span>
                                     <div class="nav__link--arrow xl:!top-[.35rem]"></div>
                                 </button>
                             </div>
@@ -192,7 +184,7 @@
 
                                             </li>
                                         </ul>
-                                        <a href="#" class="block pt-[2.75rem] pb-2.5 mx-8 font-semibold border-b border-neutral-200">Data insights & audiences</a>
+                                        <a href="#" class="block pt-[2.75rem] pb-2.5 mx-8 font-semibold border-b-200">Data insights & audiences</a>
                                         <ul>
                                             <li class="nav__sublink--xs">
                                                 <a href="#">Analytics</a>
@@ -227,7 +219,7 @@
                                                 <a href="#">Learning Manager</a>
                                             </li>
                                         </ul>
-                                        <a href="#" class="block pt-[2.875rem] pb-2.5 mx-8 font-semibold border-b border-neutral-200">Customer journeys</a>
+                                        <a href="#" class="block pt-[2.875rem] pb-2.5 mx-8 font-semibold border-b-200">Customer journeys</a>
                                         <ul>
                                             <li class="nav__sublink--xs !pt-1.5">
                                                 <a href="#">Target</a>
@@ -250,7 +242,7 @@
                                                 <a href="#">Adobe Workfront</a>
                                             </li>
                                         </ul>
-                                        <a href="#" class="block pt-[2.875rem] pb-2.5 mx-8 font-semibold border-b border-neutral-200">Digital enrollment and onboarding</a>
+                                        <a href="#" class="block pt-[2.875rem] pb-2.5 mx-8 font-semibold border-b-200">Digital enrollment and onboarding</a>
                                         <ul>
                                             <li class="nav__sublink--xs">
                                                 <a href="#">Experience Manager Forms</a>
@@ -259,7 +251,7 @@
                                                 <a href="#">Adobe Acrobat Sign</a>
                                             </li>
                                         </ul>
-                                        <a href="#" class="block pt-[2.875rem] pb-2.5 mx-8 font-semibold border-b border-neutral-200">Experience management platform</a>
+                                        <a href="#" class="block pt-[2.875rem] pb-2.5 mx-8 font-semibold border-b-200">Experience management platform</a>
                                         <ul>
                                             <li class="nav__sublink--xs">
                                                 <a href="#">Experience Platform</a>
@@ -270,7 +262,7 @@
                                         </ul>
                                     </li>
                                     <li class="px-8 -mt-1">
-                                        <div class="flex flex-col py-[1.688rem] px-7 bg-white border border-neutral-200">
+                                        <div class="flex flex-col py-[1.688rem] px-7 bg-white border-200">
                                             <a href="#" class="inline-block text-[.875rem] font-semibold mt-2.5">Contact Us</a>
                                             <a href="#" class="inline-block mt-3 text-s text-blue-600 -tracking-[.03em]">Request demo</a>
                                         </div>
@@ -278,14 +270,10 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="border-b border-neutral-200 text-neutral-700 xl:border-0 xl:flex xl:items-center xl:h-full xl:hover:bg-neutral-100/50">
+                        <li class="border-b-200 text-neutral-700 xl:border-0 xl:flex xl:items-center xl:h-full xl:hover:bg-neutral-100/50">
                             <div class="flex w-full cursor-pointer">
-                                <button class="tab__header" role="tab" 
-                                aria-selected="false" 
-                                aria-controls="tabpanel__header--3" 
-                                tabindex="0" 
-                                id="tab__header--3">
-                                    <span class="nav__link">Resources</span>
+                                <button class="tab__header" id="tab__header--3" role="tab" aria-selected="false" aria-controls="tabpanel__header--3" tabindex="0" aria-labelledby="nav__link--3">
+                                    <span class="nav__link" id="nav__link--3">Resources</span>
                                     <div class="nav__link--arrow"></div>
                                 </button>
                             </div>
@@ -340,7 +328,7 @@
                                         </ul>
                                     </li>
                                     <li class="px-8 -mt-1">
-                                        <div class="flex flex-col p-[1.688rem] text-center bg-white border border-neutral-200">
+                                        <div class="flex flex-col p-[1.688rem] bg-white border-200">
                                             <a href="#" class="inline-block text-[.875rem] font-semibold mt-2.5">Contact Us</a>
                                             <a href="#" class="inline-block mt-[.813rem] text-[.688rem] text-blue-600 -tracking-[.03em]">Request demo</a>
                                         </div>
@@ -348,14 +336,10 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="border-b border-neutral-200 text-neutral-700 xl:border-0 xl:flex xl:items-center xl:h-full xl:hover:bg-neutral-100/50">
+                        <li class="border-b-200 text-neutral-700 xl:border-0 xl:flex xl:items-center xl:h-full xl:hover:bg-neutral-100/50">
                             <div class="flex w-full cursor-pointer">
-                                <button class="tab__header" role="tab" 
-                                aria-selected="false" 
-                                aria-controls="tabpanel__header--4" 
-                                tabindex="0" 
-                                id="tab__header--4">
-                                    <span class="nav__link">For customers</span>
+                                <button class="tab__header" id="tab__header--4" role="tab" aria-selected="false" aria-controls="tabpanel__header--4" tabindex="0" aria-labelledby="nav__link--4">
+                                    <span class="nav__link" id="nav__link--4">For customers</span>
                                     <div class="nav__link--arrow"></div>
                                 </button>
                             </div>
@@ -407,7 +391,7 @@
                                         </ul>
                                     </li>
                                     <li class="px-8 -mt-1">
-                                        <div class="flex flex-col p-[1.688rem] text-center bg-white border border-neutral-200">
+                                        <div class="flex flex-col p-[1.688rem] bg-white border-200">
                                             <a href="#" class="inline-block text-[.875rem] font-semibold mt-2.5">Contact Us</a>
                                             <a href="#" class="inline-block mt-[.813rem] text-[.688rem] text-blue-600 -tracking-[.03em]">Request demo</a>
                                         </div>
@@ -415,14 +399,10 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="border-b border-neutral-200 text-neutral-700 xl:border-0 xl:flex xl:items-center xl:h-full xl:hover:bg-neutral-100/50">
+                        <li class="border-b-200 text-neutral-700 xl:border-0 xl:flex xl:items-center xl:h-full xl:hover:bg-neutral-100/50">
                             <div class="flex w-full cursor-pointer">
-                                <button class="tab__header" role="tab" 
-                                aria-selected="false" 
-                                aria-controls="tabpanel__header--5" 
-                                tabindex="0" 
-                                id="tab__header--5">
-                                    <span class="nav__link">Support</span>
+                                <button class="tab__header" id="tab__header--5" role="tab" aria-selected="false" aria-controls="tabpanel__header--5" tabindex="0" aria-labelledby="nav__link--5">
+                                    <span class="nav__link" id="nav__link--5">Support</span>
                                     <div class="nav__link--arrow"></div>
                                 </button>
                             </div>
@@ -474,7 +454,7 @@
                                         </ul>
                                     </li>
                                     <li class="px-8 -mt-1">
-                                        <div class="flex flex-col p-[1.688rem] text-center bg-white border border-neutral-200">
+                                        <div class="flex flex-col p-[1.688rem] bg-white border-200">
                                             <a href="#" class="inline-block text-[.875rem] font-semibold mt-2.5">Contact Us</a>
                                             <a href="#" class="inline-block mt-[.813rem] text-[.688rem] text-blue-600 -tracking-[.03em]">Request demo</a>
                                         </div>
@@ -482,14 +462,10 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="border-b border-neutral-200 text-neutral-700 xl:border-0 xl:flex xl:items-center xl:h-full xl:hover:bg-neutral-100/50">
+                        <li class="border-b-200 text-neutral-700 xl:border-0 xl:flex xl:items-center xl:h-full xl:hover:bg-neutral-100/50">
                             <div class="flex w-full cursor-pointer">
-                                <button class="tab__header" role="tab" 
-                                aria-selected="false" 
-                                aria-controls="tabpanel__header--6" 
-                                tabindex="0" 
-                                id="tab__header--6">
-                                    <span class="nav__link">Events</span>
+                                <button class="tab__header" id="tab__header--6" role="tab" aria-selected="false" aria-controls="tabpanel__header--6" tabindex="0" aria-labelledby="nav__link--6">
+                                    <span class="nav__link" id="nav__link--6">Events</span>
                                     <div class="nav__link--arrow"></div>
                                 </button>
                             </div>
@@ -526,7 +502,7 @@
                                         </ul>
                                     </li>
                                     <li class="px-8 -mt-1">
-                                        <div class="flex flex-col p-[1.688rem] text-center bg-white border border-neutral-200">
+                                        <div class="flex flex-col p-[1.688rem] bg-white border-200">
                                             <a href="#" class="inline-block text-[.875rem] font-semibold mt-2.5">Contact Us</a>
                                             <a href="#" class="inline-block mt-[.813rem] text-[.688rem] text-blue-600 -tracking-[.03em]">Request demo</a>
                                         </div>
@@ -534,14 +510,10 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="border-b border-neutral-200 text-neutral-700 xl:border-0 xl:flex xl:items-center xl:h-full xl:hover:bg-neutral-100/50">
+                        <li class="border-b-200 text-neutral-700 xl:border-0 xl:flex xl:items-center xl:h-full xl:hover:bg-neutral-100/50">
                             <div class="flex w-full cursor-pointer">
-                                <button class="tab__header" role="tab" 
-                                aria-selected="false" 
-                                aria-controls="tabpanel__header--7" 
-                                tabindex="0" 
-                                id="tab__header--7">
-                                    <span class="nav__link">Why Adobe</span>
+                                <button class="tab__header" id="tab__header--7" role="tab" aria-selected="false" aria-controls="tabpanel__header--7" tabindex="0" aria-labelledby="nav__link--7">
+                                    <span class="nav__link" id="nav__link--7">Why Adobe</span>
                                     <div class="nav__link--arrow"></div>
                                 </button>
                             </div>
@@ -602,7 +574,7 @@
                                         </ul>
                                     </li>
                                     <li class="px-8 -mt-1">
-                                        <div class="flex flex-col p-[1.688rem] text-center bg-white border border-neutral-200">
+                                        <div class="flex flex-col p-[1.688rem] bg-white border-200">
                                             <a href="#" class="inline-block text-[.875rem] font-semibold mt-2.5">Contact Us</a>
                                             <a href="#" class="inline-block mt-[.813rem] text-[.688rem] text-blue-600 -tracking-[.03em]">Request demo</a>
                                         </div>
@@ -611,24 +583,23 @@
                             </div>
                         </li>  
                         <li class="flex ml-5">
-                            <a href="" class="
-                            block text-white border-blue-500 border-2 rounded-full font-semibold leading-5 text-s px-3.5 py-1 my-auto bg-blue-500">Get started</a>
+                            <a href="" class="text-white border-blue-500 border-2 rounded-full font-semibold text-s px-3.5 py-1 bg-blue-500">Get started</a>
                         </li>      
-                        <li class="flex">
-                            <button class="flex h-full z-10">
+                        <li>
+                            <button class="flex">
                                 <span class="text-[.775rem] ml-[1.375rem] mr-3 pt-px">1-800-685-4193</span>
                             </button>
                         </li>                
                     </ul>
                 </nav>
-                <div class="flex items-center h-full">
-                    <button class="flex items-center h-full ml-1">
+                <div class="flex-ic">
+                    <button class="ml-1">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" focusable="false">
                             <path d="M14 2A8 8 0 0 0 7.4 14.5L2.4 19.4a1.5 1.5 0 0 0 2.1 2.1L9.5 16.6A8 8 0 1 0 14 2Zm0 14.1A6.1 6.1 0 1 1 20.1 10 6.1 6.1 0 0 1 14 16.1Z"></path>
                         </svg>
                     </button>
                     <a href="#" class="text-s ml-[1.375rem] mr-5 -tracking-[.03em]">Sign In</a>
-                    <a href="#" class="flex items-center mr-9">
+                    <a href="#" class="mr-9">
                         <img src="img/logo--xl.svg" alt="Adobe Experience Cloud logo" class="w-6">
                     </a>
                 </div>
@@ -717,7 +688,7 @@
         <article class="article pb-11">
             <div class="mt-[1.125rem] w-full px-[2.188rem] border-b border-neutral-300 md:mt-4 md:px-[4.688rem] xl:mt-5 xl:px-[calc(25%+.313rem)]">
                 <div role="tablist" class="flex overflow-hidden relative z-10 -mb-px">
-                    <button role="tab" aria-selected="false" aria-controls="tabpanel--1" tabindex="0" id="tab--1" class="tab tab-md tab-xl tab__active">Personalization at scale</button>
+                    <button role="tab" aria-selected="false" aria-controls="tabpanel--1" tabindex="0" id="tab--1" class="tab tab-md tab-xl --active">Personalization at scale</button>
                     <button role="tab" aria-selected="false" aria-controls="tabpanel--2" tabindex="0" id="tab--2" class="tab tab-md tab-xl">Data insights &amp; audiences</button>
                     <button role="tab" aria-selected="false" aria-controls="tabpanel--3" tabindex="0" id="tab--3" class="tab tab-md tab-xl">Content management</button>
                     <button role="tab" aria-selected="false" aria-controls="tabpanel--4" tabindex="0" id="tab--4" class="tab tab-md tab-xl">Customer journeys</button> 
@@ -950,7 +921,7 @@
             </div>
         </article>
         <article class="article">
-            <div class="xl:max-w-[1200px] xl:mx-auto">
+            <div class="pb-[6.25rem] xl:pb-[6.125rem] xl:max-w-[1200px] xl:mx-auto">
                 <div class="article__container pt-12 bg-adobe shadow-md shadow-stone-300 xl:!w-2/3">
                     <h2 class="pb-[1.688rem] text-ml font-semibold text-center md:px-[15%] md:pb-[1.813rem] xl:text-[1.313rem] xl:px-[20%]">Let us show you the full power of Adobe Experience Cloud for your business.</h2>
                     <div class="xl:px-[2.938rem]">
@@ -1036,7 +1007,7 @@
                     </div>
                 </div>
             </div>
-            <div class="h-[6.25rem] xl:h-[6.125rem]"></div>
+            <div class="hidden h-[6.25rem] xl:h-[6.125rem]"></div>
         </article>
         <footer class="bg-adobe mb-1 mx-6 pt-10 pb-2 md:pt-[2.563rem] xl:flex xl:flex-wrap xl:px-[calc(calc(100%-73.5%)/2)] xl:m-0 xl:pb-6">
             <div class="border-b-400 xl:w-[17.5%] xl:border-transparent">
@@ -1320,28 +1291,28 @@
                     </li>
                 </ul>
                 <ul class="w-full pt-4 xl:w-max xl:flex xl:items-center xl:-tracking-[.0125em] xl:pt-0.5">
-                    <li class="after__slash pb-px md:pb-0.5 xl:after:pt-[.188rem]">
+                    <li class="after--slash pb-px md:pb-0.5 xl:after:pt-[.188rem]">
                         <p class="text-center text-xxs text-neutral-500 leading-5 xl:whitespace-nowrap xl:font-light">Copyright © 2023 Adobe. All rights reserved.</p>
                     </li>
                     <li class="w-full">
                         <ul class="flex flex-wrap w-full h-12 mb-12 items-start -mt-[.156rem] gap-y-1 md:h-auto md:py-[.438rem] md:mb-1 xl:mb-0">
                             <li>
-                                <a href="https://www.adobe.com/privacy.html" class="after__slash">
+                                <a href="https://www.adobe.com/privacy.html" class="after--slash">
                                     <span class="footer__text--small">Privacy</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.adobe.com/legal/terms.html" class="after__slash">
+                                <a href="https://www.adobe.com/legal/terms.html" class="after--slash">
                                     <span class="footer__text--small">Terms of Use</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="after__slash">
+                                <a href="#" class="after--slash">
                                     <span class="footer__text--small">Cookie preferences</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.adobe.com/privacy/ca-rights.html" class="after__slash">
+                                <a href="https://www.adobe.com/privacy/ca-rights.html" class="after--slash">
                                     <span class="footer__text--small">Do not sell or share my personal information</span>
                                 </a>
                             </li>
