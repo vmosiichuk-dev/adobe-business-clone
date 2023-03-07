@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 @layer utilities {
+	.flex-jc {
+		@apply
+		flex
+		justify-center;
+	}
 	.flex-between {
 		@apply
 		flex
@@ -163,9 +168,7 @@
 		whitespace-nowrap 
 		py-[1.125rem] 
 		px-3.7 
-		border 
-		border-transparent 
-		border-b-neutral-400 
+		border-b-400 
 		text-neutral-500 
 		text-sm 
 		font-semibold;

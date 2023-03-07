@@ -15,16 +15,16 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@100;200;300;400;500;600;700;800;900&display=swap">
     </head>
     <body class="font-noto">
-        <div class="-z-10 fixed w-full h-full opacity-[55%] bg-neutral-900 xl:z-0"></div>
+        <div class="-z-10 fixed w-full h-full opacity-[55%] bg-neutral-900"></div>
         <header class="h-[4.063rem] border-b border-neutral-100 relative z-10 bg-white">
             <div class="flex-between h-full max-w-[1440px] mx-auto">
                 <nav class="flex">
-                    <aside class="hidden p-5 items-center flex-col">
-                        <div class="relative w-full">
-                            <form class="flex-ic relative text-sm px-[10px] py-[7px] bg-white border-200 rounded-[0.25rem]" action="https://helpx.adobe.com/globalsearch.html" method="GET">
-                                <input name="inp-search" id="inp-search" type="text" class="bg-transparent font-light max-w-[90%] min-w-[auto] p-0 border-0 flex-grow outline-none" placeholder="Search">
-                                <div class="flex-ic h-full ml-[10px] relative">
-                                    <svg class="block h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false">
+                    <aside class="*flex hidden absolute bg-white top-16 w-full left-0 justify-center">
+                        <div class="relative w-full max-w-[1200px] p-5">
+                            <form class="flex-ic text-sm px-2.5 py-[.406rem] border border-neutral-400/60 rounded-[0.25rem]" action="https://helpx.adobe.com/globalsearch.html" method="GET">
+                                <input name="inp-search" id="inp-search" type="text" class="font-light flex-grow outline-none" placeholder="Search">
+                                <div>
+                                    <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false">
                                         <path d="M14 2A8 8 0 0 0 7.4 14.5L2.4 19.4a1.5 1.5 0 0 0 2.1 2.1L9.5 16.6A8 8 0 1 0 14 2Zm0 14.1A6.1 6.1 0 1 1 20.1 10 6.1 6.1 0 0 1 14 16.1Z"></path>
                                     </svg>
                                     <a href="#" tabindex="-1" role="button" aria-label="Clear results"></a>
@@ -612,22 +612,22 @@
                 <p class="underline">Register now</p>
             </div>
             <div class="hidden md:block article__container">
-                <div class="hidden md:flex items-center w-full my-[1.125rem]">
-                    <div class="flex h-[.925rem] justify-start items-center my-0 w-max">
+                <div class="hidden md:flex-ic w-full my-[1.125rem]">
+                    <div class="flex-ic h-[.925rem] justify-start my-0 w-max">
                         <img class="h-full" src="img/logo--text.svg" alt="Adobe Summit">
                     </div>
                     <p class="leading-5 font-medium text-white mr-10 ml-5">Join Shaquille O'Neal and more — March 2023.</p>
                     <div class="flex flex-col">
-                        <div class="h-10 flex items-center w-max">
+                        <div class="h-10 flex-ic w-max">
                             <a href="#" class="block rounded-full border-2 text-white font-semibold text-s py-[.313rem] px-3">Register now</a>
                         </div>
                     </div>
                 </div>
             </div>
         </aside>
-        <main aria-labelledby="main__label" class="flex flex-col pb-10 bg-gradient-to-bl from-adobered-light to-adobered-dark text-white xl:pb-0">
-            <div class="article__container xl:min-h-[560px] xl:max-w-[1200px] xl:flex-row-reverse xl:flex xl:items-center">
-                <div class="flex my-0 mx-auto pt-14 pb-8 md:mx-14 xl:w-1/2 xl:p-0 xl:m-0">
+        <main aria-labelledby="main__label" class="pb-10 bg-gradient-to-bl from-adobered-light to-adobered-dark text-white xl:pb-0">
+            <div class="article__container xl:flex-ic xl:flex-row-reverse">
+                <div class="mx-auto pt-14 pb-8 md:mx-14 xl:w-1/2 xl:p-0 xl:m-0">
                     <picture>
                         <source media="(min-width:1200px)" srcset="img/home--1200.avif">
                         <source media="(min-width:768px)" srcset="img/home--768.avif">                            
@@ -638,8 +638,8 @@
                     <h2 id="main__label" class="text-xxs font-semibold mb-4 xl:text-[.67rem]">ADOBE EXPERIENCE CLOUD FOR BUSINESS</h2>
                     <h3 class="text-2xl font-semibold mb-4 md:pr-12 xl:text-3.5xl xl:mb-[1.125rem]">Always make it personal. With Adobe Experience Cloud.</h3>
                     <p class="leading-6.5 md:pr-12">What is Adobe Experience Cloud? It’s customer experience technology that helps your business create personalized experiences for every single customer. Starting with data insights to really know each individual. To content creation built for them. And finally delivering those experiences on any surface. With Adobe, you’ve got this.</p>
-                    <div class="flex flex-row items-center mt-[1.563rem] mb-2 w-full md:w-max">
-                        <a href="#" class="flex-center w-full pt-[.313rem] pb-2 rounded-full border-2 border-white md:px-5">
+                    <div class="mt-[1.563rem] mb-2 w-full md:w-max">
+                        <a href="#" class="flex-center pt-[.313rem] pb-2 rounded-full border-2 border-white px-5">
                             <span class="font-semibold text-[.938rem]">Explore all Experience Cloud products</span>
                         </a>
                     </div>
@@ -647,30 +647,29 @@
             </div>
         </main>
         <article class="article pb-10">
-            <section class="article__container xl:!min-h-[236px] xl:flex-row-reverse xl:flex-center">
-                <div class="bg-trends bg-cover bg-[50%_50%] bg-black flex flex-col-reverse mt-10 rounded-md px-2 md:flex-row md:pt-[2.375rem] md:pb-[1.375rem] md:px-6 md:bg-trends--md md:bg-[100%_49%] xl:w-3/4 xl:max-w-[75%] xl:bg-trends--xl xl:pt-4 xl:pb-[1.125rem]">
+            <section class="article__container xl:!min-h-[236px] xl:flex-center">
+                <div class="bg-trends bg-cover bg-[50%_50%] bg-black flex flex-col-reverse mt-10 rounded-lg px-2 md:flex-row md:pt-[2.375rem] md:pb-[1.375rem] md:px-6 md:bg-trends--md md:bg-[100%_49%] xl:w-3/4 xl:bg-trends--xl xl:pt-4 xl:pb-[1.125rem]">
                     <div class="px-4 w-full text-neutral-100 md:flex md:flex-col md:justify-center md:pl-0">
-                        <h3 class="text-lg font-semibold mt-8. mb-3.3 leading-[1.813rem] md:mt-1 xl:mt-[.313rem] xl:text-[1.09375rem]">An all-star lineup you just can't miss.</h3>
+                        <h3 class="text-lg font-semibold mt-8. mb-3.3 leading-[1.813rem] md:mt-1 xl:mt-1 xl:text-[1.09375rem]">An all-star lineup you just can't miss.</h3>
                         <p class="text-sm leading-6">The speakers at Adobe Summit are unmatched — discover the digital experience champions delivering this year’s keynotes. March 19–23.</p>
-                        <div class="flex-row-ic-js mt-[1.2rem] mb-7 md:mb-1 md:mt-3 md:flex-col">
-                            <div class="w-full flex items-center">
-                                <a href="#" class="block text-neutral-800 
-                                border-neutral-800 border-2 rounded-full font-semibold leading-5 bg-neutral-100 text-s px-4 pt-1 pb-1.5">Register now</a>
+                        <div class="mt-[1.2rem] mb-7 md:mb-1 md:mt-3 xl:mt-[.563rem]">
+                            <div class="flex">
+                                <a href="#" class="text-neutral-800 rounded-full font-semibold leading-5 bg-neutral-100 text-s py-[.313rem] px-3.5">Register now</a>
                             </div>
                         </div>
                     </div>
-                    <div class="w-full flex-center px-4 md:px-2 xl:w-[66%] xl:px-0">
+                    <div class="w-full flex-center px-4 md:px-2 xl:w-2/3 xl:px-0">
                         <picture>
-                            <img class="rounded-md pt-10 md:pt-0" src="img/trends.avif" alt="">
+                            <img class="pt-10 md:pt-0" src="img/trends.avif" alt="">
                         </picture>
                     </div>
                 </div>
             </section>
             <section class="article__container xl:flex-center xl:flex-col">
-                <div class="xl:w-[66.66%]">
+                <div class="xl:w-2/3">
                     <h3 class="h3-center mt-12. mb-4 md:mt-12 xl:text-2xl xl:mt-[4.313rem] xl:mb-[.938rem]">Meet the Experience Cloud business solutions.</h3>
                     <p class="text-center leading-6.5">Adobe Experience Cloud solutions solve needs from data insights to content management, marketing workflows, and more. Let’s find your solution to more meaningful B2C and B2B customer experiences.</p>
-                    <div class="flex justify-center mt-6 xl:mt-[1.563rem]">
+                    <div class="flex-jc mt-6 xl:mt-[1.563rem]">
                         <a href="#" class="text-blue-500 font-semibold underline">View all Adobe business solutions</a>
                     </div>
                 </div>
@@ -686,7 +685,7 @@
             </section>
         </article>
         <article class="article pb-11">
-            <div class="mt-[1.125rem] w-full px-[2.188rem] border-b border-neutral-300 md:mt-4 md:px-[4.688rem] xl:mt-5 xl:px-[calc(25%+.313rem)]">
+            <div class="mt-[1.125rem] px-[2.188rem] border-b-400 md:mt-4 md:px-[4.688rem] xl:mt-5 xl:px-[calc(25%+.313rem)]">
                 <div role="tablist" class="flex overflow-hidden relative z-10 -mb-px">
                     <button role="tab" aria-selected="false" aria-controls="tabpanel--1" tabindex="0" id="tab--1" class="tab tab-md tab-xl --active">Personalization at scale</button>
                     <button role="tab" aria-selected="false" aria-controls="tabpanel--2" tabindex="0" id="tab--2" class="tab tab-md tab-xl">Data insights &amp; audiences</button>
@@ -695,7 +694,7 @@
                 </div>
             </div>
             <div role="tabpanel" id="tabpanel--1" class="article__container">
-                <div class="flex-wrap flex-row gap-x-6 md:flex md:relative">
+                <div class="gap-x-6 md:flex md:flex-wrap md:flex-row md:relative">
                     <div class="md:w-[calc(50%-0.75rem)] xl:w-[700px]">
                         <div class="w-full flex-center mb-6 md:mt-[4.313rem] xl:mt-0">
                             <picture>
@@ -709,7 +708,7 @@
                         <h3 class="text-2xl font-semibold mb-4 mt-8 xl:text-3.5xl">Customer connections personalized at any scale</h3>
                         <p class="leading-6.5">No matter the size of your business, you can bring the personal touch to each of your customers. Whether your business is far along its personalization journey or just getting started, we have the building blocks you need to transform the relationships you build with each customer.</p>
                         <div class="flex-row-ic-js mt-[1.563rem] mb-4 md:mt-[1.438rem]">
-                            <div class="w-full flex items-center">
+                            <div class="w-full flex-ic">
                                 <a href="#" class="link__pill">Learn more</a>
                             </div>
                         </div>
@@ -717,7 +716,7 @@
                 </div>
             </div>
             <div role="tabpanel" id="tabpanel--2" class="article__container hidden">
-                <div class="flex-wrap flex-row gap-x-6 md:flex md:relative">
+                <div class="gap-x-6 md:flex md:flex-wrap md:flex-row md:relative">
                     <div class="md:w-[calc(50%-0.75rem)] xl:w-[700px]">
                         <div class="w-full flex-center mb-6 md:mt-14 xl:mt-0">
                             <picture>
@@ -731,7 +730,7 @@
                         <h3 class="text-2xl font-semibold mb-4 mt-8 xl:text-3.5xl">Deep and relevant data insights & audiences</h3>
                         <p class="leading-6.5">Use our customer data platform (CDP) technology to drive real-time personalization on any channel using online and offline data insights across your entire business.</p>
                         <div class="flex-row-ic-js mt-[1.563rem] mb-4 md:mt-[1.438rem]">
-                            <div class="w-full flex items-center">
+                            <div class="w-full flex-ic">
                                 <a href="#" class="link__pill">Learn more</a>
                             </div>
                         </div>
@@ -739,7 +738,7 @@
                 </div>
             </div>
             <div role="tabpanel" id="tabpanel--3" class="article__container hidden">
-                <div class="flex-wrap flex-row gap-x-6 md:flex md:relative">
+                <div class="gap-x-6 md:flex md:flex-wrap md:flex-row md:relative">
                     <div class="md:w-[calc(50%-0.75rem)] xl:w-[700px]">
                         <div class="w-full flex-center mb-6 md:mt-14 xl:mt-0">
                             <picture>
@@ -753,7 +752,7 @@
                         <h3 class="text-2xl font-semibold mb-4 mt-8 xl:text-3.5xl">Fast and flexible content management</h3>
                         <p class="leading-6.5">Employ our marketing workflow technology, our open-source content management system (CMS), and digital asset management (DAM) system to create and manage your business’s websites, apps, forms, and other marketing and business content.</p>
                         <div class="flex-row-ic-js mt-[1.563rem] mb-4 md:mt-[1.438rem]">
-                            <div class="w-full flex items-center">
+                            <div class="w-full flex-ic">
                                 <a href="#" class="link__pill">Learn more</a>
                             </div>
                         </div>
@@ -761,7 +760,7 @@
                 </div>
             </div>
             <div role="tabpanel" id="tabpanel--4" class="article__container hidden">
-                <div class="flex-wrap flex-row gap-x-6 md:flex md:relative">
+                <div class="gap-x-6 md:flex md:flex-wrap md:flex-row md:relative">
                     <div class="md:w-[calc(50%-0.75rem)] xl:w-[700px]">
                         <div class="w-full flex-center mb-6 md:mt-14 xl:mt-0">
                             <picture>
@@ -775,7 +774,7 @@
                         <h3 class="text-2xl font-semibold mb-4 mt-8 xl:text-3.5xl">Personalized customer journeys</h3>
                         <p class="leading-6.5">Build a content marketing strategy for your business that delivers personalized content across all channels. It updates the customer experience in real time based on an individual’s engagement history. And now, serve that experience at scale to all of your customers.</p>
                         <div class="flex-row-ic-js mt-[1.563rem] mb-4 md:mt-[1.438rem]">
-                            <div class="w-full flex items-center">
+                            <div class="w-full flex-ic">
                                 <a href="#" class="link__pill">Learn more</a>
                             </div>
                         </div>
@@ -807,7 +806,7 @@
                         <h3 class="products__h3 leading-[1.563rem] xl:text-[1.313rem] xl:mt-[1.125rem] xl:mb-6">See customers in high def with our leading CDP.</h3>
                         <p class="text-sm leading-6">Get crystal clear, real-time view of your audiences. Whether you target B2B, B2C, or a mix of both, Adobe Real-Time CDP helps you respond to your customers' up-to-the-moment preferences with unified profiles that power all of your customer experience systems.</p>
                         <div class="flex-row-ic-js mt-6 mb-4 md:mt-[1.438rem]">
-                            <div class="w-full flex items-center">
+                            <div class="w-full flex-ic">
                                 <a href="#" class="link__pill">Learn more</a>
                             </div>
                         </div>
@@ -875,7 +874,7 @@
                         <h3 class="text-lg font-semibold mb-4 xl:text-[1.365rem] xl:font-medium">40 years and counting — Discover why Adobe sets the standard for innovative experiences.</h3>
                         <p class="text-sm leading-6">To meet customers where they are, your business needs a footprint everywhere they are. Learn why Adobe was named a Leader in <span class="italic">"The&nbsp;Forrester Wave": Digital Intelligence Platforms, Q4 2022."</span></p>
                         <div class="flex-row-ic-js mt-[1.438rem] pb-6">
-                            <div class="w-full flex items-center">
+                            <div class="w-full flex-ic">
                                 <a href="#" class="link__pill">Read the report</a>
                             </div>
                         </div>
@@ -1317,7 +1316,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.adobe.com/privacy/opt-out.html#interest-based-ads" class="flex items-center w-full h-full relative">
+                                <a href="https://www.adobe.com/privacy/opt-out.html#interest-based-ads" class="flex-ic w-full h-full relative">
                                     <span class="w-6 h-6 absolute">
                                         <img src="https://www.adobe.com/content/dam/cc/icons/adchoices-small.svg">
                                     </span>
