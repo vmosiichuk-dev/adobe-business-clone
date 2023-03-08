@@ -256,9 +256,8 @@
 		py-4 
 		flex 
 		w-full 
-		z-10
 		xl:pt-0 
-		xl:pb-2; 
+		xl:pb-1.5; 
 	}
 	.footer__link--arrow {
 		@apply
@@ -286,19 +285,15 @@
 	}
 	.footer__region {
 		@apply 
-		flex-center 
-		h-full 
+		flex-ic
 		after:content-['⌄'] 
 		after:text-xl
 		after:text-neutral-600
-		after:block 
 		after:ml-[.313rem] 
-		after:mb-2.5 
-		after:font-medium;
+		after:mb-2.5;
 	}
 	.footer__text--small {
 		@apply
-		text-center 
 		text-xxs 
 		text-neutral-700;
 	}

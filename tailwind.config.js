@@ -58,6 +58,7 @@ module.exports = {
 			},
 			screens: {
 				'xl': '1200px',
+				'mxl': { 'raw': '(max-height: 1200px)' },
 			},
 		},
 	},
