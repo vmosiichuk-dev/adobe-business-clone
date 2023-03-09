@@ -57,8 +57,11 @@ module.exports = {
 				'6.5': '1.688rem',
 			},
 			screens: {
-				'xl': '1200px',
-				'mxl': { 'raw': '(max-height: 1200px)' },
+				'md': '600px',
+				'xl': '900px',
+				'mxl': { 'raw': '(max-width: 900px)' },
+				'2xl': '1366px',
+				'm2xl': { 'raw': '(max-width: 1366px)' },
 			},
 		},
 	},
