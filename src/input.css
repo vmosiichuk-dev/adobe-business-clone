@@ -59,7 +59,7 @@
 		@apply
 		py-4 
 		flex 
-		xl:text-s;
+		lg:text-s;
 	}
 	.nav__link {
 		@apply
@@ -114,7 +114,7 @@
 	.nav__sublink--span {
 		@apply
 		hidden 
-		xl:block 
+		lg:block 
 		text-[.688rem] 
 		pt-0.5 
 		text-neutral-500 

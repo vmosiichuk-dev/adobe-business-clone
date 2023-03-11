@@ -28,7 +28,7 @@ module.exports = {
 		},
 		extend: {
 			backgroundImage: {
-			   	'body': "url('img/grid-bg1.jpg')",
+			   	'body': "url('img/grid-bg.jpg')",
 				'trends': "url('img/trends-bg.avif')",
 				'trends--md': "url('img/trends-bg--600.avif')",
 				'trends--xl': "url('img/trends-bg--900.avif')",
@@ -59,8 +59,10 @@ module.exports = {
 			screens: {
 				'md': '600px',
 				'mmd': { 'raw': '(max-width: 600px)' },
-				'xl': '900px',
-				'mxl': { 'raw': '(max-width: 900px)' },
+				'lg': '900px',
+				'mlg': { 'raw': '(max-width: 900px)' },
+				'xl': '1230px',
+				'mxl': { 'raw': '(max-width: 1230px)' },
 				'2xl': '1366px',
 				'm2xl': { 'raw': '(max-width: 1366px)' },
 			},
