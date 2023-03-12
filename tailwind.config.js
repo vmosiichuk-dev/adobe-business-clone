@@ -65,6 +65,8 @@ module.exports = {
 				'mxl': { 'raw': '(max-width: 1230px)' },
 				'2xl': '1366px',
 				'm2xl': { 'raw': '(max-width: 1366px)' },
+				'3xl': '1680px',
+				'm3xl': { 'raw': '(max-width: 1680px)' },
 			},
 		},
 	},
