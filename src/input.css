@@ -55,93 +55,7 @@
 }
 
 @layer components {
-	.tab__header {
-		@apply
-		py-4 
-		flex 
-		lg:text-s;
-	}
-	.nav__link {
-		@apply
-		mx-[.938rem]
-		-tracking-[0.03em];
-	}
-	.nav__link--arrow {
-		@apply
-		border-neutral-600
-		border-b
-		border-r
-		h-1.5
-		w-1.5
-		relative
-		top-[.45rem]
-		-left-3
-		rotate-45
-		origin-[75%_75%]
-		transition-transform
-		duration-[0.1s]
-		ease-in-out;
-	}
-	.tabpanel__header {
-		@apply
-		hidden 
-		top-[4.063rem] 
-		left-0 
-		absolute 
-		w-full 
-		bg-adobe;
-	}
-	.tabpanel__header.--active {
-		@apply
-		block;
-	}
-	.nav__sublink {
-		@apply
-		block 
-		pt-2 
-		pb-2.5 
-		mx-8 
-		font-semibold 
-		border-b 
-		border-neutral-200;
-	}
-	.nav__sublink--dbl {
-		@apply
-		pt-3.5 
-		pb-1 
-		px-8;
-	}
-	.nav__sublink--span {
-		@apply
-		hidden 
-		lg:block 
-		text-[.688rem] 
-		pt-0.5 
-		text-neutral-500 
-		-tracking-[.03em];
-	}
-	.nav__sublink--xs {
-		@apply
-		px-8
-		pt-[.625rem] 
-		pb-[.125rem];
-	}
-	.link__pill {
-		@apply
-		block 
-		text-neutral-800 
-		border-neutral-800
-		border-2
-		rounded-full 
-		font-semibold
-		leading-5
-		text-sm
-		px-3 
-		py-.75;
-	}
-
-
-    .article__container {
+	.article__container {
 		@apply 
 		max-w-[83.4%] 
 		my-0 
@@ -163,38 +77,6 @@
 		text-center
 		font-semibold;
 	}
-	.tab {
-		@apply
-		whitespace-nowrap 
-		py-[1.125rem] 
-		px-3.7 
-		border-b-400 
-		text-neutral-500 
-		text-sm 
-		font-semibold;
-	}
-	.tab.--active {
-		@apply
-		border
-		border-neutral-400
-		border-b-white
-		rounded-t-[.188rem]
-		text-black !important;
-	}
-	.tab-md {
-		@apply
-		md:py-6
-		md:leading-6
-		md:text-[.938rem]
-		md:pt-[1.625rem]
-		md:pb-[1.188rem]
-		md:px-[2.125rem];
-	}
-	.tab-xl {
-		@apply
-		xl:text-[.969rem]
-		xl:px-[2rem];
-	}
 	.products__h3 {
 		@apply
 		text-lg 
@@ -210,6 +92,126 @@
 		underline 
 		text-center;
 	}
+	.link__pill {
+		@apply
+		block 
+		text-neutral-800 
+		border-neutral-800
+		border-2
+		rounded-full 
+		font-semibold
+		leading-5
+		text-sm
+		px-3 
+		py-.75;
+	}
+
+/*------------- header -------------*/
+
+	.nav__tab {
+		@apply
+		py-4 
+		flex 
+		lg:text-s;
+	}
+	.nav__title--arrow {
+		@apply
+		border-neutral-600
+		border-b
+		border-r
+		h-1.5
+		w-1.5
+		relative
+		top-[.45rem]
+		-left-3
+		rotate-45
+		origin-[75%_75%]
+		transition-transform
+		duration-[0.1s]
+		ease-in-out;
+	}
+	.nav__tabpanel {
+		@apply
+		hidden 
+		top-[4.063rem] 
+		left-0 
+		absolute 
+		w-full 
+		bg-adobe;
+	}
+	.nav__tabpanel.--active {
+		@apply
+		block;
+	}
+	.nav__link--xl {
+		@apply
+		block 
+		pt-2 
+		pb-2.5 
+		mx-8 
+		font-semibold 
+		border-b 
+		border-neutral-200;
+	}
+	.nav__link--dbl {
+		@apply
+		pt-3.5 
+		pb-1 
+		px-8;
+	}
+	.nav__link--span {
+		@apply
+		hidden 
+		lg:block 
+		text-[.688rem] 
+		pt-0.5 
+		text-neutral-500 
+		-tracking-[.03em];
+	}
+	.nav__link {
+		@apply
+		px-8
+		pt-[.625rem] 
+		pb-[.125rem];
+	}
+
+/*-------------- tabs --------------*/
+
+	.tab {
+		@apply
+		whitespace-nowrap 
+		py-[1.125rem] 
+		px-3.7 
+		border-b-400 
+		text-neutral-500 
+		text-sm 
+		font-semibold;
+	}
+	.tab-md {
+		@apply
+		py-6
+		leading-6
+		text-[.938rem]
+		pt-[1.625rem]
+		pb-[1.188rem]
+		px-[2.125rem];
+	}
+	.tab-xl {
+		@apply
+		text-[.969rem]
+		px-[2rem];
+	}
+	.tab.--active {
+		@apply
+		border
+		border-neutral-400
+		border-b-white
+		rounded-t-[.188rem]
+		text-black !important;
+	}
+
+/*---------- contact form ----------*/
+
 	.form__container {
 		@apply
 		flex 
@@ -250,63 +252,45 @@
 		font-medium;
 	}
 
+/*------------- footer -------------*/
 
 	.footer__link {
 		@apply
+		relative
 		py-4 
 		flex 
 		w-full 
 		xl:pt-0 
 		xl:pb-1.5; 
 	}
-	.footer__link--arrow {
+	.footer__link--span {
 		@apply
 		relative 
 		w-full 
 		font-semibold 
 		text-[.813rem] 
-		text-neutral-600
-		after:border-neutral-600
-		after:border-b
-		after:border-r
-		after:flex
-		after:h-1.5
-		after:w-1.5
-		after:-mt-.75
-		after:absolute
-		after:right-5
-		after:top-1/2
-		after:rotate-45
-		after:origin-[75%_75%]
-		after:transition-transform
-		after:duration-[0.1s]
-		after:ease-in-out
-		xl:after:opacity-0;
+		text-neutral-600;
 	}
-	.footer__region {
-		@apply 
-		flex-ic
-		after:content-['⌄'] 
-		after:text-xl
-		after:text-neutral-600
-		after:ml-[.313rem] 
-		after:mb-2.5;
-	}
-	.footer__text--small {
+	.footer__link--arrow {
 		@apply
-		text-xxs 
-		text-neutral-700;
-	}
-	.after--slash {
-		@apply 
+		border-neutral-600
+		border-b
+		border-r
 		flex
-		after:content-['/'] 
-		after:mx-2 
-		after:text-xxs
-		after:text-neutral-600
-		xl:after:text-[.5rem]
-		xl:after:pb-0;
+		h-1.5
+		w-1.5
+		-mt-.75
+		absolute
+		right-5
+		top-1/2
+		rotate-45
+		origin-[75%_75%]
+		transition-transform
+		duration-[0.1s]
+		ease-in-out;
 	}
+
+/*-------- comparison.html --------*/
 
 	.body-lg {
 		@apply
@@ -322,7 +306,6 @@
 	.comp__title {
 		@apply
 		w-[900px]
-		3xl:w-[1680px]
 		transition-[width]
 		duration-700
 		mx-auto
@@ -342,8 +325,6 @@
 		h-[844px]
 		w-[390px]
 		min-w-[390px]
-		3xl:w-[800px]
-		3xl:min-w-[800px]
 		bg-adobe
 		rounded-md
 		border
@@ -351,8 +332,7 @@
 		overflow-scroll;
 	}
 	.comp__title--h2 {
-		@apply
-		mlg:hidden 
+		@apply 
 		absolute
 		top-[10%]
 		font-mono
@@ -373,16 +353,5 @@
 		flex
 		flex-row
 		cursor-default;
-	}
-	.resize__svg {
-		@apply
-		mx-4
-		opacity-60;
-	}
-	.resize__p {
-		@apply
-		text-m
-		text-adobered-dark
-		opacity-70;
 	}
 }

@@ -65,8 +65,22 @@ module.exports = {
 				'mxl': { 'raw': '(max-width: 1230px)' },
 				'2xl': '1366px',
 				'm2xl': { 'raw': '(max-width: 1366px)' },
-				'3xl': '1680px',
-				'm3xl': { 'raw': '(max-width: 1680px)' },
+				'3xl': '1710px',
+				'm3xl': { 'raw': '(max-width: 1710px)' },
+			},     
+			keyframes: {
+				resize: {
+				  '10%, 30%, 50%': { transform: 'translateX(20%)' },
+				  '0%, 20%, 40%, 60%': { transform: 'translateX(0)' },
+				},
+				resize__right: {
+				  '10%, 30%, 50%': { transform: 'translateX(-20%)' },
+				  '0%, 20%, 40%, 60%': { transform: 'translateX(0)' },
+				}
+			},   
+			animation: {
+				'resize': 'resize 10s infinite',
+				'resize__right': 'resize__right 10s infinite',
 			},
 		},
 	},
