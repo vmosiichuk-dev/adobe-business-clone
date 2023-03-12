@@ -58,11 +58,13 @@
 	.article__container {
 		@apply 
 		max-w-[83.4%] 
-		my-0 
-		mx-auto
-		xl:min-h-[560px]
-		xl:w-[1200px]
-		xl:max-w-[1200px];
+		mx-auto;
+	}
+	.ac-xl {
+		@apply
+		min-h-[560px]
+		w-[1200px]
+		max-w-[1200px];
     }
 	.article {
 		@apply
@@ -108,12 +110,6 @@
 
 /*------------- header -------------*/
 
-	.nav__tab {
-		@apply
-		py-4 
-		flex 
-		lg:text-s;
-	}
 	.nav__title--arrow {
 		@apply
 		border-neutral-600
@@ -162,7 +158,6 @@
 	.nav__link--span {
 		@apply
 		hidden 
-		lg:block 
 		text-[.688rem] 
 		pt-0.5 
 		text-neutral-500 
@@ -259,9 +254,7 @@
 		relative
 		py-4 
 		flex 
-		w-full 
-		xl:pt-0 
-		xl:pb-1.5; 
+		w-full; 
 	}
 	.footer__link--span {
 		@apply
