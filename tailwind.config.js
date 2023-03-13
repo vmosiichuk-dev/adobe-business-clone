@@ -28,7 +28,6 @@ module.exports = {
 		},
 		extend: {
 			backgroundImage: {
-			   	'body': "url('img/grid-bg.jpg')",
 				'trends': "url('img/trends-bg.avif')",
 				'trends--md': "url('img/trends-bg--600.avif')",
 				'trends--xl': "url('img/trends-bg--900.avif')",
@@ -70,17 +69,22 @@ module.exports = {
 			},     
 			keyframes: {
 				resize: {
-				  '10%, 30%, 50%': { transform: 'translateX(20%)' },
-				  '0%, 20%, 40%, 60%': { transform: 'translateX(0)' },
+				  '10%, 30%, 50%': { transform: 'translateX(20%)', opacity: '0.8' },
+				  '0%, 20%, 40%, 60%, 100%': { transform: 'translateX(0)', opacity: '0' },
 				},
 				resize__right: {
-				  '10%, 30%, 50%': { transform: 'translateX(-20%)' },
-				  '0%, 20%, 40%, 60%': { transform: 'translateX(0)' },
-				}
+				  '10%, 30%, 50%': { transform: 'translateX(-20%)', opacity: '0.8' },
+				  '0%, 20%, 40%, 60%, 100%': { transform: 'translateX(0)', opacity: '0' },
+				},
+				blink: {
+				  '10%, 30%, 50%': { opacity: '0.6' },
+				  '0%, 20%, 40%, 60%, 100%': { opacity: '0' },
+				},
 			},   
 			animation: {
 				'resize': 'resize 10s infinite',
 				'resize__right': 'resize__right 10s infinite',
+				'blink': 'blink 10s infinite',
 			},
 		},
 	},

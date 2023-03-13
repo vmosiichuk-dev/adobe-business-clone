@@ -287,7 +287,7 @@
 
 	.body-lg {
 		@apply
-		bg-body 
+		bg-adobe 
 		flex 
 		flex-row 
 		pt-[4.063rem]
@@ -299,6 +299,7 @@
 	.comp__title {
 		@apply
 		w-[900px]
+		cursor-default
 		transition-[width]
 		duration-700
 		mx-auto
@@ -330,7 +331,7 @@
 		top-[10%]
 		font-mono
 		font-light
-		text-[2rem]
+		text-2xl
 		-tracking-[.436em]
 		text-neutral-600
 		[writing-mode:vertical-lr]

@@ -1,17 +1,17 @@
-const clone = document.getElementById('clone'),
+const clone = document.getElementById("clone"),
       mql = window.matchMedia("(min-width: 600px) and (max-width: 900px)"),
       mqlXl = window.matchMedia("(min-width: 1710px)");
 
 function load_md(){
     fetch('md.html')
     .then(response => response.text())
-    .then(md => document.getElementById('clone').innerHTML = md);
+    .then(md => document.getElementById("clone").innerHTML = md);
 }
 
 function load_sm(){
     fetch('sm.html')
     .then(response => response.text())
-    .then(sm => document.getElementById('clone').innerHTML = sm);
+    .then(sm => document.getElementById("clone").innerHTML = sm);
 }
 
 function mediaContentChange(event) {
@@ -23,8 +23,8 @@ function mediaContentChange(event) {
 }
 
 document.addEventListener("DOMContentLoaded", function(e) { 
-    mediaContentChange(mql); 
-    mediaContentChange(mqlXl); 
+    mediaContentChange(mql);
+    mediaContentChange(mqlXl);
 });
 
 mql.addEventListener("change", mediaContentChange);
