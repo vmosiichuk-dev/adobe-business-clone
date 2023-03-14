@@ -3,13 +3,13 @@ const clone = document.getElementById("clone"),
       mqlXl = window.matchMedia("(min-width: 1710px)");
 
 function load_md(){
-    fetch('md.html')
+    fetch('../src/md.html')
     .then(response => response.text())
     .then(md => document.getElementById("clone").innerHTML = md);
 }
 
 function load_sm(){
-    fetch('sm.html')
+    fetch('../src/sm.html')
     .then(response => response.text())
     .then(sm => document.getElementById("clone").innerHTML = sm);
 }
