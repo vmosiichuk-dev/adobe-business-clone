@@ -1061,6 +1061,10 @@ video {
   margin-top: 2.063rem;
 }
 
+.mb-3\. {
+  margin-bottom: .813rem;
+}
+
 .mt-8 {
   margin-top: 2rem;
 }
@@ -1267,10 +1271,6 @@ video {
 
 .-mt-\.5 {
   margin-top: -1.188rem;
-}
-
-.mb-3\. {
-  margin-bottom: .813rem;
 }
 
 .mt-14\.5 {
@@ -1789,11 +1789,6 @@ video {
   padding-bottom: .313rem;
 }
 
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-
 .px-25 {
   padding-left: 6.25rem;
   padding-right: 6.25rem;
@@ -1807,6 +1802,11 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .py-0 {
@@ -2080,10 +2080,6 @@ video {
 
 .pt-\.5 {
   padding-top: 1.188rem;
-}
-
-.pb-2\. {
-  padding-bottom: .563rem;
 }
 
 .text-left {
@@ -2441,6 +2437,14 @@ video {
     margin-bottom: 1rem;
   }
 
+  .md\:mt-6\. {
+    margin-top: 1.563rem;
+  }
+
+  .md\:mt-6 {
+    margin-top: 1.5rem;
+  }
+
   .md\:mt-1 {
     margin-top: 0.25rem;
   }
@@ -2497,10 +2501,6 @@ video {
     margin-top: 1.625rem;
   }
 
-  .md\:mt-6 {
-    margin-top: 1.5rem;
-  }
-
   .md\:mt-10\. {
     margin-top: 2.563rem;
   }
@@ -2519,10 +2519,6 @@ video {
 
   .md\:mt-12 {
     margin-top: 3rem;
-  }
-
-  .md\:mt-6\. {
-    margin-top: 1.563rem;
   }
 
   .md\:mt-24\. {
@@ -3129,11 +3125,6 @@ video {
     padding: 1.25rem;
   }
 
-  .xl\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
   .xl\:px-\[calc\(25\%\+\.313rem\)\] {
     padding-left: calc(25% + .313rem);
     padding-right: calc(25% + .313rem);
@@ -3178,12 +3169,24 @@ video {
     padding-top: .938rem;
   }
 
-  .xl\:pb-4\. {
-    padding-bottom: 1.063rem;
+  .xl\:pb-4\.5 {
+    padding-bottom: 1.125rem;
   }
 
   .xl\:pb-4 {
     padding-bottom: 1rem;
+  }
+
+  .xl\:pr-0 {
+    padding-right: 0px;
+  }
+
+  .xl\:pl-\.1 {
+    padding-left: .188rem;
+  }
+
+  .xl\:pt-px {
+    padding-top: 1px;
   }
 
   .xl\:pl-8 {
@@ -3192,10 +3195,6 @@ video {
 
   .xl\:pl-4 {
     padding-left: 1rem;
-  }
-
-  .xl\:pr-0 {
-    padding-right: 0px;
   }
 
   .xl\:pr-12\.5 {
@@ -3240,18 +3239,6 @@ video {
 
   .xl\:pt-0\.5 {
     padding-top: 0.125rem;
-  }
-
-  .xl\:pl-\.1 {
-    padding-left: .188rem;
-  }
-
-  .xl\:pt-px {
-    padding-top: 1px;
-  }
-
-  .xl\:pb-4\.5 {
-    padding-bottom: 1.125rem;
   }
 
   .xl\:text-\[\.67rem\] {
@@ -3428,14 +3415,6 @@ video {
 
 @media (min-width: 600px) {
   @media (max-width: 1230px) {
-    .md\:mxl\:mt-6\. {
-      margin-top: 1.563rem;
-    }
-
-    .md\:mxl\:mt-6 {
-      margin-top: 1.5rem;
-    }
-
     .md\:mxl\:mt-9 {
       margin-top: 2.25rem;
     }
