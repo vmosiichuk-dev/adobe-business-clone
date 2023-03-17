@@ -686,14 +686,14 @@
         </article>
         <article class="article pb-11">
             <div class="mt-.4 px-.9 border-b-400 md:px-.19 xl:mt-5 xl:px-0 xl:flex-jc">
-                <div role="tablist" class="flex overflow-hidden relative z-10 -mb-px">
-                    <button role="tab" aria-selected="false" aria-controls="tabpanel--1" tabindex="0" id="tab--1" class="tab md:tab-md xl:tab-xl --active">Personalization at scale</button>
+                <div role="tablist" id="tabList" class="flex overflow-hidden relative z-10 -mb-px">
+                    <button role="tab" aria-selected="false" aria-controls="tabpanel--1" tabindex="0" id="tab--1" class="tab md:tab-md xl:tab-xl">Personalization at scale</button>
                     <button role="tab" aria-selected="false" aria-controls="tabpanel--2" tabindex="0" id="tab--2" class="tab md:tab-md xl:tab-xl">Data insights &amp; audiences</button>
                     <button role="tab" aria-selected="false" aria-controls="tabpanel--3" tabindex="0" id="tab--3" class="tab md:tab-md xl:tab-xl">Content management</button>
                     <button role="tab" aria-selected="false" aria-controls="tabpanel--4" tabindex="0" id="tab--4" class="tab md:tab-md xl:tab-xl">Customer journeys</button> 
                 </div>
             </div>
-            <div role="tabpanel" id="tabpanel--1" class="article__container xl:ac-xl">
+            <div role="tabpanel" id="tabpanel--1" class="article__container xl:ac-xl tabPanel">
                 <div class="gap-x-6 md:flex md:flex-wrap md:flex-row md:relative">
                     <div class="md:w-[calc(50%-.75rem)] xl:w-[700px]">
                         <div class="w-full flex-center mb-6 md:mt-17. xl:mt-0">
@@ -715,9 +715,9 @@
                     </div>
                 </div>
             </div>
-            <div role="tabpanel" id="tabpanel--2" class="article__container xl:ac-xl hidden">
-                <div class="gap-x-6 md:flex md:flex-wrap md:flex-row md:relative">
-                    <div class="md:w-[calc(50%-.75rem)] xl:w-[700px]">
+            <div role="tabpanel" id="tabpanel--2" class="article__container xl:ac-xl tabPanel">
+                <div class="gap-x-6 md:flex md:flex-wrap md:flex-row md:relative xl:mb-4">
+                    <div class="md:w-[calc(50%-.75rem)] xl:w-[700px] xl:mt-10">
                         <div class="w-full flex-center mb-6 md:mt-14 xl:mt-0">
                             <picture>
                                 <source media="(min-width:900px)" srcset="img/tab-2--900.avif">
@@ -726,7 +726,7 @@
                             </picture>
                         </div>
                     </div>
-                    <div class="mt-4 md:w-[calc(50%-.75rem)] md:mt-2. xl:w-[calc(100%-730px)] xl:pl-8 xl:mt-20.">
+                    <div class="mt-4 md:w-[calc(50%-.75rem)] md:mt-2. xl:w-[calc(100%-730px)] xl:pl-8 xl:mt-.38">
                         <h3 class="text-2xl font-semibold mb-4 mt-8 xl:text-3.5xl xl:-tracking-[.02em]">Deep and relevant data insights & audiences</h3>
                         <p class="leading-6.5 xl:-tracking-[.01em]">Use our customer data platform (CDP) technology to drive real-time personalization on any channel using online and offline data insights across your entire business.</p>
                         <div class="flex-row-ic-js mt-6.5 mb-4 md:mt-.6">
@@ -737,9 +737,9 @@
                     </div>
                 </div>
             </div>
-            <div role="tabpanel" id="tabpanel--3" class="article__container xl:ac-xl hidden">
-                <div class="gap-x-6 md:flex md:flex-wrap md:flex-row md:relative">
-                    <div class="md:w-[calc(50%-.75rem)] xl:w-[700px]">
+            <div role="tabpanel" id="tabpanel--3" class="article__container xl:ac-xl tabPanel">
+                <div class="gap-x-6 md:flex md:flex-wrap md:flex-row md:relative xl:mb-4">
+                    <div class="md:w-[calc(50%-.75rem)] xl:w-[700px] xl:mt-10">
                         <div class="w-full flex-center mb-6 md:mt-14 xl:mt-0">
                             <picture>
                                 <source media="(min-width:900px)" srcset="img/tab-3--900.avif">
@@ -748,7 +748,7 @@
                             </picture>
                         </div>
                     </div>
-                    <div class="mt-4 md:w-[calc(50%-.75rem)] md:mt-2. xl:w-[calc(100%-730px)] xl:pl-8 xl:mt-20.">
+                    <div class="mt-4 md:w-[calc(50%-.75rem)] md:mt-2. xl:w-[calc(100%-730px)] xl:pl-8 xl:mt-31">
                         <h3 class="text-2xl font-semibold mb-4 mt-8 xl:text-3.5xl xl:-tracking-[.02em]">Fast and flexible content management</h3>
                         <p class="leading-6.5 xl:-tracking-[.01em]">Employ our marketing workflow technology, our open-source content management system (CMS), and digital asset management (DAM) system to create and manage your business’s websites, apps, forms, and other marketing and business content.</p>
                         <div class="flex-row-ic-js mt-6.5 mb-4 md:mt-.6">
@@ -759,9 +759,9 @@
                     </div>
                 </div>
             </div>
-            <div role="tabpanel" id="tabpanel--4" class="article__container xl:ac-xl hidden">
-                <div class="gap-x-6 md:flex md:flex-wrap md:flex-row md:relative">
-                    <div class="md:w-[calc(50%-.75rem)] xl:w-[700px]">
+            <div role="tabpanel" id="tabpanel--4" class="article__container xl:ac-xl tabPanel">
+                <div class="gap-x-6 md:flex md:flex-wrap md:flex-row md:relative xl:mb-4">
+                    <div class="md:w-[calc(50%-.75rem)] xl:w-[700px] xl:mt-10">
                         <div class="w-full flex-center mb-6 md:mt-14 xl:mt-0">
                             <picture>
                                 <source media="(min-width:900px)" srcset="img/tab-4--900.avif">
@@ -770,7 +770,7 @@
                             </picture>
                         </div>
                     </div>
-                    <div class="mt-4 md:w-[calc(50%-.75rem)] md:mt-2. xl:w-[calc(100%-730px)] xl:pl-8 xl:mt-20.">
+                    <div class="mt-4 md:w-[calc(50%-.75rem)] md:mt-2. xl:w-[calc(100%-730px)] xl:pl-8 xl:mt-31">
                         <h3 class="text-2xl font-semibold mb-4 mt-8 xl:text-3.5xl xl:-tracking-[.02em]">Personalized customer journeys</h3>
                         <p class="leading-6.5 xl:-tracking-[.01em]">Build a content marketing strategy for your business that delivers personalized content across all channels. It updates the customer experience in real time based on an individual’s engagement history. And now, serve that experience at scale to all of your customers.</p>
                         <div class="flex-row-ic-js mt-6.5 mb-4 md:mt-.6">
@@ -1323,5 +1323,6 @@
                 </ul>
             </div>
         </footer>
+        <script src="index.js"></script>
     </body>
 </html>
