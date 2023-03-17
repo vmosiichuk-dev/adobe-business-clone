@@ -103,8 +103,8 @@
 		rounded-full 
 		font-semibold
 		leading-5
-		text-sm
-		px-3 
+		text-s
+		px-3. 
 		py-.1;
 	}
 
@@ -194,7 +194,9 @@
 	.tab-xl {
 		@apply
 		text-[.969rem]
-		px-8;
+		px-8.
+		pt-.7
+		pb-4.5;
 	}
 	.tab.--active {
 		@apply

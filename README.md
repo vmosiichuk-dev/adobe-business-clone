@@ -11,5 +11,5 @@ Mobile First Approuch was chosen for this project, since Tailwind CSS media quer
 - [x] Moving from Mobile to Tablet
 - [x] Moving from Tablet to Desktop
 - [x] Code review & Responsiveness testing
-- [ ] Side to side comparison preview page 
+- [x] Side to side comparison preview page 
 - [ ] Implement JavaScript functionality
