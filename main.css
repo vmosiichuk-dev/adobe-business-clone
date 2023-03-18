@@ -571,6 +571,7 @@ video {
 /*------------- header -------------*/
 
 .nav__title--arrow {
+  pointer-events: none;
   position: relative;
   top: .45rem;
   left: -0.625rem;
@@ -589,11 +590,26 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.nav__title--arrow.--active {
+  --tw-rotate: 225deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.nav__tablist {
+  display: flex;
+  align-items: center;
+}
+
+.nav__tab {
+  display: flex;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .nav__tabpanel {
   position: absolute;
   top: 4.063rem;
   left: 0px;
-  display: none;
   width: 100%;
   --tw-bg-opacity: 1;
   background-color: rgb(250 250 250 / var(--tw-bg-opacity));
@@ -836,6 +852,10 @@ video {
   white-space: nowrap;
   display: flex;
   align-items: center;
+}
+
+.pointer-events-none {
+  pointer-events: none;
 }
 
 .fixed {
@@ -1734,11 +1754,6 @@ video {
   padding-right: 0.5rem;
 }
 
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
 .px-3\.5 {
   padding-left: 0.875rem;
   padding-right: 0.875rem;
@@ -1847,6 +1862,11 @@ video {
 .py-\.\.3 {
   padding-top: .675rem;
   padding-bottom: .675rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .pt-11 {
@@ -2720,6 +2740,10 @@ video {
     display: block;
   }
 
+  .lg\:flex {
+    display: flex;
+  }
+
   .lg\:body-lg {
     display: flex;
     height: 100%;
@@ -2731,10 +2755,6 @@ video {
     --tw-bg-opacity: 1;
     background-color: rgb(250 250 250 / var(--tw-bg-opacity));
     padding-top: 4.063rem;
-  }
-
-  .lg\:flex {
-    display: flex;
   }
 
   .lg\:comp__wrapper {
@@ -2983,10 +3003,6 @@ video {
 
   .xl\:mt-7 {
     margin-top: 1.75rem;
-  }
-
-  .xl\:mb-1 {
-    margin-bottom: 0.25rem;
   }
 
   .xl\:flex {
