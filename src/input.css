@@ -124,11 +124,24 @@
 		origin-[75%_75%]
 		transition-transform
 		duration-[0.1s]
-		ease-in-out;
+		ease-in-out
+		pointer-events-none;
+	}
+	.nav__title--arrow.--active {
+		@apply
+		rotate-[225deg];
+	}
+	.nav__tablist {
+		@apply
+		flex-ic;
+	}
+	.nav__tab {
+		@apply
+		flex
+		py-4;
 	}
 	.nav__tabpanel {
 		@apply
-		hidden 
 		top-[4.063rem] 
 		left-0 
 		absolute 
