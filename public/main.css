@@ -654,6 +654,11 @@ video {
   padding-bottom: .125rem;
 }
 
+.search__form.--active {
+  --tw-border-opacity: 1;
+  border-color: rgb(59 130 246 / var(--tw-border-opacity));
+}
+
 /*-------------- tabs --------------*/
 
 .tab {
@@ -2139,6 +2144,10 @@ video {
   font-size: .775rem;
 }
 
+.text-\[1\.6rem\] {
+  font-size: 1.6rem;
+}
+
 .text-3xs {
   font-size: .625rem;
 }
@@ -2423,6 +2432,11 @@ video {
 .hover\:border-b-adobered-dark:hover {
   --tw-border-opacity: 1;
   border-bottom-color: rgb(180 14 4 / var(--tw-border-opacity));
+}
+
+.hover\:text-blue-500:hover {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
 @media (min-width: 600px) {
@@ -2852,16 +2866,16 @@ video {
     max-width: 1200px;
   }
 
+  .xl\:m-0 {
+    margin: 0px;
+  }
+
   .xl\:tab-xl {
     padding-left: 2.063rem;
     padding-right: 2.063rem;
     padding-top: 1.688rem;
     padding-bottom: 1.125rem;
     font-size: .969rem;
-  }
-
-  .xl\:m-0 {
-    margin: 0px;
   }
 
   .xl\:mx-auto {

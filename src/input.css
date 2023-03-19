@@ -182,6 +182,10 @@
 		pt-[.625rem] 
 		pb-[.125rem];
 	}
+	.search__form.--active {
+		@apply
+		border-blue-500;
+	}
 
 /*-------------- tabs --------------*/
 

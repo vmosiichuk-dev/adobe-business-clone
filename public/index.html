@@ -19,10 +19,10 @@
         <header class="nav__bar h-[4.063rem] border-b border-neutral-100 relative z-10 bg-white">
             <div class="nav__bar flex-between h-full max-w-[1440px] mx-auto whitespace-nowrap">
                 <nav class="flex">
-                    <aside class="hidden absolute bg-white top-16 w-full left-0 justify-center">
+                    <aside id="search__bar" class="flex absolute bg-white top-16 w-full left-0 justify-center">
                         <div class="relative w-full max-w-[1200px] p-5">
-                            <form class="flex-ic text-sm px-2.5 py-[.406rem] border border-neutral-400/60 rounded-[.25rem]" action="https://helpx.adobe.com/globalsearch.html" method="GET">
-                                <input name="inp-search" id="inp-search" type="text" class="font-light flex-grow outline-none" placeholder="Search">
+                            <form class="search__form flex-ic text-sm px-2.5 py-[.406rem] border border-neutral-400/60 rounded-[.25rem]" action="https://helpx.adobe.com/globalsearch.html" method="GET">
+                                <input name="search__input" id="search__input" type="text" class="font-light flex-grow outline-none" placeholder="Search">
                                 <div>
                                     <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false">
                                         <path d="M14 2A8 8 0 0 0 7.4 14.5L2.4 19.4a1.5 1.5 0 0 0 2.1 2.1L9.5 16.6A8 8 0 1 0 14 2Zm0 14.1A6.1 6.1 0 1 1 20.1 10 6.1 6.1 0 0 1 14 16.1Z"></path>
@@ -593,10 +593,11 @@
                     </ul>
                 </nav>
                 <div class="flex-ic">
-                    <button class="pl-6 mlg:hidden ">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" focusable="false">
+                    <button id="search__switch" class="pl-6 mlg:hidden">
+                        <svg id="search__svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" focusable="false">
                             <path d="M14 2A8 8 0 0 0 7.4 14.5L2.4 19.4a1.5 1.5 0 0 0 2.1 2.1L9.5 16.6A8 8 0 1 0 14 2Zm0 14.1A6.1 6.1 0 1 1 20.1 10 6.1 6.1 0 0 1 14 16.1Z"></path>
                         </svg>
+                        <span id="search__close" class="text-[1.6rem] hover:text-blue-500 hidden">&#x2715;</span>
                     </button>
                     <a href="#" class="text-s ml-5.5 mr-5 -tracking-[.03em]">Sign In</a>
                     <a href="#" class="mr-9 mlg:hidden">
@@ -1323,6 +1324,6 @@
                 </ul>
             </div>
         </footer>
-        <script src="index.js"></script>
+        <script defer src="index.js"></script>
     </body>
 </html>
